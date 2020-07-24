@@ -1,0 +1,102 @@
+@font-face {
+  font-family: aleckcd;
+  font-style: normal;
+  font-weight: 200;
+  src: url("./../fonts/attaleckcd_lt.woff") format("woff"), url("./../fonts/attaleckcd_lt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: aleckcd;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./../fonts/attaleckcd_md.woff") format("woff"), url("./../fonts/attaleckcd_md.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: aleck;
+  font-style: normal;
+  font-weight: 200;
+  src: url("./../fonts/attalecksans_lt.woff") format("woff"), url("./../fonts/attalecksans_lt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: aleck;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./../fonts/attalecksans_rg.woff") format("woff"), url("./../fonts/attalecksans_rg.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: aleck;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./../fonts/attalecksans_md.woff") format("woff"), url("./../fonts/attalecksans_md.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: aleck;
+  font-style: normal;
+  font-weight: 700;
+  src: url("./../fonts/attalecksans_bd.woff") format("woff"), url("./../fonts/attalecksans_bd.ttf") format("truetype");
+}
+
+$font-aleckcd: 'aleckcd', Helvetica, Arial, sans-serif;
+$font-aleck: 'aleck', Helvetica, Arial, sans-serif;
+$font-aleck-bold: 'attalecksans_bd', Helvetica, sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-aleck;
+
+}
+
+h1,
+.h1 {
+  font-family: $font-aleck;
+  font-size: 32px;
+  // font-weight: 500;
+  line-height: 32px;
+
+  @include large-up {
+    font-size: 52px;
+    line-height: 60px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 28px;
+  line-height: 32px;
+
+  @include large-up {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+
+  @include large-up {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 22px;
+}

@@ -1,0 +1,16 @@
+body.fixed-nav .cartNav {
+  @include small {
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+  }
+}
+
+.cartNav {
+  background-color: $white;
+  position: relative;
+  top: 0;
+  width: 100%;
+  transition:all 0.5s;
+  z-index: 1;
+}

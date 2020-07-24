@@ -1,0 +1,89 @@
+.bg-default {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.bg-family-hero {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    height: 100%;
+    width: 49%;
+    right: 0;
+    top: 0;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/images/service-hero-2a.jpg');
+    @include medium-down {
+      display: none;
+    }
+
+  }
+}
+
+.bg-checker-shirt-lady {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    height: 100%;
+    width: 49%;
+    right: 0;
+    top: 0;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/images/checker-shirt-lady.jpg');
+    @include medium-down {
+      display: none;
+    }
+
+  }
+}
+
+.bg-error-hero {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    height: 100%;
+    width: 49%;
+    right: 0;
+    top: 0;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/images/error.jpg');
+    @include medium-down {
+      display: none;
+    }
+
+  }
+}
+
+.bg-error-timeout {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    height: 100%;
+    width: 49%;
+    right: 0;
+    top: 0;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/images/timeout-hero.png');
+    @include medium-down {
+      display: none;
+    }
+
+  }
+}

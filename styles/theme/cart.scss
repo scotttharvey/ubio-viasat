@@ -1,0 +1,33 @@
+body.cart-open {
+  @include small {
+    position: fixed;
+    background: rgba(0,0,0,0.4) !important;
+  }
+}
+
+.cart-container {
+  position: relative;
+
+  .dropdown-arrow {
+    transform: rotate(270deg);
+
+    &.open {
+      transform: rotate(90deg);
+    }
+  }
+
+  .cart-dropdown {
+    position: absolute;
+    width: 370px;
+    margin: 0 auto;
+    top: 34px;
+    right: 0;
+    z-index: 99;
+
+    @include small {
+      top: 46px;
+      right: -15px;
+      width: 100vw;
+    }
+  }
+}

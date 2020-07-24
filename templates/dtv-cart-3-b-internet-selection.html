@@ -1,0 +1,263 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<link rel="stylesheet" href="./../styles/index.scss" />
+<script type="text/javascript" src="./../index.js"></script>
+
+<!-- CART 3-A -->
+  <div class="container bg-blue-sky">
+    <div class="row p-y-5">
+      <div class="content flex flex-row">
+        <img class="w-15px h-15px" src="../images/icons/location-pin.svg" alt=""/>
+        <p class="text-14">200 Deerhunter Rd, Apt 4, Omaha, NE 42311 <a class="blue-light no-underline" href="#">Change</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="cartNav" class="cartNav container box-shadow">
+    <div class="row p-y-8">
+        <div class="flex space-between content">
+          <div class="flex align-center p-y-8 md-up:hidden">
+            <p class="gray-dark">Step 1 of 4</p>
+          </div>
+          <div class="flex flex-row align-center sm:hidden">
+            <p class="p-x-10 text-14 blue bold">Package</p>
+            <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
+            <p class="p-x-10 text-14 gray-dark">Checkout</p>
+            <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
+            <p class="p-x-10 text-14 gray-dark">Summary</p>
+            <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
+            <p class="p-x-10 text-14 gray-dark">Install</p>
+          </div>
+          <div id="cart" class="cart-container pointer flex flex-row align-center" data-target="cart">
+            <img src="../images/icons/cart-blue.svg" alt="" class="w-25px h-25px"/>
+            <p class="p-x-5">My Cart</p>
+            <img src="../images/icons/chevron-left.svg" alt="" class="dropdown-arrow md-up:hidden w-25px h-25px -m-t-3  icon-rotate-270"/>
+            <!-- Cart Dropdown -->
+            <div class="cart-dropdown box-shadow border-gray-light bg-light hidden p-15">
+              <div class="dropdown-container">
+                <p class="text-24 thin p-b-15">Cost</p>
+                <div class="bg-white p-25 sm:p-x-15 m-b-25">
+                  <p class="text-18 bold p-b-15">Monthly Cost</p>
+                  <div class="flex space-between p-b-15">
+                    <p class="text-14">Internet 100</p>
+                    <p class="text-14">$69.99</p>
+                  </div>
+                  <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+                    <p class="text-18">Total</p>
+                    <p class="text-18">$69.99</p>
+                  </div>
+                </div>
+                <div class="w-100 flex flex-end p-b-15">
+                  <button class="btn btn-shadow bg-blue-dark white p-y-8 p-x-25 ">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row p-y-30">
+
+      <section class="w-100 content">
+
+        <!-- <div class="p-b-35 m-b-35 border-bottom-gray">
+          <div class="p-25 sm:p-x-15 border-blue-light flex space-between align-center sm:flex-column">
+            <p class="icon check-circle sm:p-b-15">
+              Internet 1000 has been added to your cart
+            </p>
+            <button class="btn bg-blue-dark white p-x-45 p-y-8 block m-l-auto">Checkout</button>
+          </div>
+        </div> -->
+
+        <div class="gray-darkest">
+          <h1 class="h3 gray-darkest thin p-b-15">Pick Your Perfect AT&T Internet Package</h1>
+          <p class="gray-dark p-b-15">Showing 2 products</p>
+          <p class="m-b-25">Choose any package below to start building your order.</p>
+        </div>
+
+        <div class="package-cards-container">
+
+          <div class="content">
+            <div class="package-card">
+              <div class="label-container">
+                <p class="label">
+                  Highest Speed
+                </p>
+              </div>
+              <div class="title-container m-b-15">
+                <div class="flex justify-center">
+                  <img src="/images/icons/wifi.svg" alt="" class="w-35px"/>
+                </div>
+                <p class="text-center title">Internet 1000</p>
+              </div>
+              <p class="text-center text-14">Monthly Cost</p>
+              <div class="price">
+                <div class="prefix">$</div>
+                <div class="amount">39</div>
+                <div class="change">99</div>
+              </div>
+              <div class="p-b-15 p-x-15 text-center">
+                <p class="legal">for 12 mos plus taxes & equip fee. $10/mo equip. fee applies. Incl unlimited internet data allowance ($30 value) <br/> <span data-modal-trigger="internet-1000-details" class="underlined pointer">See Offer Details</span>
+                  <!-- Start modal content -->
+                  <div data-modal-content="internet-1000-details" class="modal hidden sm:p-x-15 is-active">
+                    <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
+                      <div class="w-100 text-right">
+                        <span data-modal-trigger="close" class="close">&#10005;</span>
+                      </div>
+                      <div class="text-left">
+                        <p class="text-24 p-b-15">Offer Details.</p>
+                        <p class="bold text-14 p-b-15">
+                          Geographic and service restrictions apply to AT&T Internet services. Not all speeds available in all areas. Call to see if you qualify.
+                        </p>
+
+                        <p class="text-14 p-b-15">
+                          <span class="bold">$39.99 Internet 1000 Offer: Ends 6/27/20.</span> Price requires bundle with another qualifying AT&T service (DIRECTV, U-verse TV, AT&T TV, AT&T Phone or postpaid AT&T wireless). <span class="bold">Pricing for first 12 months only.</span> After 12 mos or loss of eligibility, then prevailing rate applies (currently $59.99/mo) unless canceled or changed by customer prior to end of 12 months. Must maintain qualifying bundled services with matching service address to receive advertised pricing. <span class="bold">Additional Fees & Taxes:</span> AT&T one-time transactional fees, $10/mo. equipment fee, and monthly cost recovery surcharges which are not government-required may apply, as well as taxes. See <a class="gray-dead" href="https://www.att.com/fees">www.att.com/fees</a> for details. Credit restrictions apply. Pricing subj to change. Subj. to Internet Terms of Service at att.com/internet-terms.
+                        </p>
+                        <p class="text-14">
+                          †† <span class="bold">Internet speed claims </span> represent maximum network service capability speeds and based on wired connection to gateway. Actual customer speeds may vary based on a number of factors and are not guaranteed. Download speeds are typically up to 940Mbps due to overhead capacity reserved to deliver the data. For more information, go to www.att.com/speed101.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End modal content -->
+
+                </p>
+              </div>
+              <div class="speed">
+                <div class="box">
+                  <p class="text-12 text-center top">Download/upload speed</p>
+                  <p class="text-center unit">1000/1000 Mpbs</p>
+                </div>
+              </div>
+
+              <p class="card-description text-center text-14 p-x-10 p-b-15">This is the internet you've been waiting for. AT&T Internet 1000 gives you the speed you need and backs it up with a 100% fiber network. Connect all your internet-enabled devices to your in-home network and enjoy a fast, consistent connection. AT&T Internet service relies on the Wireless Gateway, designed to boost your internet signal. Use the Wireless Gateway to reduce the presence of dead signal spots and create an in-home wireless network capable of connecting from nearly any room in your home. A dependable Internet connection doesn't have to end once you step outside. Thanks to the vast nationwide network of AT&T Wi-Fi hotspots, you're never too far from a great signal. Just download the AT&T Smart Wi-Fi app to locate the nearest hotspot, and start saving mobile data. Conserve smartphone battery life. Thousands of Wi-Fi hotspots. Automatically connect when in range.</p>
+
+              <button class="add-cart-btn" data-modal-trigger="internet">
+                Add to Cart
+              </button>
+              <!-- Start modal content -->
+              <div data-modal-content="internet" class="modal hidden sm:p-x-15 is-active">
+                <div class="modal-content p-25 p-r-15 sm:p-x-15 w-60 md-down:w-100">
+                  <div class="w-100 text-right">
+                    <span data-modal-trigger="close" class="close -m-t-10">&#10005;</span>
+                  </div>
+                  <div class="p-t-30 p-b-15">
+                    <div class="p-b-15 m-b-15 border-bottom-gray">
+                      <div class="p-10 sm:p-x-15 flex space-between align-center sm:flex-column">
+                        <p class="icon text-18 check-circle sm:p-b-15">
+                          Internet 1000 has been added to your cart
+                        </p>
+                        <button class="btn bg-blue-dark white p-x-25 p-y-8 block m-l-auto">Checkout</button>
+                      </div>
+                    </div>
+                    <div class="w-100 flex sm:flex-column space-between">
+                      <div class="w-60 sm:w-100 p-r-10">
+                        <p class="text-24 thin p-b-15">Great Internet Deserves Great TV</p>
+                        <p class="p-b-15">Tired of missing the big game or cliff-hanger season finale? Thanks to 500 hours of Cloud DVR storage, you don’t have to. Bundle now to double your savings, plus use voice remote with the Google Assistant to find everything you want without leaving your couch.</p>
+                        <p class="text-12 p-b-25">Recordings expire after 90 days. Restrictions apply. Google is a trademark of Google LLC. Google login required.</p>
+                        <button class="btn p-y-8 p-x-45 white bg-blue-dark ">See DirecTV Packages</button>
+                      </div>
+
+                      <div class="w-40 sm:hidden">
+                        <img src="../images/tv-channels.png" alt="" class="w-100">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End modal content -->
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="package-card dtv-internet">
+              <div class="label-container">
+                <p class="label">
+                  Bundle Discount
+                </p>
+              </div>
+              <div class="title-container text-center m-b-15">
+                <div class="flex justify-center">
+                  <img src="/images/icons/wifi.svg" alt="" class="w-35px"/>
+                  <img src="/images/icons/tv.svg" alt="" class="w-35px"/>
+                </div>
+                <p class="title">Internet 1000</p>
+                <p class="blue text-14">with DIRECTV Bundling</p>
+
+              </div>
+              <p class="text-center text-14">Discounted monthly Cost</p>
+              <div class="price">
+                <div class="prefix">$</div>
+                <div class="amount">39</div>
+                <div class="change">99</div>
+              </div>
+              <p class="text-center strike-out blue p-b-10">Original price: $49.99</p>
+              <div class="p-b-15 p-x-15 text-center">
+                <p class="legal">for 12 mos when bundled, + taxes & equip fee. w/ other qualifying svc (min $19/mo) & combined bill req’d. $10/mo equip fee applies Incl unlimited internet data allowance ($30-value) <br/> <span data-modal-trigger="internet-1000-details" class="underlined pointer">See Offer Details</span>
+                  <!-- Start modal content -->
+                  <div data-modal-content="internet-1000-details" class="modal hidden sm:p-x-15 is-active">
+                    <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
+                      <div class="w-100 text-right">
+                        <span data-modal-trigger="close" class="close">&#10005;</span>
+                      </div>
+                      <div class="text-left">
+                        <p class="text-24 p-b-15">Offer Details.</p>
+                        <p class="bold text-14 p-b-15">
+                          Geographic and service restrictions apply to AT&T Internet services. Not all speeds available in all areas. Call to see if you qualify.
+                        </p>
+
+                        <p class="text-14 p-b-15">
+                          <span class="bold">$39.99 Internet Offer:</span> Price requires bundle with another qualifying AT&T service (DIRECTV, U-verse TV, AT&T TV, AT&T Phone or postpaid AT&T wireless). <span class="bold">Pricing for first 12 months only.</span> After 12 mos or loss of eligibility, then prevailing rate applies (currently $59.99/mo) unless canceled or changed by customer prior to end of 12 months. Must maintain qualifying bundled services with matching service address to receive advertised pricing. <span class="bold">Additional Fees & Taxes:</span> AT&T one-time transactional fees, $10/mo. equipment fee, and monthly cost recovery surcharges which are not government-required may apply, as well as taxes. See <a class="gray-dead" href="https://www.att.com/fees">www.att.com/fees</a> for details. Credit restrictions apply. <span class="bold">Pricing subj to change. Subj. to Internet Terms of Service at <a href="https://att.com/internet-terms" class="gray-dead">att.com/internet-terms.</a></span>
+                        </p>
+                        <p class="text-14">
+                          †† <span class="bold">Internet speed claims</span> represent maximum network service capability speeds and based on wired connection to gateway. Actual customer speeds may vary based on a number of factors and are not guaranteed. Download speeds are typically up to 940Mbps due to overhead capacity reserved to deliver the data. For more information, go to www.att.com/speed101.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End modal content -->
+
+                </p>
+              </div>
+              <div class="speed">
+                <div class="box">
+                  <p class="text-12 text-center top">Download/upload speed</p>
+                  <p class="text-center unit">1000/1000 Mpbs</p>
+                </div>
+              </div>
+
+              <p class="card-description text-center text-14 p-x-10 p-b-15">This is the internet you've been waiting for. AT&T Internet 1000 gives you the speed you need and backs it up with a 100% fiber network. Connect all your internet-enabled devices to your in-home network and enjoy a fast, consistent connection. AT&T Internet service relies on the Wireless Gateway, designed to boost your internet signal. Use the Wireless Gateway to reduce the presence of dead signal spots and create an in-home wireless network capable of connecting from nearly any room in your home. A dependable Internet connection doesn't have to end once you step outside. Thanks to the vast nationwide network of AT&T Wi-Fi hotspots, you're never too far from a great signal. Just download the AT&T Smart Wi-Fi app to locate the nearest hotspot, and start saving mobile data. Conserve smartphone battery life. Thousands of Wi-Fi hotspots. Automatically connect when in range.</p>
+
+              <button class="add-cart-btn" data-modal-trigger="internet-dtv">
+                Added to Cart
+              </button>
+              <!-- Start modal content -->
+              <div data-modal-content="internet-dtv" class="modal hidden sm:p-x-15 is-active">
+                <div class="modal-content p-25 p-r-15 sm:p-x-15 w-60 md-down:w-100">
+                  <div class="w-100 text-right">
+                    <span data-modal-trigger="close" class="close -m-t-10">&#10005;</span>
+                  </div>
+                  <div class="p-t-30 p-b-15">
+                    <div>
+                      <div class="p-10 sm:p-x-15 flex space-between align-center sm:flex-column">
+                        <p class="icon text-18 thin check-circle sm:p-b-15">
+                          Internet 1000 with DirecTV bundling has been added to your cart! Select your DirecTV package next.
+                        </p>
+                        <button class="btn bg-blue-dark white p-x-45 p-y-8 block m-l-auto">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End modal content -->
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../index.js"></script>
+  <script type="text/javascript" src="../scripts/cart.js"></script>

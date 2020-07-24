@@ -1,0 +1,44 @@
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./../styles/index.scss">
+
+  <form id="card-form" style="display: block; visibility: visible;">
+    <div id="pan-field" class="invalid-field"><label for="pan">Card number</label><input type="tel" name="pan" id="pan" maxlength="19"
+        placeholder="XXXX XXXX XXXX XXXX"></div>
+    <div id="name-field"><label for="name">Name on card</label><input type="text" name="name" id="name" placeholder="">
+    </div>
+    <div id="expiry-field" class="invalid-field"><label>Expiry date</label>
+      <select id="expiry-month" name="expiry-month" class="expiry-month">
+        <option value="">MM</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <select id="expiry-year" name="expiry-year">
+        <option value="">YYYY</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        <option value="2029">2029</option>
+      </select></div>
+    <div id="cvv-field" class="invalid-field"><label for="cvv">Security number</label><input type="tel" name="cvv" id="cvv" maxlength="4"
+        placeholder=""></div>
+  </form>
+
+

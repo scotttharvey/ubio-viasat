@@ -1,0 +1,84 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<link rel="stylesheet" href="./../styles/index.scss" />
+
+
+<!-- SCREEN 2-A -->
+<div class="container bg-gray-light bg-checker-shirt-lady">
+  <div class="row p-y-30">
+    <section class="flex w-100">
+
+      <div class="w-50 md-down:w-100 p-y-25 content lg-up:p-r-50">
+        <h1 class="h3 gray-darkest bold m-b-25">Available AT&T Packages In Your Area</h1>
+
+        <form action="" class="flex flex-wrap space-between form-container">
+          <div class="w-100 m-b-25">
+            <p class="thin gray-dead m-b-10">I'm interested in seeing...*</p>
+
+            <section class="pro-card install-option bg-white w-100 flex md-down:flex-column box-shadow p-y-25 p-x-20 m-b-10">
+              <div class="w-100 md-down:w-100 flex radio-section blue">
+                <div class="radio-container ">
+                  <label for="seeInternet" class="big-radio" >
+                    <input type="radio" id="seeInternet" name="seeOption" value="AT&T Internet" class="professionalInstall m-r-15 m-0" />
+                    <span class="inputFill"></span>
+                  </label>
+                </div>
+
+                <img src="/images/icons/see-internet.svg" alt="" class="max-w-120 m-l-10 md-down:hidden"/>
+
+                <p class="text-18 align-self-center m-l-10">AT&T Internet</p>
+              </div>
+            </section>
+
+            <section class="pro-card install-option bg-white w-100 flex md-down:flex-column box-shadow p-y-25 p-x-20 m-b-25">
+              <div class="w-100 md-down:w-100 flex radio-section blue">
+                <div class="radio-container ">
+                  <label for="seeTV" class="big-radio" >
+                    <input type="radio" id="seeTV" name="seeOption" value="AT&T TV and DIRECTV" class="professionalInstall m-r-15 m-0" />
+                    <span class="inputFill"></span>
+                  </label>
+                </div>
+
+                <img src="/images/icons/see-tv.svg" alt="" class="max-w-120 m-l-10 md-down:hidden"/>
+
+                <p class="text-18 align-self-center m-l-10">AT&T TV and DIRECTV</p>
+              </div>
+            </section>
+
+          </div>
+
+          <div class="street-address flex-column w-100">
+            <label for="address">
+              Street Address*
+            </label>
+            <input id="address" name="address" type="text" list="address_list" required />
+            <datalist id="address_list">
+            </datalist>
+          </div>
+
+          <div class="apt flex-column w-48 sm:w-100">
+            <label for="apt">
+              Apt./Suite/Bldg.
+            </label>
+            <input id="apt" name="apt" type="text" />
+          </div>
+
+          <div class="zip-container flex-column w-48 sm:w-100">
+            <label for="address-zip">
+              Zip Code*
+            </label>
+            <input id="address-zip" name="zip" class="zip" type="tel" data-parsley-required-message="This field is required" pattern="[0-9]{5}" data-parsley-pattern-message="Zipcode must be 5 digits" data-parsley-pattern="[0-9]{5}" maxlength="5" placeholder="00000" required />
+          </div>
+
+          <input type="submit" value="See Packages" class="btn w-100 bg-blue-dark white disabled" />
+          <p class="legal gray-darkest">*Required Field</p>
+        </form>
+      </div>
+
+    </section>
+  </div>
+</div>
+
+<script type="text/javascript" src="../index.js"></script>
+<script type="text/javascript" src="../scripts/smartyStreets.js"></script>
+<script type="text/javascript" src="../scripts/form.js"></script>
+<script type="text/javascript" src="../scripts/mask.js"></script>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Alert/ic_warning</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Hi-fidelity-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cart-00-20mininactivity-desktop" transform="translate(-120.000000, -244.000000)">
+            <g id="Alert/ic_error_outline" transform="translate(120.000000, 244.000000)">
+                <rect id="Bounds" x="0" y="0" width="34" height="34"></rect>
+                <path d="M15.3,22.1 L18.7,22.1 L18.7,25.5 L15.3,25.5 L15.3,22.1 Z M15.3,8.5 L18.7,8.5 L18.7,18.7 L15.3,18.7 L15.3,8.5 Z M16.983,0 C7.599,0 0,7.616 0,17 C0,26.384 7.599,34 16.983,34 C26.384,34 34,26.384 34,17 C34,7.616 26.384,0 16.983,0 Z M17,30.6 C9.486,30.6 3.4,24.514 3.4,17 C3.4,9.486 9.486,3.4 17,3.4 C24.514,3.4 30.6,9.486 30.6,17 C30.6,24.514 24.514,30.6 17,30.6 Z" id="Color-Fill" fill="#242424" fill-rule="evenodd"></path>
+            </g>
+        </g>
+    </g>
+</svg>

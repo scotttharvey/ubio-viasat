@@ -1,0 +1,166 @@
+.package-card {
+
+  width: 100%;
+  border-radius: 4px;
+  border-top: 6px solid $blue-light;
+  box-shadow: 0 4px 8px #d8dcdf;
+  position: relative;
+
+  &.dtv-internet {
+    border-top: 6px solid #91dc00;
+  }
+
+  &.dtv-tv {
+    border-top: 6px solid $blue-dark;
+
+    .channel-circle {
+      height: 100%;
+      align-self: flex-start;
+      padding: 15px;
+      position: relative;
+      background-color: $gray-lightest;
+      border-radius: 100px;
+    }
+  }
+
+  .bg-blue-to-purple {
+    background: linear-gradient(90deg, rgba(0,87,184,1) 20%, rgba(175,41,187,1) 80%);
+  }
+
+  .bg-red-to-orange {
+    background: linear-gradient(90deg, rgba(255,88,93,1) 20%, rgba(255,176,0,1) 80%);
+  }
+
+  .label-container {
+    transform: translate(-50%, calc(-100% - 6px));
+    position: absolute;
+    left: 50%;
+
+    .label {
+      white-space: nowrap;
+      text-align: center;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      background-color: $white;
+      font-size: 12px;
+      color: $blue;
+      letter-spacing: -0.11px;
+      padding: 4px 30px;
+      border-top: 1px solid $blue;
+      border-right: 1px solid $blue;
+      border-left: 1px solid $blue;
+    }
+  }
+
+  .title-container {
+    width: 100%;
+    padding: 12px 22px;
+    border-bottom: 1px solid $gray;
+
+    .title {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 300;
+    }
+  }
+
+  .price {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    .prefix {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    .amount {
+      font-size: 60px;
+      line-height: 50px;
+    }
+
+    .change {
+      position: relative;
+      font-size: 18px;
+
+      &.duration-after {
+        &::after {
+          position: absolute;
+          content: '/mo';
+          font-size: 12px;
+          bottom: 8px;
+          left: 0;
+        }
+      }
+
+    }
+  }
+
+  .speed {
+    padding: 10px 40px 20px;
+
+    .box {
+      padding: 10px;
+      background-color: #f0f0f0;
+      .top {
+        color: #4f565e;
+      }
+    }
+  }
+
+  .add-cart-btn {
+    background-color: $blue-dark;
+    color: $white;
+    padding: 12px 16px;
+    width: 100%;
+    border: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    &.added {
+      background-color: $gray-dark;
+    }
+  }
+}
+
+.package-cards-container {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  > div {
+    width: 25%;
+    margin-bottom: 15px;
+
+    @include medium {
+      width: 50%;
+    }
+
+    @include small {
+      width: 100%;
+      padding: 0;
+    }
+
+    &.dtv {
+      width: 33%;
+      margin-bottom: 60px;
+
+      @include medium {
+        width: 50%;
+      }
+
+      @include small {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.device-card {
+  width: 90px;
+  margin-right: 10px;
+  margin-left: 10px;
+}

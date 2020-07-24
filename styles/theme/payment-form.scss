@@ -1,0 +1,138 @@
+#card-form {
+  max-width: 400px;
+
+  * {
+    font-family: $font-aleck;
+    font-size: 14px;
+    color: #383d43;
+    font-weight: 400;
+  }
+
+  label {
+    font-size: 14px;
+    font-weight: 300;
+    color: #383d43;
+
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 8px auto 18px;
+    border-radius: 4px;
+    border: solid 1px $gray-border;
+
+    &::placeholder {
+      color: $gray;
+      font-weight: 200;
+      letter-spacing: .5px;
+    }
+
+  }
+
+  select {
+    display: inline-block;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8"><polygon points="12.4 0 14 1.5 7 8 0 1.5 1.6 0 7 4.9"/></svg>');
+    background-position: calc(100% - 10px) 50%;
+    background-repeat: no-repeat;
+    padding: 0 35px 0 10px;
+    height: 40px;
+    margin: 8px 0 18px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: white;
+    border: solid 1px $gray-border;
+
+    &:first-of-type {
+      margin-right: 8px;
+    }
+
+    &::placeholder {
+      color: $gray;
+      font-weight: 200;
+      letter-spacing: .5px;
+    }
+
+  }
+
+  #pan-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50%;
+
+    @include small {
+      padding-right: 0;
+    }
+
+    &::after {
+      position: absolute;
+      height: 100%;
+      width: 49%;
+      right: 0;
+      top: 2px;
+      content: '';
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      // background-image: url('https://ubio-att.netlify.app/cards.0f834a20.png');
+      background-image: url('/images/icons/cards.png');
+      @include medium-down {
+        display: none;
+      }
+
+    }
+  }
+
+  #name-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #expiry-field {
+    width: 60%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include small {
+      width: 100%;
+    }
+
+    label { width: 100%; }
+
+  }
+
+  #cvv-field {
+    width: 38%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+
+    @include small {
+      width: 50%;
+      margin-right: 0;
+      float: left;
+
+      label { white-space: nowrap; }
+    }
+  }
+
+  .invalid-field {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: 'Invalid';
+      font-size: 14px;
+      color: red;
+    }
+  }
+
+}

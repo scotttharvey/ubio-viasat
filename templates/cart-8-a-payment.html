@@ -1,0 +1,245 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<link rel="stylesheet" href="./../styles/index.scss" />
+
+<!-- SCREEN 8-A -->
+<div class="container row w-100 bg-white">
+  <section class="w-100 bg-white p-y-15 content flex space-between">
+    <p class="text-18 icon lock">Secure Checkout</p>
+    <p class="blue-light">Back to Cart</p>
+  </section>
+</div>
+
+<div class="container bg-gray-light">
+  <div id="screen-5" class="row p-y-30 sm:p-y-15">
+    <section class="flex w-100 flex-wrap sm:flex-column">
+      <div class="w-66 sm:w-100 p-y-25 sm:p-x-15 sm:p-t-0 content">
+        <h1 class="h3 gray-darkest thin p-b-15">Checkout</h1>
+        <p class="p-b-25 sm:hidden">Just a few more steps and you’ll be set! Fill out your information below to place your order.
+        </p>
+
+        <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
+          <div class="flex flex-row align-center">
+            <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt="" />
+            <p class="text-18 sm:text-14">Personal Information & Credit Check</p>
+          </div>
+          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+        </section>
+
+        <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
+          <div class="flex flex-row align-center">
+            <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt="" />
+            <p class="text-18 sm:text-14">Account Setup & Installation</p>
+          </div>
+          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+        </section>
+
+        <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
+          <div class="flex flex-row align-center">
+            <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt="" />
+            <p class="text-18 sm:text-14">Terms & Conditions</p>
+          </div>
+          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+        </section>
+
+        <section class="bg-white p-25 sm:p-x-15">
+          <div class="w-100 m-b-15 flex space-between">
+            <p class="text-24 sm:text-18 thin">Payment</p>
+            <p class="gray">Step 4 of 5</p>
+          </div>
+
+          <div class="p-y-25 p-x-25 sm:p-x-15 border-blue-light">
+            <div class="w-100 m-b-25 gray-darkest">
+              <p class="text-18 icon lock m-b-15">Secure payment form</p>
+              <p class="m-b-10">Today's charge is <span class="blue">$100</span>.</p>
+              <p class="sm:hidden">The last name on the credit card being used must match the last name of the customer signing up for
+                service.</p>
+            </div>
+
+            <form action="" name="payment-form" class="flex flex-wrap form-container">
+              <div class="flex flex-wrap w-100 md-down:w-100">
+                <div class="w-100 p-r-25 md-down:w-100 sm:p-0 flex flex-wrap">
+                  <label class="w-40 md-down:w-100 m-r-10">
+                    Credit Card Number*
+                    <input id="credit-card-number" name="credit-card-number" class="credit-card-number" type="tel" required placeholder="0000 0000 0000 0000"
+                      pattern="([0-9]{4} ){3}[0-9]{4}" data-parsley-required-message="This field is required" data-parsley-pattern-message="Enter valid card number" data-parsley-pattern="([0-9]{4} ){3}[0-9]{4}" />
+                  </label>
+                  <div class="flex flex-center md-down:p-b-15">
+                    <img class="m-r-5 m-t-5 md-down:m-t-0" src="/images/icons/visa-card.svg" alt="" />
+                    <img class="m-r-5 m-t-5 md-down:m-t-0" src="/images/icons/master-card.svg" alt="" />
+                    <img class="m-r-5 m-t-5 md-down:m-t-0" src="/images/icons/american-express-card.svg" alt="" />
+                    <img class="m-t-5 md-down:m-t-0" src="/images/icons/discover-card.svg" alt="" />
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="flex flex-wrap w-100">
+                <div class="w-50 sm:w-100">
+                  <label>
+                    Cardholder Name*
+                    <input name="cardholder-name" type="text" required />
+                  </label>
+                </div>
+
+                <div class="w-25 sm:w-100 p-l-25 sm:p-0">
+                  <label>
+                    Zipcode*
+                    <input id="payment-zip" name="zipcode" class="zip" type="tel" placeholder="00000" pattern="[0-9]{5}" required data-parsley-required-message="This field is required" data-parsley-pattern-message="Zip expects 5 digits" data-parsley-pattern="[0-9]{5}" />
+                  </label>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap w-50 md-down:w-100">
+                <div class="w-50 sm:w-75">
+                  <label>
+                    Exp. Date*
+                    <input name="card-expire" type="tel" class="expire" placeholder="MM/YY" type="text" required data-parsley-required-message="Exp. Date is required" data-parsley-pattern-message="Enter valid date" data-parsley-pattern="^\d{2}\/\d{2}" />
+                  </label>
+                </div>
+
+                <div class="w-50 sm:w-75 p-l-15 sm:p-0 p-b-15">
+                  <label>
+                    CVV*
+                    <input name="CVV" type="tel" class="cvv" placeholder="000" pattern="[0-9]{3}" required data-parsley-required-message="CVV is required" data-parsley-pattern-message="Enter valid CVV" data-parsley-pattern="[0-9]{3}" />
+                  </label>
+                </div>
+              </div>
+
+              <div class="w-100 p-l-15 sm:p-0">
+                <label for="auto-bill-pay" class="checkbox">
+                  <input type="checkbox" id="auto-bill-pay" name="auto-bill-pay" class="auto-bill-pay-trigger m-0" checked />
+                  <span class="p-l-15">I’d like to sign up for auto bill pay.</span>
+                </label>
+              </div>
+
+              <!-- REMOVING hidden CLASS TO SHOW CONTENT -->
+              <div class="auto-bill-pay-step p-b-25">
+
+                <p class="text-14 p-b-15">
+                  By providing my bank account, credit card or debit card information I authorize AT&T to store this information and to automatically charge the amount of my monthly bill due each month, and to charge any amounts outstanding if I cancel AT&T service. I certify I am the owner of the payment method, can authorize storage and make charges to the payment method I provided. My monthly payments will be charged on the date indicated on my monthly bill. You agree to update my payment method if there are changes to the payment method information. My authorization and the AT&T AutoPay service will remain in effect until revoked by I, my financial institution, or AT&T. I may revoke my AutoPay authorization online at <a href="https://www.att.com/myatt" class="blue-light underline">www.att.com/myatt</a> or by calling the customer care number on my bill. Promotional discounts or incentives that require Autopay will be removed if my account is de-enrolled from AutoPay.
+                </p>
+
+                <div class="w-100 p-l-15 sm:p-0">
+                  <label for="auto-bill-pay-card" class="checkbox">
+                    <input type="checkbox" id="auto-bill-pay-card" name="auto-bill-pay" class=" auto-bill-pay-card-trigger m-0" checked />
+                    <span class="p-l-15">Use a different card for auto bill pay</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- START -->
+              <!-- REMOVING hidden CLASS TO SHOW CONTENT -->
+              <div class="auto-bill-pay-card-step flex-wrap">
+                <div class="flex flex-wrap w-100 md-down:w-100">
+                  <div class="w-100 p-r-25 md-down:w-100 sm:p-0 flex flex-wrap">
+                    <label class="w-40 md-down:w-100 m-r-10">
+                      Credit Card Number*
+                      <input id="credit-card-number" name="credit-card-number" class="credit-card-number" type="tel" required placeholder="0000 0000 0000 0000"
+                        pattern="([0-9]{4} ){3}[0-9]{4}" data-parsley-required-message="This field is required" data-parsley-pattern-message="Enter valid card number" data-parsley-pattern="([0-9]{4} ){3}[0-9]{4}" />
+                    </label>
+                    <div class="flex flex-center m-y-8 md-down:p-b-15">
+                      <img class="m-r-5 m-t-5 md-down:m-t-0" src="/images/icons/visa-card.svg" alt="" />
+                      <img class="m-r-5 m-t-5 md-down:m-t-0" src="/images/icons/master-card.svg" alt="" />
+                      <img class="m-r-5 m-t-5 md-down:m-t-0" src="/images/icons/american-express-card.svg" alt="" />
+                      <img class="m-t-5 md-down:m-t-0" src="/images/icons/discover-card.svg" alt="" />
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="flex flex-wrap w-100">
+                  <div class="w-50 sm:w-100">
+                    <label>
+                      Cardholder Name*
+                      <input name="cardholder-name" type="text" required />
+                    </label>
+                  </div>
+
+                  <div class="w-25 sm:w-100 p-l-25 sm:p-0">
+                    <label>
+                      Zipcode*
+                      <input name="zipcode" type="tel" class="zip" placeholder="00000" pattern="[0-9]{5}" required data-parsley-required-message="Zip is required" data-parsley-pattern-message="Zip expects 5 digits" data-parsley-pattern="[0-9]{5}"/>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap w-50 md-down:w-100 p-b-15">
+                  <div class="w-50 sm:w-75">
+                    <label>
+                      Exp. Date*
+                      <input name="card-expire" type="tel" class="expire" placeholder="MM/YY" type="text" required data-parsley-required-message="Exp. Date is required" data-parsley-pattern-message="Enter valid date" data-parsley-pattern="^\d{2}\/\d{2}" />
+                    </label>
+                  </div>
+
+                  <div class="w-50 sm:w-75 p-l-15 sm:p-0">
+                    <label>
+                      CVV*
+                      <input name="CVV" type="tel" class="cvv" placeholder="000" pattern="[0-9]{3}" required data-parsley-required-message="CVV is required" data-parsley-pattern-message="Enter valid CVV" data-parsley-pattern="[0-9]{3}" />
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+              <!-- END -->
+
+              <div class="w-100 p-b-15 border-top-gray-dark p-t-15">
+                <p class="text-14">I certify that I am the card owner or authorized to use this card or bank account.
+                  Additionally I authorize AT&T to charge the amount I specified to the debit/credit card account(s)
+                  that I designated. The amount could be debited as early as today. The amount could be debited as early
+                  as today.</p>
+              </div>
+
+              <div class="flex flex-end content w-100 bg-white sm:fixed-submit">
+                <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45 block m-l-auto disabled" >Submit
+                  payment form</button>
+              </div>
+
+            </form>
+          </div>
+        </section>
+
+
+      </div>
+
+      <!-- COST SECTION -->
+      <div class="w-33 sm:w-100 p-y-25 sm:p-t-0 content">
+        <p class="h3 thin p-b-25 sm:p-b-10">Cost</p>
+
+        <section>
+          <div class="bg-white p-25 sm:p-x-15 m-b-25">
+            <p class="text-18 bold p-b-15">Monthly Cost</p>
+            <div class="flex space-between p-b-15">
+              <p class="text-14">Internet 100</p>
+              <p class="text-14">$69.99</p>
+            </div>
+
+            <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+              <p class="text-18">Total</p>
+              <p class="text-18">$69.99</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="bg-white p-25 sm:p-x-15 m-b-25">
+            <p class="text-18 bold p-b-15">Today's Charges</p>
+            <div class="flex space-between p-b-15">
+              <p class="text-14">AT&T Internet Advanced Payment</p>
+              <p class="text-14">$100.00</p>
+            </div>
+
+            <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+              <p class="text-18">Due Today</p>
+              <p class="text-18">$100.00</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </section>
+  </div>
+</div>
+<div class="sm:p-y-15"></div>
+
+<script type="text/javascript" src="../index.js"></script>
+<script type="text/javascript" src="../scripts/mask.js"></script>

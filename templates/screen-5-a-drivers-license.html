@@ -1,0 +1,155 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<link rel="stylesheet" href="./../styles/index.scss" />
+
+<!-- SCREEN 5-A -->
+<div class="container row w-100 bg-white">
+  <section class="w-100 bg-white p-y-15 content flex space-between">
+    <p class="text-18 icon lock">Secure Checkout</p>
+    <p class="blue-light">Back to Cart</p>
+  </section>
+</div>
+
+<div class="container bg-gray-light">
+  <div id="screen-5" class="row p-y-30 sm:p-y-15">
+    <section class="flex w-100 flex-wrap sm:flex-column">
+
+      <div class="w-66 sm:w-100 p-y-25 sm:p-t-0 content">
+        <h1 class="h3 gray-darkest thin p-b-15">Checkout</h1>
+        <p class="p-b-25 sm:hidden">Just a few more steps and you’ll be set! Fill out your information below to place your order. </p>
+
+        <section class="bg-white p-25 sm:p-x-15">
+          <div class="w-100 m-b-15 flex space-between">
+            <p class="text-18">Personal information</p>
+            <p class="gray">Step 1 of 5</p>
+          </div>
+          <form action="" class="flex flex-wrap form-container">
+            <div class="name-container flex w-100 sm:flex-column">
+              <div class="w-33 md-down:w-50 sm:w-100  m-r-25 sm:p-0">
+                <label for="firstname">
+                  First name*
+                </label>
+                <input id="firstname" name="firstname" type="text" required />
+              </div>
+              <div class="w-33 md-down:w-50 sm:w-100">
+                <label for="lastname">
+                  Last name*
+                </label>
+                <input id="lastname" name="lastname" type="text" required />
+              </div>
+            </div>
+
+            <div class="contact flex flex-wrap w-100 p-b-15">
+              <div class="w-33 sm:w-100 m-r-25 sm:m-0">
+                <label for="phone">
+                  Phone*
+                </label>
+                <input id="phone" name="phone" type="tel" placeholder="(000)000-0000" required data-parsley-required-message="Phone is required" data-parsley-pattern-message="Phone expecting 10 numbers" data-parsley-pattern="((\(\d{3}\)?)|(\d{3}-))?\d{3}-\d{4}" />
+              </div>
+
+              <div class="w-60 sm:w-100">
+                <label for="email">
+                  Email*
+                </label>
+                <input id="email" name="email" type="email" required data-parsley-required-message="Email is required" data-parsley-pattern-message="Please enter valid email" data-parsley-pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" />
+              </div>
+            </div>
+
+            <div class="w-100 flex flex-start flex-column checkbox-container p-b-25">
+              <label for="consent" class="checkbox" >
+                <input type="checkbox" id="consent" name="consent" value="Consent" class="consent m-r-15 m-0" required />
+                <span class="blue-dark" tabindex="-1">By checking this box, you authorize AT&T to reach you by phone or text with information about your AT&T services. Examples include install and repair appointment, billing and account information, and customer satisfaction inquiries. Standard rates may apply.</span>
+              </label>
+            </div>
+
+            <div class="creditcheck border-blue-light p-y-25 p-x-20 sm:p-x-15 flex flex-column w-100">
+              <p class="text-18 thin m-b-15 icon lock">Credit Check</p>
+              <p class="text-14 m-b-15">To complete your order, we need a few details to check your credit. We'll use your existing credit info that may be on file with other AT&T companies and/or a credit bureau.</p>
+              <div class="w-100 flex flex-wrap">
+                <div class="w-33 md-down:w-100">
+                  <label for="driversLicense">
+                    Drivers License*
+                  </label>
+                  <input id="driversLicense" name="driversLicense" type="text" placeholder="000000000" pattern="d{9}" maxlength="9" required  data-parsley-required-message="Drivers license is required" data-parsley-pattern-message="Please enter valid driversLicense" data-parsley-pattern="d{9}"/>
+                </div>
+
+                <div class="w-33 md-down:w-100 p-l-25 md-down:p-0">
+                  <label for="birthday">
+                    Date of Birth*
+                  </label>
+                  <input id="birthday" name="birthday" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Birthday is required" data-parsley-pattern-message="Please enter valid Birthday" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
+                </div>
+
+                <div class="w-33 sm:w-50 p-l-25 sm:p-0 flex align-center p-b-10">
+                  <img src="/images/icons/verisign-secured.svg" alt="" class="w-50 sm:w-60">
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-end w-100 p-t-25">
+
+              <div class="flex flex-end content w-100 bg-white sm:fixed-submit">
+                <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-65 disabled" data-modal-trigger="money-deposit" >Next</button>
+              </div>
+              <!-- Start modal content -->
+              <div data-modal-content="money-deposit" class="modal hidden sm:p-x-15 is-active">
+                <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
+                  <div class="w-100 text-right">
+                    <span data-modal-trigger="close" class="close">&#10005;</span>
+                  </div>
+                  <div class="text-center p-y-30">
+                    <p class="text-24 p-b-15 p-x-45">Based on your credit report, you are required to pay a <span class="blue-light">$100.00</span> advanced payment.</p>
+                    <p class="p-b-15 w-75 m-auto p-x-20">This advanced payment will be used towards your monthly bills.
+                      If you have any questions, please call 1-888-888-8888.</p>
+                    <button  class="btn bg-blue-dark white p-y-8 p-x-45" data-modal-trigger="close">Yes, I agree to continue</button>
+                  </div>
+                </div>
+              </div>
+              <!-- End modal content -->
+            </div>
+
+          </form>
+        </section>
+      </div>
+
+      <!-- COST SECTION -->
+      <div class="w-33 sm:w-100 p-y-25 sm:p-x-15 content">
+        <p class="h3 thin p-b-25 sm:p-b-10">Cost</p>
+
+        <section>
+          <div class="bg-white p-25 sm:p-x-15 m-b-25">
+            <p class="text-18 bold p-b-15">Monthly Cost</p>
+            <div class="flex space-between p-b-15">
+              <p class="text-14">Internet 100</p>
+              <p class="text-14">$69.99</p>
+            </div>
+
+            <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+              <p class="text-18">Total</p>
+              <p class="text-18">$69.99</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="bg-white p-25 sm:p-x-15 m-b-25">
+            <p class="text-18 bold p-b-15">Today's Charges</p>
+            <div class="flex space-between p-b-15">
+              <p class="text-14">AT&T Internet Advanced Payment</p>
+              <p class="text-14">$100.00</p>
+            </div>
+
+            <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+              <p class="text-18">Due Today</p>
+              <p class="text-18">$100.00</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </section>
+  </div>
+</div>
+<div class="sm:p-y-15"></div>
+
+<script type="text/javascript" src="../index.js"></script>
+<script type="text/javascript" src="../scripts/mask.js"></script>

@@ -1,0 +1,36 @@
+{
+  "name": "viasat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "rm -rf dist && parcel index.html",
+    "build": "rm -rf dist && parcel build index.html",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clearlink/ubio-viasat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clearlink/ubio-viasat/issues"
+  },
+  "homepage": "https://github.com/clearlink/ubio-viasat#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@storybook/html": "^5.3.19",
+    "babel-loader": "^8.1.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "flatpickr": "^4.6.3",
+    "jquery": "^3.4.1",
+    "jquery-mask-plugin": "^1.14.16",
+    "normalize.css": "^8.0.1",
+    "parsleyjs": "^2.9.2"
+  }
+}

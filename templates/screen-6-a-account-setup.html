@@ -1,0 +1,220 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<link rel="stylesheet" href="./../styles/index.scss" />
+
+<!-- SCREEN 6-A -->
+<div class="container row w-100 bg-white">
+  <section class="w-100 bg-white p-y-15 content flex space-between">
+    <p class="text-18 icon lock">Secure Checkout</p>
+    <p class="blue-light">Back to Cart</p>
+  </section>
+</div>
+
+<div class="container bg-gray-light">
+  <div id="screen-6" class="row p-y-30 sm:p-y-15">
+    <section class="flex w-100 flex-wrap sm:flex-column">
+      <div class="w-66 sm:w-100 p-y-25 sm:p-x-15 sm:p-t-0 content">
+        <h1 class="h3 gray-darkest thin p-b-15">Checkout</h1>
+        <p class="p-b-25 sm:hidden">Just a few more steps and you’ll be set! Fill out your information below to place your order. </p>
+
+        <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-wrap space-between align-center">
+          <div class="flex flex-row align-center">
+            <img class="w-20px h-20px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt=""/>
+            <p class="text-18 sm:text-14">Personal Information & Credit Check</p>
+          </div>
+          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+        </section>
+
+        <section class="bg-white p-25 sm:p-x-15">
+          <div class="w-100 m-b-15 flex space-between">
+            <p class="text-24 sm:text-18">Account Setup & Installation</p>
+            <p class="gray">Step 2 of 5</p>
+          </div>
+          <div class="w-100 m-b-25 gray-darkest">
+            <p>This 4-digit PIN will be used to verify you whenever you contact AT&T about your account. Please make a note of this information. This PIN cannot be 4 repeating numbers (4444) or 4 sequential numbers (2345).</p>
+          </div>
+          <form class="flex flex-wrap form-container">
+            <div class="pin-container flex flex-wrap w-50 md-down:w-100">
+              <div class="w-50 p-r-15 sm:p-r-10">
+                <label for="pin">
+                  PIN number*
+                </label>
+                <input id="pin" name="pin" class="pin" type="password" required placeholder="0000" pattern="[0-9]{4}" data-parsley-required-message="This field is required" data-parsley-pattern-message="PIN expects 4 numbers" data-parsley-pattern="[0-9]{4}" />
+              </div>
+              <div class="w-50 p-l-15 sm:p-l-10">
+                <label for="confirmPin">
+                  Confirm PIN number*
+                </label>
+                <input id="confirmPin" name="confirmPin" class="pin" type="password" required placeholder="0000" pattern="[0-9]{4}" data-parsley-required-message="This field is required" data-parsley-pattern-message="PIN expects 4 digits" data-parsley-pattern="[0-9]{4}" data-parsley-equalto="#pin" data-parsley-equalto-message="PIN does not match." />
+              </div>
+            </div>
+
+            <div class="flex flex-wrap w-100 p-b-15">
+              <div class="w-50 sm:w-100">
+                <label for="securityQuestion">
+                  Security Question*
+                </label>
+                <select name="securityQuestion" id="securityQuestion" class="w-100 dropdown" required>
+                  <option value="test">Test Val 1</option>
+                  <option value="test">Test Val 2</option>
+                  <option value="test">Test Val 3</option>
+                  <option value="test">Test Val 4</option>
+                  <option value="test">Test Val 5</option>
+                </select>
+              </div>
+
+              <div class="w-50 sm:w-100 p-l-25 sm:p-0">
+                <label for="securityAnswer">
+                  Security Answer*
+                </label>
+                <input id="securityAnswer" name="securityAnswer" type="text" maxlength="100" required />
+              </div>
+            </div>
+
+            <div class="installoption flex flex-column w-100 m-b-25">
+              <p class="text-18 thin m-b-15">Installation Option</p>
+              <p class="text-14 m-b-15">Please select one installation option</p>
+
+              <section class="self-card install-option border-white w-100 flex md-down:flex-column space-between box-shadow p-y-25 p-x-20 m-b-25">
+
+                <div class="w-30 md-down:w-100 md-down:p-b-25 flex space-between radio-section">
+                  <div class="radio-container w-25 md-down:w-100">
+                    <label for="selfInstall" class="big-radio" >
+                      <input type="radio" id="selfInstall" name="installMethod" value="Self Install" class="selfInstall m-r-15 m-0" required  data-parsley-required-message="Install method required" data-parsley-errors-container="#installMethodError" />
+                      <span class="inputFill"></span>
+                    </label>
+                  </div>
+                  <div class="w-75 md-down:w-100">
+                    <!-- <p class="h2 text-right lg-up:hidden">FREE</p> -->
+                    <img src="/images/icons/self-install.svg" alt="" class="max-w-120"/>
+                  </div>
+
+                </div>
+
+                <div class="w-70 md-down:w-100 flex space-between p-l-10 md-down:p-0">
+                  <div class="w-100">
+                    <div class="w-100 flex space-between">
+                      <p class="text-18 blue-dark p-b-15">Self-Install</p>
+                      <p class="text-24 thin text-right -m-t-5 lg-up:hidden">FREE</p>
+                    </div>
+                    <p class="text-14 p-b-15">You will receive a self-install kit with the equipment along with instructions.</p>
+                  </div>
+                  <div class="p-l-15 md-down:hidden">
+                    <p class="text-24 thin">FREE</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="pro-card install-option border-white w-100 flex md-down:flex-column space-between box-shadow p-y-25 p-x-20">
+
+                <div class="w-30 md-down:w-100 md-down:p-b-25 flex space-between sm:row-reverse radio-section">
+                  <div class="radio-container w-25 md-down:w-100">
+                    <label for="professionalInstall" class="big-radio" >
+                      <input type="radio" id="professionalInstall" name="installMethod" value="Professional Install" class="professionalInstall m-r-15 m-0" required  data-parsley-required-message="Install method required" data-parsley-errors-container="#installMethodError" />
+                      <span class="inputFill"></span>
+                    </label>
+                  </div>
+
+                  <div class="w-70 md-down:w-100">
+                    <!-- <p class="h1 thin text-right lg-up:hidden">$99</p> -->
+                    <img src="/images/icons/pro-install.svg" alt="" class="max-w-120"/>
+                  </div>
+                </div>
+
+                <div class="w-75 md-down:w-100 flex space-between p-l-10 md-down:p-0">
+                  <div>
+                    <div class="flex space-between">
+                      <p class="text-18 blue-dark p-b-15">Professional Install</p>
+                      <p class="text-24 thin text-right -m-t-5 lg-up:hidden">$99</p>
+                    </div>
+                    <p class="text-14 p-b-15">A service technician will visit your location to install your Internet service. Someone 18 years of age or older must be present when the technician arrives. The installation averages 2 - 4 hours, but can vary.</p>
+                    <p class="text-14 blue">Payment will be split into installments of $33 for 3 months.</p>
+                  </div>
+                  <div class="p-l-15 md-down:hidden">
+                    <p class="text-24 thin">$99</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="pro-card install-option border-white w-100 flex md-down:flex-column space-between box-shadow p-y-25 p-x-20">
+
+                <div class="w-30 md-down:w-100 md-down:p-b-25 flex space-between sm:row-reverse radio-section">
+                  <div class="radio-container w-25 md-down:w-100">
+                    <label for="freeProfessionalInstall" class="big-radio" >
+                      <input type="radio" id="freeProfessionalInstall" name="installMethod" value="Professional Install" class="freeProfessionalInstall m-r-15 m-0" required  data-parsley-required-message="Install method required" data-parsley-errors-container="#installMethodError" />
+                      <span class="inputFill"></span>
+                    </label>
+                  </div>
+
+                  <div class="w-70 md-down:w-100">
+                    <img src="/images/icons/pro-install.svg" alt="" class="max-w-120"/>
+                  </div>
+                </div>
+
+                <div class="w-75 md-down:w-100 flex space-between p-l-10 md-down:p-0">
+                  <div>
+                    <div class="flex space-between">
+                      <p class="text-18 blue-dark p-b-15">Professional Install</p>
+                      <p class="text-24 thin text-right -m-t-5 lg-up:hidden">FREE</p>
+                    </div>
+                    <p class="text-14 p-b-15">A service technician will visit your location to install your Internet service. Someone 18 years of age or older must be present when the technician arrives. The installation averages 2 - 4 hours, but can vary.</p>
+                  </div>
+                  <div class="p-l-15 md-down:hidden">
+                    <p class="text-24 thin">FREE</p>
+                  </div>
+                </div>
+              </section>
+
+              <div id="installMethodError"></div>
+
+            </div>
+
+            <div class="flex flex-end content w-100 bg-white sm:fixed-submit">
+              <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45 disabled" >Next</button>
+            </div>
+
+          </form>
+        </section>
+      </div>
+
+      <!-- COST SECTION -->
+      <div class="w-33 sm:w-100 p-y-25 sm:p-x-15 sm:p-t-0 content">
+        <p class="h3 thin p-b-25 sm:p-b-10">Cost</p>
+
+        <section>
+          <div class="bg-white p-25 sm:p-x-15 m-b-25">
+            <p class="text-18 bold p-b-15">Monthly Cost</p>
+            <div class="flex space-between p-b-15">
+              <p class="text-14">Internet 100</p>
+              <p class="text-14">$69.99</p>
+            </div>
+
+            <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+              <p class="text-18">Total</p>
+              <p class="text-18">$69.99</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="bg-white p-25 sm:p-x-15 m-b-25">
+            <p class="text-18 bold p-b-15">Today's Charges</p>
+            <div class="flex space-between p-b-15">
+              <p class="text-14">AT&T Internet Advanced Payment</p>
+              <p class="text-14">$100.00</p>
+            </div>
+
+            <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+              <p class="text-18">Due Today</p>
+              <p class="text-18">$100.00</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </section>
+  </div>
+</div>
+<div class="sm:p-y-15"></div>
+
+<script type="text/javascript" src="../index.js"></script>
+<script type="text/javascript" src="../scripts/mask.js"></script>

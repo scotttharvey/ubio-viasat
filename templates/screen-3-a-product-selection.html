@@ -1,0 +1,231 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<link rel="stylesheet" href="./../styles/index.scss" />
+<script type="text/javascript" src="./../index.js"></script>
+
+<!-- CART 3-A -->
+  <div class="container bg-blue-sky">
+    <div class="row p-y-5">
+      <div class="content flex flex-row">
+        <img class="w-15px h-15px" src="../images/icons/location-pin.svg" alt=""/>
+        <p class="text-14">200 Deerhunter Rd, Apt 4, Omaha, NE 42311 <a class="blue-light no-underline" href="#">Change</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="cartNav" class="cartNav container box-shadow">
+    <div class="row p-y-8">
+        <div class="flex space-between content">
+          <div class="flex align-center p-y-8 md-up:hidden">
+            <p class="gray-dark">Step 1 of 4</p>
+          </div>
+          <div class="flex flex-row align-center sm:hidden">
+            <p class="p-x-10 text-14 blue bold">Package</p>
+            <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
+            <p class="p-x-10 text-14 gray-dark">Checkout</p>
+            <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
+            <p class="p-x-10 text-14 gray-dark">Summary</p>
+            <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
+            <p class="p-x-10 text-14 gray-dark">Install</p>
+          </div>
+          <div id="cart" class="cart-container pointer flex flex-row align-center" data-target="cart">
+            <img src="../images/icons/cart-blue.svg" alt="" class="w-25px h-25px"/>
+            <p class="p-x-5">My Cart</p>
+            <img src="../images/icons/chevron-left.svg" alt="" class="dropdown-arrow md-up:hidden w-25px h-25px -m-t-3  icon-rotate-270"/>
+            <!-- Cart Dropdown -->
+            <div class="cart-dropdown box-shadow border-gray-light bg-light hidden p-15">
+              <div class="dropdown-container">
+                <p class="text-24 thin p-b-15">Cost</p>
+                <div class="bg-white p-25 sm:p-x-15 m-b-25">
+                  <p class="text-18 bold p-b-15">Monthly Cost</p>
+                  <div class="flex space-between p-b-15">
+                    <p class="text-14">Internet 100</p>
+                    <p class="text-14">$69.99</p>
+                  </div>
+                  <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+                    <p class="text-18">Total</p>
+                    <p class="text-18">$69.99</p>
+                  </div>
+                </div>
+                <div class="w-100 flex flex-end p-b-15">
+                  <button class="btn btn-shadow bg-blue-dark white p-y-8 p-x-25 ">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row p-y-30">
+
+      <section class="w-100 content">
+
+        <div class="p-b-35 m-b-35 border-bottom-gray">
+          <div class="p-25 sm:p-x-15 border-blue-light flex space-between align-center sm:flex-column">
+            <p class="icon check-circle sm:p-b-15">
+              Internet 1000 has been added to your cart
+            </p>
+            <button class="btn bg-blue-dark white p-x-45 p-y-8 block m-l-auto">Checkout</button>
+          </div>
+        </div>
+
+        <div class="gray-darkest">
+          <h1 class="h3 gray-darkest thin p-b-15">Pick Your Perfect AT&T Internet Package</h1>
+          <p class="gray-dark p-b-15">Showing 2 products</p>
+          <p class="m-b-25">Choose any package below to start building your order.</p>
+        </div>
+
+        <div class="package-cards-container">
+
+          <div class="content">
+            <div class="package-card">
+              <div class="label-container">
+                <p class="label">
+                  Highest Speed
+                </p>
+              </div>
+              <div class="title-container">
+                <div class="flex justify-center">
+                  <img src="/images/icons/wifi.svg" alt="" class="w-35px"/>
+                </div>
+                <p class="text-center title">Internet 1000</p>
+              </div>
+              <div class="bg-blue-to-purple m-b-15 p-y-8">
+                <p class="white text-center text-16">$100 Reward card included</p>
+                <p class="white text-center text-14">(Detailsl in cart)</p>
+              </div>
+              <div class="price">
+                <div class="prefix">$</div>
+                <div class="amount">39</div>
+                <div class="change duration-after">99</div>
+              </div>
+              <p class="legal text-center p-b-5">for 12 mos plus taxes</p>
+              <div class="p-b-15 p-x-15 text-center">
+                <p class="legal">for 12 mos plus taxes & equip fee. $10/mo equip. fee applies. Incl unlimited internet data allowance ($30 value) Download max typically 940 mbps, Not g’td. <span data-modal-trigger="internet-1000-details" class="underlined pointer">See Offer Details</span>
+                  <!-- Start modal content -->
+                  <div data-modal-content="internet-1000-details" class="modal hidden sm:p-x-15 is-active">
+                    <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
+                      <div class="w-100 text-right">
+                        <span data-modal-trigger="close" class="close">&#10005;</span>
+                      </div>
+                      <div class="text-left">
+                        <p class="text-24 p-b-15">Offer Details.</p>
+                        <p class="bold text-14 p-b-15">
+                          Geographic and service restrictions apply to AT&T Internet services. Not all speeds available in all areas. Call to see if you qualify.
+                        </p>
+
+                        <p class="text-14 p-b-15">
+                          <span class="bold">$39.99 Internet 1000 Offer: Ends 6/27/20.</span> Price requires bundle with another qualifying AT&T service (DIRECTV, U-verse TV, AT&T TV, AT&T Phone or postpaid AT&T wireless). <span class="bold">Pricing for first 12 months only.</span> After 12 mos or loss of eligibility, then prevailing rate applies (currently $59.99/mo) unless canceled or changed by customer prior to end of 12 months. Must maintain qualifying bundled services with matching service address to receive advertised pricing. <span class="bold">Additional Fees & Taxes:</span> AT&T one-time transactional fees, $10/mo. equipment fee, and monthly cost recovery surcharges which are not government-required may apply, as well as taxes. See <a class="gray-dead" href="https://www.att.com/fees">www.att.com/fees</a> for details. Credit restrictions apply. Pricing subj to change. Subj. to Internet Terms of Service at att.com/internet-terms.
+                        </p>
+                        <p class="text-14">
+                          †† <span class="bold">Internet speed claims</span> represent maximum network service capability speeds and based on wired connection to gateway. Actual customer speeds may vary based on a number of factors and are not guaranteed. Download speeds are typically up to 940Mbps due to overhead capacity reserved to deliver the data. For more information, go to www.att.com/speed101.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End modal content -->
+
+                </p>
+              </div>
+              <div class="speed">
+                <div class="box">
+                  <p class="text-12 text-center top">Download/upload speed</p>
+                  <p class="text-center unit nowrap">1000/1000 Mpbs</p>
+                </div>
+              </div>
+
+              <button class="add-cart-btn added" data-trigger="internet" disabled>
+                Added to Cart
+              </button>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="package-card">
+
+              <div class="title-container">
+                <div class="flex justify-center">
+                  <img src="/images/icons/wifi.svg" alt="" class="w-35px"/>
+                </div>
+                <p class="text-center title">Internet 100</p>
+              </div>
+              <div class="bg-blue-to-purple m-b-15 p-y-8">
+                <p class="white text-center text-16">$100 Reward card included</p>
+                <p class="white text-center text-14">(Detailsl in cart)</p>
+              </div>
+              <div class="price">
+                <div class="prefix">$</div>
+                <div class="amount">49</div>
+                <div class="change duration-after">99</div>
+              </div>
+              <p class="legal text-center p-b-5">for 12 mos plus taxes</p>
+
+              <div class="p-b-15 p-x-15 text-center">
+                <p class="legal">for 12 mos plus taxes & equip fee. $10/mo equip. fee applies. Incl unlimited internet data allowance ($30 value) Ltd. avail/areas; speeds vary, not gt’d. <span data-modal-trigger="internet-100-details" class="underlined pointer">See Offer Details</span>
+                  <!-- Start modal content -->
+                  <div id="" data-modal-content="internet-100-details"  class="modal hidden sm:p-x-15 is-active">
+                    <div class="modal-content w-50 sm:p-x-15 p-25 md-down:w-100">
+                      <div class="w-100 text-right">
+                        <span data-modal-trigger="close" class="close">&#10005;</span>
+                      </div>
+                      <div class="text-center">
+                        <div class="text-left">
+                          <p class="text-24 p-b-15">Offer Details.</p>
+                          <p class="bold text-14 p-b-15">
+                            Geographic and service restrictions apply to AT&T Internet services. Not all speeds available in all areas. Call to see if you qualify.
+                          </p>
+
+                          <p class="text-14 p-b-15">
+                            <span class="bold">$49.99 Internet 100 Offer: Ends 6/27/20.</span> Price requires bundle with another qualifying AT&T service (DIRECTV, U-verse TV, AT&T TV, AT&T Phone or postpaid AT&T wireless). <span class="bold">Pricing for first 12 months only.</span> After 12 mos or loss of eligibility, then prevailing rate applies (currently $59.99/mo) unless canceled or changed by customer prior to end of 12 months. Must maintain qualifying bundled services with matching service address to receive advertised pricing. <span class="bold">Additional Fees & Taxes:</span> AT&T one-time transactional fees, $10/mo. equipment fee, and monthly cost recovery surcharges which are not government-required may apply, as well as taxes. See <a class="gray-dead" href="https://www.att.com/fees">www.att.com/fees</a> for details. Credit restrictions apply. Pricing subj to change. Subj. to Internet Terms of Service at att.com/internet-terms.
+                          </p>
+                          <p class="text-14">
+                            †† <span class="bold">Internet speed claims</span> represent maximum network service capability speeds and based on wired connection to gateway. Actual customer speeds may vary based on a number of factors and are not guaranteed. Download speeds are typically up to 940Mbps due to overhead capacity reserved to deliver the data. For more information, go to www.att.com/speed101.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End modal content -->
+
+                </p>
+              </div>
+              <div class="speed">
+                <div class="box">
+                  <p class="text-12 text-center top">Download/upload speed</p>
+                  <p class="text-center unit nowrap">100/100 Mpbs</p>
+                </div>
+              </div>
+
+              <button class="add-cart-btn" data-modal-trigger="internet-100-added">
+                Add to Cart
+              </button>
+
+              <!-- Add to cart modal content -->
+              <div id="" data-modal-content="internet-100-added"  class="modal hidden sm:p-x-15 is-active">
+                <div class="modal-content w-66 sm:p-x-15 p-25 md-down:w-100">
+                  <div class="w-100 text-right">
+                    <span data-modal-trigger="close" class="close">&#10005;</span>
+                  </div>
+                  <div class="w-100 flex space-between md-down:flex-column">
+                    <div class="flex text-left p-y-8 md-down:p-b-15">
+                      <img src="/images/icons/check-blue-filled.svg" class="w-25px h-25px -m-t-3 sm:m-0 " alt=""/>
+                      <p class="text-18 p-l-15">Internet 1000 has been added to your cart!</p>
+                    </div>
+                    <div class="text-right p-r-15">
+                      <button class="btn bg-blue-dark white p-y-8 p-x-45" data-modal-trigger="close">Checkout</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End modal content -->
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../index.js"></script>
+  <script type="text/javascript" src="../scripts/cart.js"></script>

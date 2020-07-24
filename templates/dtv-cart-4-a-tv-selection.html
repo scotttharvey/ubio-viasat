@@ -1,0 +1,746 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<link rel="stylesheet" href="./../styles/index.scss" />
+<script type="text/javascript" src="./../index.js"></script>
+
+<!-- CART DTV 4-A -->
+  <div id="cartNav" class="cartNav container box-shadow">
+    <div class="row p-y-8">
+        <div class="flex space-between content">
+          <div class="flex align-center p-y-8 md-up:hidden">
+            <p class="gray-dark">Step 1 of 4</p>
+          </div>
+          <div class="flex flex-row align-center sm:hidden">
+            <p class="p-x-10 text-14 blue bold">Package</p>
+            <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
+            <p class="p-x-10 text-14 blue bold">Bundling</p>
+            <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
+            <p class="p-x-10 text-14 gray-dark">Checkout</p>
+          </div>
+          <div id="cart" class="cart-container pointer flex flex-row align-center" data-target="cart">
+            <img src="../images/icons/cart-blue.svg" alt="" class="w-25px h-25px"/>
+            <p class="p-x-5">My Cart</p>
+            <img src="../images/icons/chevron-left.svg" alt="" class="dropdown-arrow md-up:hidden w-25px h-25px -m-t-3  icon-rotate-270"/>
+            <!-- Cart Dropdown -->
+            <div class="cart-dropdown box-shadow border-gray-light bg-light hidden p-15">
+              <div class="dropdown-container">
+                <p class="text-24 thin p-b-15">Cost</p>
+                <section>
+                  <div class="bg-white p-25 sm:p-x-15 m-b-25">
+                    <p class="text-18 bold p-b-10">Monthly Cost</p>
+                    <div class="flex space-between">
+                      <p class="text-14">DIRECTV CHOICE All Included</p>
+                      <p class="text-14">$115.00</p>
+                    </div>
+                    <div class="flex space-between blue-light">
+                      <p class="text-14">$50.01 Off for 12 months</p>
+                      <p class="text-14">-($50.01)</p>
+                    </div>
+                    <div class="flex space-between blue-light">
+                      <p class="text-14">DIRECTV CHOICE All Included</p>
+                      <p class="text-14">$115.00</p>
+                    </div>
+                    <div class="flex space-between blue-light">
+                      <p class="text-14">NFL Sunday Ticket Max</p>
+                      <p class="text-14">$0.00</p>
+                    </div>
+                    <div class="flex space-between blue-light">
+                      <p class="text-14 w-66">HBO (12months), Showtime, Starz, Cinemax, and EPIX</p>
+                      <p class="text-14">$0.00</p>
+                    </div>
+
+                    <div class="w-100 flex flex-wrap space-between border-top-gray p-t-10 blue-dark bold p-b-10">
+                      <p class="text-16 w-50">Total</p>
+                      <p class="text-16 w-50 text-right">$69.99</p>
+                      <span class="w-100 text-12 gray-darkest thin text-right ">plus tax</span>
+                    </div>
+
+                    <p class="text-18 bold p-b-10">First Bill Charges</p>
+
+                    <div class="flex space-between p-b-5 blue-light">
+                      <p class="text-14 w-66">Free Standard Professional Installation Included</p>
+                      <p class="text-14">$0.00</p>
+                    </div>
+
+                    <div class="w-100 flex flex-wrap space-between border-top-gray p-t-10 blue-dark bold p-b-15">
+                      <p class="text-16 w-50">Total</p>
+                      <p class="text-16 w-50 text-right">$0.00</p>
+                    </div>
+
+                    <p class="text-18 bold p-b-10">Package Discounts & Fees </p>
+
+                    <div class="flex space-between">
+                      <p class="text-14">Regional Sports Fee</p>
+                      <p class="text-14">$8.49</p>
+                    </div>
+                    <div class="flex space-between p-b-5">
+                      <p class="text-14">Monthly Receiver Lease</p>
+                      <p class="text-14">$42.00</p>
+                    </div>
+                    <div class="w-100 flex flex-wrap space-between border-top-gray p-t-10 blue-dark bold text-16">
+                      <p class="text-16 w-50">Total</p>
+                      <p class="text-16 w-50 text-right">$50.49</p>
+                      <span class="w-100 text-12 gray-darkest thin text-right ">plus tax</span>
+                    </div>
+
+                  </div>
+                </section>
+
+                <section>
+                  <div class="bg-white p-25 sm:p-x-15 m-b-25">
+                    <p class="text-18 bold p-b-15">Today's Charges</p>
+                    <div class="flex space-between">
+                      <p class="text-14">DIRECTV Activation fee</p>
+                      <p class="text-14">$19.95</p>
+                    </div>
+                    <div class="flex space-between blue-light">
+                      <p class="text-14">Genie</p>
+                      <p class="text-14">$0.00</p>
+                    </div>
+
+                    <div class="flex space-between border-top-gray p-t-15 blue-dark bold text-18">
+                      <p class="text-18">Due Today</p>
+                      <p class="text-18">$19.95</p>
+                    </div>
+                  </div>
+                </section>
+                <div class="w-100 flex flex-end p-b-15">
+                  <button class="btn btn-shadow bg-blue-dark white p-y-8 p-x-25 ">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-blue-sky">
+    <div class="row p-y-5">
+      <div class="content flex flex-row">
+        <img class="w-15px h-15px" src="../images/icons/location-pin.svg" alt=""/>
+        <p class="text-14">200 Deerhunter Rd, Apt 4, Omaha, NE 42311 <a class="blue-light no-underline" href="#">Change</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row p-y-30">
+
+      <section class="w-100 content">
+
+        <div class="gray-darkest w-100 flex space-between sm:flex-column align-center m-b-25">
+          <div class="w-50 sm:w-100">
+            <h1 class="h3 gray-darkest thin p-b-15">Bundle with DirecTV Package</h1>
+            <p class="gray-dark p-b-15">Showing 6 products</p>
+            <p class="p-b-25 sm:p-b-15">Choose any package below to start designing your home viewing experience </p>
+          </div>
+          <div class="w-25 sm:w-100 sm:p-b-25">
+            <div class="w-100">
+              <label for="sortBy">
+                Sort by
+              </label>
+              <select name="sortBy" id="sortBy" class="w-100 dropdown p-y-8 p-x-5 m-t-5">
+                <option value="low">Price: low to high</option>
+                <option value="high">Price: high to low</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <section class="flex sm:column-reverse space-between">
+          <div class="filter-container w-270px m-r-10">
+            <div class="filter box-shadow p-b-25 m-b-30">
+              <div class="p-15">
+                <p class="text-18 p-b-5">Filter</p>
+              </div>
+
+              <div class="border-bottom-gray"></div>
+
+              <div class="p-15">
+                <p class="p-b-10">Language</p>
+                <div class="flex flex-wrap w-100 m-b-25">
+                  <button class="btn p-y-5 p-x-15 m-r-15 text-14 bg-blue white border-blue-dark">English</button>
+                  <button class="btn p-y-5 p-x-15 text-14 bg-white gray-dark border-blue-dark">Spanish</button>
+                </div>
+                <p class="p-b-10">Channels Included</p>
+                <div class="flex flex-column">
+                  <div class="w-100 flex flex-start flex-column checkbox-container p-b-25">
+                    <label for="nfl" class="p-b-10 checkbox">
+                      <input name="nfl" type="checkbox" class="consent m-r-5"/>
+                      <span>NFL Sunday Ticket</span>
+                    </label>
+                  </div>
+
+                  <div class="w-100 flex flex-start flex-column checkbox-container p-b-25">
+                    <label for="channels" class="checkbox">
+                      <input name="channels" type="checkbox" class="consent m-r-5"/>
+                      <span>Premium channels (HBO®, Cinemax,® SHOWTIME,® STARZ® and EPIX®)</span>
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="channel-filter box-shadow m-b-30">
+              <div class="p-15">
+                <p class="text-18 p-b-5">Channel Lineup</p>
+              </div>
+              <div class="border-bottom-gray"></div>
+              <div class="p-15">
+                <p class="p-b-10">See what channels are included in all DirecTV packages</p>
+                <div class="w-100 m-b-25">
+                  <button class="btn w-100 p-y-8 text-14 nowrap bg-white blue-dark border-blue-dark m-b-15">See Local Channel Lineup</button>
+                  <button class="btn w-100 p-y-8 text-14 nowrap bg-white blue-dark border-blue-dark">See Regional Sports Network</button>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn bg-white btn-shadow p-y-8 p-x-25 icon chevron-left border-blue-dark">Back</button>
+          </div>
+
+          <div class="package-cards-container w-100 flex-wrap space-between">
+
+            <div class="content dtv">
+              <div class="package-card dtv-tv">
+                <div class="label-container">
+                  <p class="label">
+                    NFL Sunday Ticket Included
+                  </p>
+                </div>
+                <div class="title-container">
+                  <div class="flex justify-center">
+                    <img src="/images/icons/tv.svg" alt="" class="w-35px"/>
+                  </div>
+                  <p class="text-center title">DIRECTV Choice
+                    All-Included</p>
+                </div>
+                <div class="bg-blue-to-purple m-b-15 p-y-8">
+                  <p class="white text-center text-16">$100 Reward card included</p>
+                  <p class="white text-center text-14">(Details in cart)</p>
+                </div>
+                <div class="w-100 flex-center sm:flex-column m-b-10">
+                  <div class="w-50 sm:w-100 flex-center sm:p-b-10">
+                    <div class="text-center channel-circle">
+                      <p class="text-12">Channels</p>
+                      <p class="text-24 thin">185+</p>
+                    </div>
+                  </div>
+                  <div class="w-50 sm:w-100">
+                    <div class="price">
+                      <div class="prefix">$</div>
+                      <div class="amount">49</div>
+                      <div class="change duration-after">99</div>
+                    </div>
+                    <p class="text-12 text-center">for 12 mos plus taxes and RSN fee</p>
+                    <p class="blue text-12 strike-out sm:text-center">Original price: $59.99</p>
+                  </div>
+                </div>
+                <div class="p-b-15 p-x-15 m-b-15 text-center">
+                  <p class="legal">w/24-mo. agmt & other qualifying AT&T svc (min. $39.99/mo. + taxes and fees). Autopay & Paperless bill req’d. Prices higher in 2nd year. Regional Sports Fee up to $9.99/mo. is extra & applies.* <br/> <span data-modal-trigger="internet-1000-details" class="underlined pointer">See Offer Details</span>
+                    <!-- Start modal content -->
+                    <div data-modal-content="internet-1000-details" class="modal hidden sm:p-x-15 is-active">
+                      <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
+                        <div class="w-100 text-right">
+                          <span data-modal-trigger="close" class="close">&#10005;</span>
+                        </div>
+                        <div class="text-left">
+                          <p class="text-24 p-b-15">Offer Details.</p>
+                          <p class="bold text-14 p-b-15">
+                            Geographic and service restrictions apply to AT&T Internet services. Not all speeds available in all areas. Call to see if you qualify.
+                          </p>
+
+                          <p class="text-14 p-b-15">
+                            <span class="bold">$39.99 Internet 1000 Offer: Ends 6/27/20.</span> Price requires bundle with another qualifying AT&T service (DIRECTV, U-verse TV, AT&T TV, AT&T Phone or postpaid AT&T wireless). <span class="bold">Pricing for first 12 months only.</span> After 12 mos or loss of eligibility, then prevailing rate applies (currently $59.99/mo) unless canceled or changed by customer prior to end of 12 months. Must maintain qualifying bundled services with matching service address to receive advertised pricing. <span class="bold">Additional Fees & Taxes:</span> AT&T one-time transactional fees, $10/mo. equipment fee, and monthly cost recovery surcharges which are not government-required may apply, as well as taxes. See <a class="gray-dead" href="https://www.att.com/fees">www.att.com/fees</a> for details. Credit restrictions apply. Pricing subj to change. Subj. to Internet Terms of Service at att.com/internet-terms.
+                          </p>
+                          <p class="text-14">
+                            †† <span class="bold">Internet speed claims </span> represent maximum network service capability speeds and based on wired connection to gateway. Actual customer speeds may vary based on a number of factors and are not guaranteed. Download speeds are typically up to 940Mbps due to overhead capacity reserved to deliver the data. For more information, go to www.att.com/speed101.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End modal content -->
+
+                  </p>
+                </div>
+                <div class="channels p-x-15 m-b-15">
+                  <p class="text-16 text-center p-b-10">
+                    Popular Channels
+                  </p>
+                  <div class="bg-gray-lightest p-15">
+                    <p class="text-14 p-b-5 icon tv-channel">SEC Network</p>
+                    <p class="text-14 p-b-5 icon tv-channel">Travel Channel</p>
+                    <p class="text-14 p-b-5 icon tv-channel">IFC</p>
+                    <p class="text-14 p-b-5 icon tv-channel">Fusion TV</p>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <a href="https://www.attexperts.com/download/dtv-english-channels-2020.pdf" target="_blank" class="btn no-underline blue-dark text-14 m-auto p-b-25 icon channel-lineup">See full channel lineup</a>
+                </div>
+                <button class="add-cart-btn" data-modal-trigger="directv-devices">
+                  Add to Cart
+                </button>
+                <!-- Start Equipment Selection Modal content -->
+                <div data-modal-content="directv-devices" class="modal hidden sm:p-x-15 is-active">
+                  <div class="modal-content sm:scrollable-content p-25 sm:p-x-15 w-60 md-down:w-100">
+                    <div class="w-100 text-right">
+                      <span data-modal-trigger="close" class="close -m-t-10">&#10005;</span>
+                    </div>
+                    <div class="p-t-30 p-b-15">
+                      <div class="p-b-15 m-b-15 border-bottom-gray">
+                        <div class="p-10 sm:p-x-15 flex space-between align-center sm:flex-column">
+                          <p class="icon text-18 check-circle sm:p-b-15">
+                            DirecTV Choice All-Included has been added to your cart!
+                          </p>
+                        </div>
+                      </div>
+                      <div class="w-100 flex sm:flex-column space-between">
+                        <div class="w-50 sm:w-100 p-r-10">
+                          <p class="text-20 thin p-b-15">Equipment for your new DirecTV service</p>
+                          <img src="../images/dtv-device.png" alt="" class="m-b-15 w-100 sm:hidden">
+                          <p class="p-b-15 text-14">Take advantage of DIRECTV Whole-Home DVR with a Genie. Enjoy a full HD DVR experience in every room. Record any 5 shows at the same time, all in HD. Record up to 200 hours in HD.</p>
+                        </div>
+
+                        <div class="w-50 sm:w-100">
+                          <form class="w-100 flex flex-wrap flex-center form-container">
+
+                            <section class="device-card bg-blue-dark radio-section border-blue-dark p-15 box-shadow flex flex-column text-center m-b-15">
+                              <label for="devices-1" class="big-radio device-option flex flex-column">
+                                <div class="relative flex flex-center m-b-5">
+                                  <input type="radio" id="devices-1" name="devices" value="1 device" class="m-0 bg-white"   data-parsley-required-message="" data-parsley-errors-container="" />
+                                  <span class="inputFill absolute text-24 bold blue-dark">1</span>
+                                </div>
+                                <p>device</p>
+                                <p>inluded</p>
+                              </label>
+                            </section>
+
+                            <section class="device-card radio-section border-blue-dark p-15 box-shadow flex flex-column text-center m-b-15">
+                              <label for="devices-2" class="big-radio device-option flex flex-column">
+                                <div class="relative flex flex-center m-b-5">
+                                  <input type="radio" id="devices-2" name="devices" value="2 devices" class="m-0 bg-white"   data-parsley-required-message="" data-parsley-errors-container="" />
+                                  <span class="inputFill absolute text-24 bold blue-dark">2</span>
+                                </div>
+                                <p class="blue-dark">devices</p>
+                                <p>$7/mo</p>
+                              </label>
+                            </section>
+
+                            <section class="device-card radio-section border-blue-dark p-15 box-shadow flex flex-column text-center m-b-15">
+                              <label for="devices-3" class="big-radio device-option flex flex-column">
+                                <div class="relative flex flex-center m-b-5">
+                                  <input type="radio" id="devices-3" name="devices" value="3 devices" class="m-0 bg-white"   data-parsley-required-message="" data-parsley-errors-container="" />
+                                  <span class="inputFill absolute text-24 bold blue-dark">3</span>
+                                </div>
+                                <p>devices</p>
+                                <p>$14/mo</p>
+                              </label>
+                            </section>
+
+                            <section class="device-card radio-section border-blue-dark p-15 box-shadow flex flex-column text-center m-b-15">
+                              <label for="devices-4" class="big-radio device-option flex flex-column">
+                                <div class="relative flex flex-center m-b-5">
+                                  <input type="radio" id="devices-4" name="devices" value="4 devices" class="m-0 bg-white"   data-parsley-required-message="" data-parsley-errors-container="" />
+                                  <span class="inputFill absolute text-24 bold blue-dark">4</span>
+                                </div>
+                                <p>devices</p>
+                                <p>$21/mo</p>
+                              </label>
+                            </section>
+
+                            <section class="device-card radio-section border-blue-dark p-15 box-shadow flex flex-column text-center m-b-15" data-activation-fee="49">
+                              <label for="devices-5" class="big-radio device-option flex flex-column">
+                                <div class="relative flex flex-center m-b-5">
+                                  <input type="radio" id="devices-5" name="devices" value="5 devices" class="m-0 bg-white"   data-parsley-required-message="" data-parsley-errors-container="" />
+                                  <span class="inputFill absolute text-24 bold blue-dark">5</span>
+                                </div>
+                                <p>devices</p>
+                                <p>$28/mo</p>
+                              </label>
+                            </section>
+
+                            <section class="device-card radio-section border-blue-dark p-15 box-shadow flex flex-column text-center m-b-15" data-activation-fee="98">
+                              <label for="devices-6" class="big-radio device-option flex flex-column">
+                                <div class="relative flex flex-center m-b-5">
+                                  <input type="radio" id="devices-6" name="devices" value="6 devices" class="m-0 bg-white"   data-parsley-required-message="" data-parsley-errors-container="" />
+                                  <span class="inputFill absolute text-24 bold blue-dark">6</span>
+                                </div>
+                                <p>devices</p>
+                                <p>$35/mo</p>
+                              </label>
+                            </section>
+
+                            <div class="w-100 activation-fee hidden flex bg-gray-lightest p-10 p-y-15 m-b-30">
+                              <div class="w-75">
+                                <p class="bold text-18">One-time activation fee</p>
+                                <p>Required for 4+ devices</p>
+                              </div>
+                              <div class="w-25 flex flex-end">
+                                <p class="text-24 thin">$</p>
+                                <p class="text-24 thin amount">49</p>
+                              </div>
+                            </div>
+
+                            <div class="flex flex-end sm:flex-center w-100 bg-white ">
+                              <button class="btn bg-blue-dark white p-x-45 right p-y-8 m-r-10 sm:m-0 btn-shadow border-blue-dark">Next</button>
+                            </div>
+
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Equipment Selection Modal content -->
+              </div>
+            </div>
+
+            <div class="content dtv">
+              <div class="package-card dtv-tv">
+                <div class="label-container">
+                  <p class="label">
+                    NFL Sunday Ticket Included
+                  </p>
+                </div>
+                <div class="title-container">
+                  <div class="flex justify-center">
+                    <img src="/images/icons/tv.svg" alt="" class="w-35px"/>
+                  </div>
+                  <p class="text-center title">DIRECTV Xtra All-Included</p>
+                </div>
+                <div class="bg-blue-to-purple m-b-15 p-y-8">
+                  <p class="white text-center text-16">$100 Reward card included</p>
+                  <p class="white text-center text-14">(Details in cart)</p>
+                </div>
+                <div class="w-100 flex-center sm:flex-column m-b-10">
+                  <div class="w-50 flex-center sm:p-b-10">
+                    <div class="text-center channel-circle">
+                      <p class="text-12">Channels</p>
+                      <p class="text-24 thin">235+</p>
+                    </div>
+                  </div>
+                  <div class="w-50">
+                    <div class="price">
+                      <div class="prefix">$</div>
+                      <div class="amount">59</div>
+                      <div class="change duration-after">99</div>
+                    </div>
+                    <p class="text-12 text-center">for 12 mos plus taxes and RSN fee</p>
+                    <p class="blue text-12 strike-out sm:text-center">Original price: $74.99</p>
+                  </div>
+                </div>
+                <div class="p-b-15 p-x-15 m-b-15 text-center">
+                  <p class="legal">w/24-mo. agmt & other qualifying AT&T svc (min. $39.99/mo. + taxes and fees). Autopay & Paperless bill req’d. Prices higher in 2nd year. Regional Sports Fee up to $9.99/mo. is extra & applies.* <br/> <span data-modal-trigger="internet-1000-details" class="underlined pointer">See Offer Details</span>
+                    <!-- Start modal content -->
+                    <div data-modal-content="internet-1000-details" class="modal hidden sm:p-x-15 is-active">
+                      <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
+                        <div class="w-100 text-right">
+                          <span data-modal-trigger="close" class="close">&#10005;</span>
+                        </div>
+                        <div class="text-left">
+                          <p class="text-24 p-b-15">Offer Details.</p>
+                          <p class="bold text-14 p-b-15">
+                            Geographic and service restrictions apply to AT&T Internet services. Not all speeds available in all areas. Call to see if you qualify.
+                          </p>
+
+                          <p class="text-14 p-b-15">
+                            <span class="bold">$39.99 Internet 1000 Offer: Ends 6/27/20.</span> Price requires bundle with another qualifying AT&T service (DIRECTV, U-verse TV, AT&T TV, AT&T Phone or postpaid AT&T wireless). <span class="bold">Pricing for first 12 months only.</span> After 12 mos or loss of eligibility, then prevailing rate applies (currently $59.99/mo) unless canceled or changed by customer prior to end of 12 months. Must maintain qualifying bundled services with matching service address to receive advertised pricing. <span class="bold">Additional Fees & Taxes:</span> AT&T one-time transactional fees, $10/mo. equipment fee, and monthly cost recovery surcharges which are not government-required may apply, as well as taxes. See <a class="gray-dead" href="https://www.att.com/fees">www.att.com/fees</a> for details. Credit restrictions apply. Pricing subj to change. Subj. to Internet Terms of Service at att.com/internet-terms.
+                          </p>
+                          <p class="text-14">
+                            †† <span class="bold">Internet speed claims </span> represent maximum network service capability speeds and based on wired connection to gateway. Actual customer speeds may vary based on a number of factors and are not guaranteed. Download speeds are typically up to 940Mbps due to overhead capacity reserved to deliver the data. For more information, go to www.att.com/speed101.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End modal content -->
+
+                  </p>
+                </div>
+                <div class="channels p-x-15 m-b-15">
+                  <p class="text-16 text-center p-b-10">
+                    Popular Channels
+                  </p>
+                  <div class="bg-gray-lightest p-15">
+                    <p class="text-14 p-b-5 icon tv-channel">Golf channel on NBC</p>
+                    <p class="text-14 p-b-5 icon tv-channel">Nat Geo Wild</p>
+                    <p class="text-14 p-b-5 icon tv-channel">FOX Sports 2</p>
+                    <p class="text-14 p-b-5 icon tv-channel">NHL Network</p>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <a href="https://www.attexperts.com/download/dtv-english-channels-2020.pdf" target="_blank" class="btn no-underline blue-dark text-14 m-auto p-b-25 icon channel-lineup">See full channel lineup</a>
+                </div>
+                <button class="add-cart-btn" data-modal-trigger="internet">
+                  Add to Cart
+                </button>
+                <!-- Start modal content -->
+                <div data-modal-content="internet" class="modal hidden sm:p-x-15 is-active">
+                  <div class="modal-content p-25 p-r-15 sm:p-x-15 w-60 md-down:w-100">
+                    <div class="w-100 text-right">
+                      <span data-modal-trigger="close" class="close -m-t-10">&#10005;</span>
+                    </div>
+                    <div class="p-t-30 p-b-15">
+                      <div class="p-b-15 m-b-15 border-bottom-gray">
+                        <div class="p-10 sm:p-x-15 flex space-between align-center sm:flex-column">
+                          <p class="icon text-18 check-circle sm:p-b-15">
+                            Internet 1000 has been added to your cart
+                          </p>
+                          <button class="btn bg-blue-dark white p-x-25 p-y-8 block m-l-auto">Checkout</button>
+                        </div>
+                      </div>
+                      <div class="w-100 flex sm:flex-column space-between">
+                        <div class="w-60 sm:w-100 p-r-10">
+                          <p class="text-24 thin p-b-15">Great Internet Deserves Great TV</p>
+                          <p class="p-b-15">Tired of missing the big game or cliff-hanger season finale? Thanks to 500 hours of Cloud DVR storage, you don’t have to. Bundle now to double your savings, plus use voice remote with the Google Assistant to find everything you want without leaving your couch.</p>
+                          <p class="text-12 p-b-25">Recordings expire after 90 days. Restrictions apply. Google is a trademark of Google LLC. Google login required.</p>
+                          <button class="btn p-y-8 p-x-45 white bg-blue-dark ">See DirecTV Packages</button>
+                        </div>
+
+                        <div class="w-40 sm:hidden">
+                          <img src="../images/icons/pro-install.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End modal content -->
+              </div>
+            </div>
+
+            <div class="content dtv">
+              <div class="package-card dtv-tv">
+                <div class="label-container">
+                  <p class="label">
+                    NFL Sunday Ticket Included
+                  </p>
+                </div>
+                <div class="title-container">
+                  <div class="flex justify-center">
+                    <img src="/images/icons/tv.svg" alt="" class="w-35px"/>
+                  </div>
+                  <p class="text-center title">DIRECTV Ultimate All-Included</p>
+                </div>
+                <div class="bg-blue-to-purple m-b-15 p-y-8">
+                  <p class="white text-center text-16">$100 Reward card included</p>
+                  <p class="white text-center text-14">(Details in cart)</p>
+                </div>
+                <div class="w-100 flex-center sm:flex-column m-b-10">
+                  <div class="w-50 flex-center sm:p-b-10">
+                    <div class="text-center channel-circle">
+                      <p class="text-12">Channels</p>
+                      <p class="text-24 thin">250+</p>
+                    </div>
+                  </div>
+                  <div class="w-50">
+                    <div class="price">
+                      <div class="prefix">$</div>
+                      <div class="amount">64</div>
+                      <div class="change duration-after">99</div>
+                    </div>
+                    <p class="text-12 text-center">for 12 mos plus taxes and RSN fee</p>
+                    <p class="blue text-12 strike-out sm:text-center">Original price: $79.99</p>
+                  </div>
+                </div>
+                <div class="p-b-15 p-x-15 m-b-15 text-center">
+                  <p class="legal">w/24-mo. agmt & other qualifying AT&T svc (min. $39.99/mo. + taxes and fees). Autopay & Paperless bill req’d. Prices higher in 2nd year. Regional Sports Fee up to $9.99/mo. is extra & applies.* <br/> <span data-modal-trigger="internet-1000-details" class="underlined pointer">See Offer Details</span>
+                    <!-- Start modal content -->
+                    <div data-modal-content="internet-1000-details" class="modal hidden sm:p-x-15 is-active">
+                      <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
+                        <div class="w-100 text-right">
+                          <span data-modal-trigger="close" class="close">&#10005;</span>
+                        </div>
+                        <div class="text-left">
+                          <p class="text-24 p-b-15">Offer Details.</p>
+                          <p class="bold text-14 p-b-15">
+                            Geographic and service restrictions apply to AT&T Internet services. Not all speeds available in all areas. Call to see if you qualify.
+                          </p>
+
+                          <p class="text-14 p-b-15">
+                            <span class="bold">$39.99 Internet 1000 Offer: Ends 6/27/20.</span> Price requires bundle with another qualifying AT&T service (DIRECTV, U-verse TV, AT&T TV, AT&T Phone or postpaid AT&T wireless). <span class="bold">Pricing for first 12 months only.</span> After 12 mos or loss of eligibility, then prevailing rate applies (currently $59.99/mo) unless canceled or changed by customer prior to end of 12 months. Must maintain qualifying bundled services with matching service address to receive advertised pricing. <span class="bold">Additional Fees & Taxes:</span> AT&T one-time transactional fees, $10/mo. equipment fee, and monthly cost recovery surcharges which are not government-required may apply, as well as taxes. See <a class="gray-dead" href="https://www.att.com/fees">www.att.com/fees</a> for details. Credit restrictions apply. Pricing subj to change. Subj. to Internet Terms of Service at att.com/internet-terms.
+                          </p>
+                          <p class="text-14">
+                            †† <span class="bold">Internet speed claims </span> represent maximum network service capability speeds and based on wired connection to gateway. Actual customer speeds may vary based on a number of factors and are not guaranteed. Download speeds are typically up to 940Mbps due to overhead capacity reserved to deliver the data. For more information, go to www.att.com/speed101.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End modal content -->
+
+                  </p>
+                </div>
+                <div class="channels p-x-15 m-b-15">
+                  <p class="text-16 text-center p-b-10">
+                    Popular Channels
+                  </p>
+                  <div class="bg-gray-lightest p-15">
+                    <p class="text-14 p-b-5 icon tv-channel">Boomerang</p>
+                    <p class="text-14 p-b-5 icon tv-channel">Univision</p>
+                    <p class="text-14 p-b-5 icon tv-channel">Chiller</p>
+                    <p class="text-14 p-b-5 icon tv-channel">The Movie Channel</p>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <a href="https://www.attexperts.com/download/dtv-english-channels-2020.pdf" target="_blank" class="btn no-underline blue-dark text-14 m-auto p-b-25 icon channel-lineup">See full channel lineup</a>
+                </div>
+                <button class="add-cart-btn" data-modal-trigger="internet">
+                  Add to Cart
+                </button>
+                <!-- Start modal content -->
+                <div data-modal-content="internet" class="modal hidden sm:p-x-15 is-active">
+                  <div class="modal-content p-25 p-r-15 sm:p-x-15 w-60 md-down:w-100">
+                    <div class="w-100 text-right">
+                      <span data-modal-trigger="close" class="close -m-t-10">&#10005;</span>
+                    </div>
+                    <div class="p-t-30 p-b-15">
+                      <div class="p-b-15 m-b-15 border-bottom-gray">
+                        <div class="p-10 sm:p-x-15 flex space-between align-center sm:flex-column">
+                          <p class="icon text-18 check-circle sm:p-b-15">
+                            Internet 1000 has been added to your cart
+                          </p>
+                          <button class="btn bg-blue-dark white p-x-25 p-y-8 block m-l-auto">Checkout</button>
+                        </div>
+                      </div>
+                      <div class="w-100 flex sm:flex-column space-between">
+                        <div class="w-60 sm:w-100 p-r-10">
+                          <p class="text-24 thin p-b-15">Great Internet Deserves Great TV</p>
+                          <p class="p-b-15">Tired of missing the big game or cliff-hanger season finale? Thanks to 500 hours of Cloud DVR storage, you don’t have to. Bundle now to double your savings, plus use voice remote with the Google Assistant to find everything you want without leaving your couch.</p>
+                          <p class="text-12 p-b-25">Recordings expire after 90 days. Restrictions apply. Google is a trademark of Google LLC. Google login required.</p>
+                          <button class="btn p-y-8 p-x-45 white bg-blue-dark ">See DirecTV Packages</button>
+                        </div>
+
+                        <div class="w-40 sm:hidden">
+                          <img src="../images/icons/pro-install.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End modal content -->
+              </div>
+            </div>
+
+            <div class="content dtv">
+              <div class="package-card dtv-tv highest">
+                <div class="label-container">
+                  <p class="label">
+                    NFL Sunday Ticket Included
+                  </p>
+                </div>
+                <div class="title-container">
+                  <div class="flex justify-center">
+                    <img src="/images/icons/tv.svg" alt="" class="w-35px"/>
+                  </div>
+                  <p class="text-center title">DIRECTV Premier All-Included</p>
+                </div>
+                <div class="bg-red-to-orange p-y-8">
+                  <p class="white text-center text-16">HBO®, Cinemax,® SHOWTIME,® STARZ® and EPIX® included</p>
+                </div>
+                <div class="bg-blue-to-purple m-b-15 p-y-8">
+                  <p class="white text-center text-16">$100 Reward card included</p>
+                  <p class="white text-center text-14">(Details in cart)</p>
+                </div>
+                <div class="w-100 flex-center sm:flex-column m-b-10">
+                  <div class="w-50 flex-center sm:p-b-10">
+                    <div class="text-center channel-circle">
+                      <p class="text-12">Channels</p>
+                      <p class="text-24 thin">330+</p>
+                    </div>
+                  </div>
+                  <div class="w-50">
+                    <div class="price">
+                      <div class="prefix">$</div>
+                      <div class="amount">114</div>
+                      <div class="change duration-after">99</div>
+                    </div>
+                    <p class="text-12 text-center">for 12 mos plus taxes and RSN fee</p>
+                    <p class="blue text-12 strike-out sm:text-center">Original price: $129.99</p>
+                  </div>
+                </div>
+                <div class="p-b-15 p-x-15 m-b-15 text-center">
+                  <p class="legal">w/24-mo. agmt & other qualifying AT&T svc (min. $39.99/mo. + taxes and fees). Autopay & Paperless bill req’d. Prices higher in 2nd year. Regional Sports Fee up to $9.99/mo. is extra & applies.* <br/> <span data-modal-trigger="internet-1000-details" class="underlined pointer">See Offer Details</span>
+                    <!-- Start modal content -->
+                    <div data-modal-content="internet-1000-details" class="modal hidden sm:p-x-15 is-active">
+                      <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
+                        <div class="w-100 text-right">
+                          <span data-modal-trigger="close" class="close">&#10005;</span>
+                        </div>
+                        <div class="text-left">
+                          <p class="text-24 p-b-15">Offer Details.</p>
+                          <p class="bold text-14 p-b-15">
+                            Geographic and service restrictions apply to AT&T Internet services. Not all speeds available in all areas. Call to see if you qualify.
+                          </p>
+
+                          <p class="text-14 p-b-15">
+                            <span class="bold">$39.99 Internet 1000 Offer: Ends 6/27/20.</span> Price requires bundle with another qualifying AT&T service (DIRECTV, U-verse TV, AT&T TV, AT&T Phone or postpaid AT&T wireless). <span class="bold">Pricing for first 12 months only.</span> After 12 mos or loss of eligibility, then prevailing rate applies (currently $59.99/mo) unless canceled or changed by customer prior to end of 12 months. Must maintain qualifying bundled services with matching service address to receive advertised pricing. <span class="bold">Additional Fees & Taxes:</span> AT&T one-time transactional fees, $10/mo. equipment fee, and monthly cost recovery surcharges which are not government-required may apply, as well as taxes. See <a class="gray-dead" href="https://www.att.com/fees">www.att.com/fees</a> for details. Credit restrictions apply. Pricing subj to change. Subj. to Internet Terms of Service at att.com/internet-terms.
+                          </p>
+                          <p class="text-14">
+                            †† <span class="bold">Internet speed claims </span> represent maximum network service capability speeds and based on wired connection to gateway. Actual customer speeds may vary based on a number of factors and are not guaranteed. Download speeds are typically up to 940Mbps due to overhead capacity reserved to deliver the data. For more information, go to www.att.com/speed101.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End modal content -->
+
+                  </p>
+                </div>
+                <div class="channels p-x-15 m-b-15">
+                  <p class="text-16 text-center p-b-10">
+                    Popular Channels
+                  </p>
+                  <div class="bg-gray-lightest p-15">
+                    <p class="text-14 p-b-5 icon tv-channel">Cinemax</p>
+                    <p class="text-14 p-b-5 icon tv-channel">Showtime</p>
+                    <p class="text-14 p-b-5 icon tv-channel">HBO</p>
+                    <p class="text-14 p-b-5 icon tv-channel">STARZ</p>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <a href="https://www.attexperts.com/download/dtv-english-channels-2020.pdf" target="_blank" class="btn no-underline blue-dark text-14 m-auto p-b-25 icon channel-lineup">See full channel lineup</a>
+                </div>
+                <button class="add-cart-btn" data-modal-trigger="internet">
+                  Add to Cart
+                </button>
+                <!-- Start modal content -->
+                <div data-modal-content="internet" class="modal hidden sm:p-x-15 is-active">
+                  <div class="modal-content p-25 p-r-15 sm:p-x-15 w-60 md-down:w-100">
+                    <div class="w-100 text-right">
+                      <span data-modal-trigger="close" class="close -m-t-10">&#10005;</span>
+                    </div>
+                    <div class="p-t-30 p-b-15">
+                      <div class="p-b-15 m-b-15 border-bottom-gray">
+                        <div class="p-10 sm:p-x-15 flex space-between align-center sm:flex-column">
+                          <p class="icon text-18 check-circle sm:p-b-15">
+                            Internet 1000 has been added to your cart
+                          </p>
+                          <button class="btn bg-blue-dark white p-x-25 p-y-8 block m-l-auto">Checkout</button>
+                        </div>
+                      </div>
+                      <div class="w-100 flex sm:flex-column space-between">
+                        <div class="w-60 sm:w-100 p-r-10">
+                          <p class="text-24 thin p-b-15">Great Internet Deserves Great TV</p>
+                          <p class="p-b-15">Tired of missing the big game or cliff-hanger season finale? Thanks to 500 hours of Cloud DVR storage, you don’t have to. Bundle now to double your savings, plus use voice remote with the Google Assistant to find everything you want without leaving your couch.</p>
+                          <p class="text-12 p-b-25">Recordings expire after 90 days. Restrictions apply. Google is a trademark of Google LLC. Google login required.</p>
+                          <button class="btn p-y-8 p-x-45 white bg-blue-dark ">See DirecTV Packages</button>
+                        </div>
+
+                        <div class="w-40 sm:hidden">
+                          <img src="../images/icons/pro-install.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End modal content -->
+              </div>
+            </div>
+
+            <p class="content w-100 text-12 active-text">*$19.95 ACTIVATION, EARLY TERMINATION FEE OF $20/MO. FOR EACH MONTH REMAINING ON AGMT., EQUIPMENT NON-RETURN & ADD’L FEES APPLY. Price after $5/mo. autopay & paperless bill and $10/mo. bundle discounts for up to 12 mos each. Discounts start w/in 3 bills. New approved residential customers only (equipment lease req’d). Credit card req’d (except MA & PA). Restr’s apply.</p>
+
+          </div>
+
+        </section>
+
+      </section>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../index.js"></script>
+  <script type="text/javascript" src="../scripts/sortBy.js"></script>
+  <script type="text/javascript" src="../scripts/cart.js"></script>

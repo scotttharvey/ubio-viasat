@@ -1,0 +1,63 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<link rel="stylesheet" href="./../styles/index.scss" />
+<script type="text/javascript" src="./../index.js"></script>
+
+<!-- CART 3-A -->
+  <div class="container bg-blue-sky">
+    <div class="row p-y-5">
+      <div class="content flex flex-row">
+        <img class="w-15px h-15px" src="../images/icons/location-pin.svg" alt=""/>
+        <p class="text-14">200 Deerhunter Rd, Apt 4, Omaha, NE 42311 <a class="blue-light no-underline" href="#">Change</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="cartNav" class="cartNav container box-shadow">
+    <div class="row p-y-8">
+        <div class="flex space-between content">
+          <div class="flex align-center p-y-8 md-up:hidden">
+            <p class="gray-dark">Step 1 of 4</p>
+          </div>
+          <div class="flex flex-row align-center sm:hidden">
+            <p class="p-x-10 text-14 blue bold">Package</p>
+            <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
+            <p class="p-x-10 text-14 gray-dark">Checkout</p>
+            <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
+            <p class="p-x-10 text-14 gray-dark">Summary</p>
+            <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
+            <p class="p-x-10 text-14 gray-dark">Install</p>
+          </div>
+          <div id="cart" class="cart-container pointer flex flex-row align-center">
+            <img src="../images/icons/cart-blue.svg" alt="" class="w-25px h-25px"/>
+            <p class="p-x-5">My Cart</p>
+            <img src="../images/icons/chevron-left.svg" alt="" class="dropdown-arrow md-up:hidden w-25px h-25px -m-t-3  icon-rotate-270"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row p-y-30">
+
+      <section class="w-100 content">
+        <div class="package-cards-container">
+
+        </div>
+      </section>
+
+      <!-- Add to cart modal content -->
+      <div id="" data-modal-content="loading"  class="modal sm:p-x-15 is-active">
+        <div class="modal-content w-40 p-y-45 p-x-25 sm:p-x-15 md-down:w-100">
+          <div class="w-100 flex flex-center flex-column">
+            <img src="/images/icons/loading.svg" class="m-b-25" alt=""/>
+            <p class="text-24 text-center bold blue-light p-b-10">Getting your order ready...</p>
+          </div>
+        </div>
+      </div>
+      <!-- End modal content -->
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../index.js"></script>

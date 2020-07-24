@@ -1,0 +1,19 @@
+.flatpickr-calendar {
+  max-width: 100%;
+
+  .numInputWrapper { display: none; }
+  .flatpickr-month {
+    height: 42px;
+    background-color: $blue-sky;
+  }
+
+  .flatpickr-weekday {
+    font-size: 14px;
+    color: $gray-dead;
+    font-weight: 400;
+  }
+
+  .flatpickr-day {
+    &.selected { background-color: $blue-dark; }
+  }
+}

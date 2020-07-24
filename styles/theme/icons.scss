@@ -1,0 +1,70 @@
+.icon {
+  position: relative;
+  padding-left: 30px;
+
+  &.lock {
+    &::before {
+      position: absolute;
+      left: 0;
+      top: -1px;
+      background-image: url('/images/icons/lock-blue.svg');
+      width: 22px;
+      height: 22px;
+      content: '';
+    }
+  }
+
+  &.check-circle {
+    &.top-2 {
+      &::before {
+        top: 2;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: -2px;
+      background-image: url('/images/icons/check-blue-filled.svg');
+      width: 22px;
+      height: 22px;
+      content: '';
+    }
+  }
+
+  &.tv-channel {
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url('/images/icons/tv.svg');
+      width: 20px;
+      height: 20px;
+      content: '';
+    }
+  }
+
+  &.channel-lineup {
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url('/images/icons/channel-lineup.svg');
+      width: 20px;
+      height: 20px;
+      content: '';
+    }
+  }
+
+  &.chevron-left {
+    &::before {
+      position: absolute;
+      left: 6px;
+      top: 8px;
+      background-image: url('/images/icons/chevron-left.svg');
+      width: 22px;
+      height: 22px;
+      content: '';
+    }
+  }
+}
