@@ -1,8 +1,50 @@
 
+// ========================================
+// COLOR VARIABLES
+// ========================================
 $black: #000000;
 $dark: #242424;
 $white: #ffffff;
 $light: #f1f2f3;
+
+$primary-blue: #009fe3;
+$secondary-blue: #00aeef;
+$dark-blue: #23495c;
+$slate-blue: rgba(6, 51, 70, .8);
+$primary-green: #bed733;
+$secondary-green: #99af21;
+$primary-gray: #202e39;
+$primary-red: #85090f;
+
+$pink: #c5569b;
+
+$lightest-gray: #f6f6f6;
+$middle-gray: #e1e3e7;
+$base-gray: #ccc;
+$primary-gray-lighter: #384d5e;
+$darkest-gray: #070d12;
+
+$dark-blue: #016691;
+$turquoise: #00b1aa;
+
+$primary-body-copy: #222;
+$body-copy: #7d8086;
+
+$error-red: #ed1c24;
+
+$box-shadow: rgba(0, 0, 0, .4);
+$mask-opaque: rgba(0, 0, 0, .7);
+$hero-overlay: rgba(6, 51, 70, .8);
+$cta-shadow: #1a3c5b;
+$black-light-opaque: rgba(0, 0, 0, .2);
+$black-heavy-opaque: rgba(0, 0, 0, .5);
+
+// ========================================
+// GRADIENT VARIABLES
+// ========================================
+$tabbed-content1: #010814;
+$tabbed-content2: #2a3c4a;
+$tabbed-content-gradient: linear-gradient(to bottom right, $tabbed-content1, $tabbed-content2);
 
 $gray-border: #c7cad1;
 $gray-dead: #383d43;

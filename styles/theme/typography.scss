@@ -1,48 +1,62 @@
 @font-face {
-  font-family: aleckcd;
+  font-family: "Source Sans Pro Light";
   font-style: normal;
   font-weight: 200;
-  src: url("./../fonts/attaleckcd_lt.woff") format("woff"), url("./../fonts/attaleckcd_lt.ttf") format("truetype");
+  src: url("./../fonts/SourceSansPro-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: aleckcd;
-  font-style: normal;
-  font-weight: 500;
-  src: url("./../fonts/attaleckcd_md.woff") format("woff"), url("./../fonts/attaleckcd_md.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: aleck;
-  font-style: normal;
-  font-weight: 200;
-  src: url("./../fonts/attalecksans_lt.woff") format("woff"), url("./../fonts/attalecksans_lt.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: aleck;
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 400;
-  src: url("./../fonts/attalecksans_rg.woff") format("woff"), url("./../fonts/attalecksans_rg.ttf") format("truetype");
+  src: url("./../fonts/SourceSansPro-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: aleck;
+  font-family: "Source Sans Pro Bold";
   font-style: normal;
   font-weight: 500;
-  src: url("./../fonts/attalecksans_md.woff") format("woff"), url("./../fonts/attalecksans_md.ttf") format("truetype");
+  src: url("./../fonts/SourceSansPro-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: aleck;
+  font-family: "Uni Neue W00 Book";
   font-style: normal;
-  font-weight: 700;
-  src: url("./../fonts/attalecksans_bd.woff") format("woff"), url("./../fonts/attalecksans_bd.ttf") format("truetype");
+  src: url("./../fonts/unineue-book.otf") format("opentype");
 }
 
-$font-aleckcd: 'aleckcd', Helvetica, Arial, sans-serif;
-$font-aleck: 'aleck', Helvetica, Arial, sans-serif;
-$font-aleck-bold: 'attalecksans_bd', Helvetica, sans-serif;
+@font-face {
+  font-family: "Uni Neue Light";
+  font-style: thin;
+  font-weight: 200;
+  src: url("./../fonts/unineue-light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Uni Neue";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./../fonts/unineue-regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Uni Neue Heavy";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./../fonts/unineue-heavy.otf") format("opentype");
+}
+
+// ========================================
+// FONT VARIABLES
+// ========================================
+$source-sans-pro: "Source Sans Pro", helvetica, sans-serif;
+$source-sans-pro-light: "Source Sans Pro Light", helvetica, sans-serif;
+$source-sans-pro-bold: "Source Sans Pro Bold", helvetica, sans-serif;
+$uni-neue-book: "Uni Neue W00 Book", helvetica, sans-serif;
+$uni-neue-bold: "Uni Neue W00 Bold", helvetica, sans-serif;
+$uni-neue-light: "Uni Neue Light", helvetica, sans-serif;
+$uni-neue: "Uni Neue", helvetica, sans-serif;
+$uni-neue-heavy: "Uni Neue Heavy", helvetica, sans-serif;
 
 h1,
 h2,
@@ -56,13 +70,13 @@ p {
 }
 
 body {
-  font-family: $font-aleck;
+  font-family: $source-sans-pro;
 
 }
 
 h1,
 .h1 {
-  font-family: $font-aleck;
+  font-family: $uni-neue;
   font-size: 32px;
   // font-weight: 500;
   line-height: 32px;
@@ -75,6 +89,7 @@ h1,
 
 h2,
 .h2 {
+  font-family: $uni-neue;
   font-size: 28px;
   line-height: 32px;
 
@@ -86,6 +101,7 @@ h2,
 
 h3,
 .h3 {
+  font-family: $uni-neue;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
