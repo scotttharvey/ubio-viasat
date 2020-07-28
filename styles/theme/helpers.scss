@@ -222,6 +222,9 @@
 .bg-orange { background-color: $orange; }
 .bg-green { background-color: $green; }
 .bg-purple { background-color: $purple; }
+.bg-teal-to-blue {
+  background: linear-gradient(106.57deg, $teal 30.76%, $blue-darkest 68.11%);
+}
 
 // ========================================
 // Font Weight Classes
@@ -266,7 +269,7 @@
 .bottom-0 { bottom: 0; }
 .pointer:hover { cursor: pointer; }
 
-.btn-shadow { box-shadow: 0 2px 4px 0 rgba(56, 61, 67, 0.2); }
+.btn-shadow { box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3); }
 .card-shadow { box-shadow: 0 4px 8px 0 rgba(56, 61, 67, 0.3); }
 .box-shadow { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
 .box-shadow-top { box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.1); }

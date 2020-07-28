@@ -7,7 +7,40 @@ $dark: #242424;
 $white: #ffffff;
 $light: #f1f2f3;
 
-$primary-blue: #009fe3;
+$gray-border: #c7cad1;
+$gray-dead: #070D12;
+$gray-slate: #384D5E;
+$gray-darkest: #0F1A23;
+$gray-dark: #7D8086;
+$gray: #cbcdd1;
+$gray-light: #e1e3e7;
+$gray-lightest: #f6f6f6;
+
+$blue-sky: #b3daff;
+
+$blue-lightest: #00c9ff;
+$blue-light: #02b0fb;
+$blue: #009fe3;
+$blue-dark: #016691;
+$blue-darkest: #013365;
+
+$green-light: #dcf744;
+$green: #bed733;
+$green-dark: #99af21;
+$green-darkest: #6d7e11;
+
+$pink-light: #E1C5DE;
+$pink: #c5569b;
+
+$orange-light: #ffdb7c;
+$orange: #ee9201;
+
+$purple-light: #bf3eff;
+$purple: #860166;
+$purple: #860166;
+$purple-dark: #501A53;
+
+
 $secondary-blue: #00aeef;
 $dark-blue: #23495c;
 $slate-blue: rgba(6, 51, 70, .8);
@@ -26,6 +59,7 @@ $darkest-gray: #070d12;
 
 $dark-blue: #016691;
 $turquoise: #00b1aa;
+$teal: #00AFA8;
 
 $primary-body-copy: #222;
 $body-copy: #7d8086;
@@ -45,23 +79,3 @@ $black-heavy-opaque: rgba(0, 0, 0, .5);
 $tabbed-content1: #010814;
 $tabbed-content2: #2a3c4a;
 $tabbed-content-gradient: linear-gradient(to bottom right, $tabbed-content1, $tabbed-content2);
-
-$gray-border: #c7cad1;
-$gray-dead: #383d43;
-$gray-darkest: #3f3f3f;
-$gray-dark: #949599;
-$gray: #bfbfbf;
-$gray-light: #e7e7e9;
-$gray-lightest: #f0f0f0;
-
-$blue-sky: #b3daff;
-
-$blue-lightest: #00c9ff;
-$blue-light: #009fdb;
-$blue: #0079b1;
-$blue-dark: #0057b8;
-$pink: #ff585d;
-$orange: #ffb000;
-$green: #91dc00;
-$purple: #af29bb;
-$purple-light: #bf3eff;
