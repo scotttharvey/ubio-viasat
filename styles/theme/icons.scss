@@ -67,4 +67,15 @@
       content: '';
     }
   }
+
+  &.phone-white {
+    &::before {
+      position: absolute;
+      left: 4px;
+      background-image: url('/images/icons/phone.svg');
+      width: 22px;
+      height: 22px;
+      content: '';
+    }
+  }
 }
