@@ -256,6 +256,10 @@
 .invisible { visibility: hidden; }
 .visible { visibility: visible; }
 .flex { display: flex; }
+.flex-1 {
+  display: flex;
+  flex: 1;
+}
 .flex-wrap { flex-wrap: wrap; }
 .flex-row { flex-direction: row; }
 .flex-column { flex-direction: column; }

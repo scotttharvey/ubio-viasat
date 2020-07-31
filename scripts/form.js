@@ -1,6 +1,6 @@
 import $ from "jquery";
 import parsley from 'parsleyjs'
-const installOptions = $('.install-option');
+const plansoptions = $('.plan-option');
 const deviceCard = $('.device-card');
 const scrollOnSmall = $('.fixed-submit button');
 
@@ -34,12 +34,12 @@ $('form').on('submit', e => {
   console.log('form submission: ', $(e.target).serialize())
 })
 
-installOptions.on('change', (e) => {
-  const input = installOptions.find('[type="radio"]:checked');
+plansoptions.on('change', (e) => {
+  const input = plansoptions.find('[type="radio"]:checked');
 
-  $('.install-option').removeClass('border-blue-light');
+  $('.plan-option').removeClass('border-blue-light');
 
-  input.closest('.install-option').toggleClass('border-blue-light')
+  input.closest('.plan-option').toggleClass('border-blue-light')
 
 });
 

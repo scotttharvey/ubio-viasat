@@ -1,0 +1,335 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<link rel="stylesheet" href="./../styles/index.scss" />
+
+<!-- SCREEN 11-A -->
+<div class="container row w-100 bg-white">
+  <section class="w-100 bg-white p-y-15 content flex space-between">
+    <p class="text-18 icon lock">Secure Checkout</p>
+    <p class="blue-light">Back to Cart</p>
+  </section>
+</div>
+
+<div class="container bg-gray-light">
+  <div id="screen-5" class="row p-y-30 sm:p-y-15">
+
+
+    <section class="flex w-100 flex-wrap sm:column-reverse">
+
+      <div class="w-66 sm:w-100 p-y-25 sm:p-y-15 content">
+
+        <div class="w-100 p-b-25">
+          <h1 class="h3 gray-dead thin p-b-15">Checkout</h1>
+          <p class="gray-dead">Just a few more steps and you’ll be set! Fill out your information below to place your order.</p>
+        </div>
+
+        <section class="bg-white p-25 sm:p-x-15">
+
+          <div class="flex flex-wrap space-between">
+            <div class="w-100 m-b-25 flex space-between">
+              <p class="text-22 thin">Plan Options and Addons</p>
+              <p class="gray">Step ? of ?</p>
+            </div>
+
+            <form class="flex flex-wrap form-container w-100 p-x-10">
+
+              <div class="plansoption flex flex-column w-100 m-b-10">
+                <p class="text-18 thin m-b-15 border-bottom-gray p-b-10">Plan Options</p>
+                <p class="text-24 gray-darkest bold p-b-15">1. Equipment plan</p>
+                <div class="p-l-25 p-b-35">
+                  <section class="plan-option border-white w-100 flex md-down:flex-column box-shadow p-y-25 p-x-20 m-b-10">
+                    <div class="radio-section flex flex-wrap m-r-10 md-down:p-b-25">
+                      <div class="radio-container">
+                        <label for="rentalFee" class="big-radio" >
+                          <input type="radio" id="rentalFee" name="planOption" value="Self Install" class="planOption m-r-15 m-0" required  data-parsley-required-message="Install method required" data-parsley-errors-container="#planOptionError" />
+                          <span class="inputFill"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="flex w-100 space-between align-center p-l-10 md-down:p-0">
+                      <div class="w-100 flex-1 space-between">
+                        <div class="flex-1 space-between">
+                          <p class="text-18 blue p-r-10">Monthly Equipment Rental Fee</p>
+                          <p class="text-18 thin text-right lg-up:hidden">$10.00/mo</p>
+                        </div>
+                      </div>
+                      <div class="flex-1 flex-end p-l-15 md-down:hidden">
+                        <p class="text-18 thin">$10.00/mo</p>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="plan-option border-white w-100 flex md-down:flex-column box-shadow p-y-25 p-x-20 m-b-25">
+
+                    <div class="radio-section flex flex-wrap m-r-10 md-down:p-b-25">
+                      <div class="radio-container">
+                        <label for="oneTimeFee" class="big-radio" >
+                          <input type="radio" id="oneTimeFee" name="installMethod" value="Self Install" class="planOption m-r-15 m-0" required  data-parsley-required-message="Install method required" data-parsley-errors-container="#installMethodError" />
+                          <span class="inputFill"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="flex w-100 space-between align-center p-l-10 md-down:p-0">
+                      <div class="w-100 flex-1 space-between">
+                        <div class="flex-1 space-between">
+                          <p class="text-18 blue p-r-10">One-time Equipment Fee</p>
+                          <p class="text-18 thin text-right lg-up:hidden">one-time $299.00</p>
+                        </div>
+                      </div>
+                      <div class="flex-1 flex-end p-l-15 md-down:hidden">
+                        <p class="text-18 thin">one-time $299.00</p>
+                      </div>
+                    </div>
+                  </section>
+                  <div id="planOptionError"></div>
+                </div>
+              </div>
+
+              <div class="plansoption flex flex-column w-100 m-b-10">
+                <p class="text-18 thin m-b-15 border-bottom-gray p-b-10">Addons</p>
+                <p class="text-24 gray-darkest bold p-b-15">2. Add EasyCare</p>
+                <div class="p-l-25 p-b-35">
+                  <p class="p-b-15">Viasat Internet offers an extra level of support for your Viasat service at a low monthly price. It’s called EasyCare. Here’s what you get:</p>
+                  <div class="w-100 flex space-between p-b-25">
+                    <div class="w-33 p-10 flex-column text-center">
+                      <img src="../images/icons/wifi.svg" alt="" class="w-25px" />
+                      <p class="blue">Service calls</p>
+                      <p class="gray-dark">(normally $95 each)</p>
+                    </div>
+                    <div class="w-33 p-10 flex-column text-center">
+                      <img src="../images/icons/wifi.svg" alt="" class="w-25px" />
+                      <p class="blue">Priority customer support</p>
+                    </div>
+                    <div class="w-33 p-10 flex-column text-center">
+                      <img src="../images/icons/wifi.svg" alt="" class="w-25px" />
+                      <p class="blue">Annual dish relocation</p>
+                      <p class="gray-dark">(normally $200)</p>
+                    </div>
+                  </div>
+                  <section class="plan-option border-white w-100 flex md-down:flex-column box-shadow p-y-25 p-x-20 m-b-10">
+                    <div class="radio-section flex flex-wrap m-r-10 md-down:p-b-25">
+                      <div class="radio-container">
+                        <label for="addEasyCare" class="big-radio" >
+                          <input type="radio" id="addEasyCare" name="addEasyCare" value="Add EasyCare" class="planOption m-r-15 m-0" required  data-parsley-required-message="EasyCare selection" data-parsley-errors-container="#easyCareError" />
+                          <span class="inputFill"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="flex w-100 space-between align-center p-l-10 md-down:p-0">
+                      <div class="w-100 flex-1 space-between">
+                        <div class="flex-1 space-between">
+                          <p class="text-18 blue p-r-10">Add EasyCare</p>
+                          <p class="text-18 thin text-right lg-up:hidden">$8.99/mo, Free for first 3 months</p>
+                        </div>
+                      </div>
+                      <div class="flex-1 flex-end p-l-15 md-down:hidden">
+                        <p class="text-18 thin">$8.99/mo, Free for first 3 months</p>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="plan-option border-white w-100 flex md-down:flex-column box-shadow p-y-25 p-x-20 m-b-25">
+
+                    <div class="radio-section flex flex-wrap m-r-10 md-down:p-b-25">
+                      <div class="radio-container">
+                        <label for="oneTimeFee" class="big-radio" >
+                          <input type="radio" id="oneTimeFee" name="addEasyCare" value="No EasyCare" class="planOption m-r-15 m-0" required  data-parsley-required-message="Install method required" data-parsley-errors-container="#installMethodError" />
+                          <span class="inputFill"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="flex w-100 space-between align-center p-l-10 md-down:p-0">
+                      <div class="w-100 flex-1 space-between">
+                        <div class="flex-1 space-between">
+                          <p class="text-18 blue p-r-10">No, i do not want EasyCare</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <div id="easyCareError"></div>
+                </div>
+              </div>
+
+              <div class="plansoption flex flex-column w-100 m-b-25">
+                <p class="text-24 gray-darkest bold p-b-15">3. Add Viasat Shield Premium</p>
+                <div class="p-l-25 p-b-35">
+                  <p class="p-b-15">Viasat Shield Premium is an internet protection service that puts you in control of your internet service and protects your home internet and Wi-Fi network from online threats</p>
+                  <div class="w-100 flex space-between p-b-25">
+                    <div class="w-33 p-y-8 p-x-15 flex-column text-center">
+                      <img src="../images/icons/wifi.svg" alt="" class="w-25px" />
+                      <p class="blue">Network protection for all of the devices you connect to our network</p>
+                    </div>
+                    <div class="w-33 p-y-8 p-x-15 flex-column text-center">
+                      <img src="../images/icons/wifi.svg" alt="" class="w-25px" />
+                      <p class="blue">Protection against online threats, such as account takeover, malware, etc.</p>
+                    </div>
+                    <div class="w-33 p-y-8 p-x-15 flex-column text-center">
+                      <img src="../images/icons/wifi.svg" alt="" class="w-25px" />
+                      <p class="blue">Control internet access for your home devices. Keep kids off at night, dinner, etc.</p>
+                    </div>
+                  </div>
+                  <section class="plan-option border-white w-100 flex md-down:flex-column box-shadow p-y-25 p-x-20 m-b-10">
+                    <div class="radio-section flex flex-wrap m-r-10 md-down:p-b-25">
+                      <div class="radio-container">
+                        <label for="addViasatShieldPremium" class="big-radio" >
+                          <input type="radio" id="addViasatShieldPremium" name="addViasatShieldPremium" value="Add Viasat Shield Premium" class="planOption m-r-15 m-0" required  data-parsley-required-message="EasyCare selection" data-parsley-errors-container="#addViasatShieldPremiumError" />
+                          <span class="inputFill"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="flex w-100 space-between align-center p-l-10 md-down:p-0">
+                      <div class="w-100 flex-1 space-between">
+                        <div class="flex-1 space-between">
+                          <p class="text-18 blue p-r-10">Add Viasat Shield Premium</p>
+                          <p class="text-18 thin text-right lg-up:hidden">$8.99/mo, Free for first 3 months</p>
+                        </div>
+                      </div>
+                      <div class="flex-1 flex-end p-l-15 md-down:hidden">
+                        <p class="text-18 thin">$5.99/mo</p>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="plan-option border-white w-100 flex md-down:flex-column box-shadow p-y-25 p-x-20 m-b-25">
+
+                    <div class="radio-section flex flex-wrap m-r-10 md-down:p-b-25">
+                      <div class="radio-container">
+                        <label for="noViasatShieldPremium" class="big-radio" >
+                          <input type="radio" id="noViasatShieldPremium" name="addEasyCare" value="No Viasat Shield Premium" class="planOption m-r-15 m-0" required  data-parsley-required-message="Install method required" data-parsley-errors-container="#addViasatShieldPremiumError" />
+                          <span class="inputFill"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="flex w-100 space-between align-center p-l-10 md-down:p-0">
+                      <div class="w-100 flex-1 space-between">
+                        <div class="flex-1 space-between">
+                          <p class="text-18 blue p-r-10">No, I do not want Viasat Shield Premium</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <div id="addViasatShieldPremiumError"></div>
+                </div>
+              </div>
+
+              <div class="plansoption flex flex-column w-100 m-b-25">
+                <p class="text-24 gray-darkest bold p-b-15">4. Bundle with voice (home phone service</p>
+                <div class="p-l-25 p-b-35">
+                  <p class="p-b-15">Voice makes a great VoIP home phone partner—particularly with Viasat satellite internet. Not only does bundling save you money, it can also save valuable time you’d normally spend dealing with two separate services. You’ll also gain distinct advantages with a consolidated package:</p>
+                  <div class="w-100 flex space-between p-b-25">
+                    <div class="w-33 p-y-8 p-x-15 flex-column text-center">
+                      <img src="../images/icons/wifi.svg" alt="" class="w-25px" />
+                      <p class="blue">One bill each month makes it easier to track your plans</p>
+                    </div>
+                    <div class="w-33 p-y-8 p-x-15 flex-column text-center">
+                      <img src="../images/icons/wifi.svg" alt="" class="w-25px" />
+                      <p class="blue">Won’t eat into your plan’s monthly bandwidth allowance</p>
+                    </div>
+                    <div class="w-33 p-y-8 p-x-15 flex-column text-center">
+                      <img src="../images/icons/wifi.svg" alt="" class="w-25px" />
+                      <p class="blue">Viasat internet offers the highest-quality audio available for Voice</p>
+                    </div>
+                  </div>
+                  <section class="plan-option border-white w-100 flex md-down:flex-column box-shadow p-y-25 p-x-20 m-b-10">
+                    <div class="radio-section flex flex-wrap m-r-10 md-down:p-b-25">
+                      <div class="radio-container">
+                        <label for="addViasatShieldPremium" class="big-radio" >
+                          <input type="radio" id="addViasatShieldPremium" name="addViasatShieldPremium" value="Add Viasat Shield Premium" class="planOption m-r-15 m-0" required  data-parsley-required-message="EasyCare selection" data-parsley-errors-container="#addViasatShieldPremiumError" />
+                          <span class="inputFill"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="flex w-100 space-between align-center p-l-10 md-down:p-0">
+                      <div class="w-60 flex-1 space-between">
+                        <div class="flex-1 space-between">
+                          <p class="text-18 blue p-r-10">Add voice bundling and transfer my number</p>
+                          <p class="text-16 thin text-right lg-up:hidden">$29.99/mo, $10 Off for 6 Months</p>
+                        </div>
+                      </div>
+                      <div class="flex-1 flex-end p-l-15 md-down:hidden">
+                        <p class="text-16 thin">$29.99/mo, $10 Off for 6 Months</p>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="plan-option border-white w-100 flex md-down:flex-column box-shadow p-y-25 p-x-20 m-b-25">
+
+                    <div class="radio-section flex flex-wrap m-r-10 md-down:p-b-25">
+                      <div class="radio-container">
+                        <label for="noViasatShieldPremium" class="big-radio" >
+                          <input type="radio" id="noViasatShieldPremium" name="addEasyCare" value="No Viasat Shield Premium" class="planOption m-r-15 m-0" required  data-parsley-required-message="Install method required" data-parsley-errors-container="#addViasatShieldPremiumError" />
+                          <span class="inputFill"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="flex w-100 space-between align-center p-l-10 md-down:p-0">
+                      <div class="w-100 flex-1 space-between">
+                        <div class="flex-1 space-between">
+                          <p class="text-18 blue p-r-10">No, I do not want Viasat Shield Premium</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <div id="addViasatShieldPremiumError"></div>
+                </div>
+              </div>
+
+              <div class="flex flex-end content w-100 bg-white sm:fixed-submit">
+                <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45 disabled" >Next</button>
+              </div>
+
+            </form>
+
+        </section>
+      </div>
+
+      <!-- COST SECTION -->
+      <div class="w-33 sm:w-100 p-y-25 sm:p-x-15 content">
+        <p class="h3 thin p-b-25 sm:p-b-10">Cost</p>
+
+        <section>
+          <div class="bg-white p-25 sm:p-x-15 m-b-25">
+            <p class="text-18 bold p-b-15">Monthly Cost</p>
+            <div class="flex space-between p-b-15">
+              <p class="text-14">Internet 100</p>
+              <p class="text-14">$69.99</p>
+            </div>
+
+            <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+              <p class="text-18">Total</p>
+              <p class="text-18">$69.99</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="bg-white p-25 sm:p-x-15 m-b-25">
+            <p class="text-18 bold p-b-15">Today's Charges</p>
+            <div class="flex space-between p-b-15">
+              <p class="text-14">AT&T Internet Advanced Payment</p>
+              <p class="text-14">$100.00</p>
+            </div>
+
+            <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+              <p class="text-18">Due Today</p>
+              <p class="text-18">$100.00</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </section>
+  </div>
+</div>
+<div class="sm:p-y-15"></div>
+<div class="sm:p-y-15"></div>
+
+<script type="text/javascript" src="../index.js"></script>
+<script type="text/javascript" src="../scripts/mask.js"></script>
