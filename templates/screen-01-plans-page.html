@@ -1,0 +1,460 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<link rel="stylesheet" href="./../styles/index.scss" />
+<script type="text/javascript" src="./../index.js"></script>
+
+<!-- Plans 01 -->
+
+  <div id="cartNav" class="cartNav container box-shadow">
+    <div class="row p-y-8">
+        <div class="flex space-between content">
+          <div class="flex align-center p-y-8 md-up:hidden">
+            <p class="gray-dark">Step 1 of 4</p>
+          </div>
+          <div class="flex flex-row align-center sm:hidden">
+            <p class="p-x-10 text-14 blue bold">Package</p>
+            <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
+            <p class="p-x-10 text-14 gray-dark">Checkout</p>
+            <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
+            <p class="p-x-10 text-14 gray-dark">Summary</p>
+            <img class="w-15px h-15px -m-t-5" src="../images/icons/arrow-right-white.svg" alt=""/>
+            <p class="p-x-10 text-14 gray-dark">Install</p>
+          </div>
+          <div id="cart" class="cart-container pointer flex flex-row align-center" data-target="cart">
+            <img src="../images/icons/cart-blue.svg" alt="" class="w-25px h-25px"/>
+            <p class="p-x-5">My Cart</p>
+            <img src="../images/icons/chevron-left.svg" alt="" class="dropdown-arrow md-up:hidden w-25px h-25px -m-t-3  icon-rotate-270"/>
+            <!-- Cart Dropdown -->
+            <div class="cart-dropdown box-shadow border-gray-light bg-light hidden p-15">
+              <div class="dropdown-container">
+                <p class="text-24 thin p-b-15">Cost</p>
+                <div class="bg-white p-25 sm:p-x-15 m-b-25">
+                  <p class="text-18 bold p-b-15">Monthly Cost</p>
+                  <div class="flex space-between p-b-15">
+                    <p class="text-14">Internet 100</p>
+                    <p class="text-14">$69.00</p>
+                  </div>
+                  <div class="flex space-between border-top-gray p-t-15 blue bold text-18">
+                    <p class="text-18">Total</p>
+                    <p class="text-18">$69.00</p>
+                  </div>
+                </div>
+                <div class="w-100 flex flex-end p-b-15">
+                  <button class="btn btn-shadow bg-blue-dark white p-y-8 p-x-25 ">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-green">
+    <div class="row p-y-5">
+      <div class="content flex flex-row">
+        <img class="w-20px h-20px m-r-5" src="../images/icons/location-pin.svg" alt=""/>
+        <p class="text-14">84111 <a class="blue-dark no-underline m-l-5" href="#">Change</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row p-y-30">
+
+      <section class="w-100 content">
+
+        <div class="p-b-35 m-b-10">
+          <div class="p-y-8 p-x-25 sm:p-x-15 border-blue-light flex space-between align-center sm:flex-column">
+            <p class="icon check-circle-green sm:p-b-15">
+              UNLIMITED BRONZE 12 has been added to your cart.
+            </p>
+            <button class="btn bg-blue-light btn-shadow border-0 white p-x-45 p-y-8 m-l-auto">Checkout</button>
+          </div>
+        </div>
+
+        <div class="gray-darkest">
+          <h1 class="h3 gray-darkest thin p-b-15">Pick Your Perfect ViaSat Internet Package</h1>
+          <p class="gray-dark p-b-15">Showing 5 products</p>
+          <p class="m-b-25">Choose any package below to start building your order.</p>
+        </div>
+
+        <div class="package-cards-container">
+
+          <div class="content">
+            <div class="package-card">
+              <section class="card-content">
+                <div class="title-container">
+                  <p class="text-14 bold blue-light">UNLIMITED BASIC 12</p>
+                </div>
+
+                <div class="price">
+                  <!-- <div class="prefix">$</div> -->
+                  <div class="amount">40</div>
+                  <div class="change duration-after">00</div>
+                </div>
+                <p class="text-14 p-b-15 gray-dead">$50/mo after 3 months</p>
+
+                <div class="speed-section w-100">
+                  <div class="split w-100 flex flex-wrap">
+                    <div class="w-50 p-r-10">
+                      <div class="flex flex-wrap">
+                        <div class="w-100 flex">
+                          <p class="legal m-r-5">Up <br/> To</p>
+                          <p class="speed text-24 thin">12Mbps</p>
+                        </div>
+                        <p class="text-14 thin nowrap">Download Speed</p>
+                      </div>
+                    </div>
+                    <div class="w-50 p-l-10">
+                      <p class="text-22 unlimited">Unlimited</p>
+                      <p class="text-14 thin">Data</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="features m-b-25">
+                  <div class="item flex flex-row">
+                    <div class="text-center w-25px m-r-5 m-t-5">
+                      <img src="../images/icons/video.svg" alt="" class="w-100" />
+                    </div>
+
+                    <div class="p-r-25">
+                      <p class="bold text-16">Up to 360p Video Streaming</p>
+                      <span class="thin text-14">at Small Screen Quality</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <button class="add-cart-btn added" data-trigger="internet" disabled>
+                Added to Cart
+              </button>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="package-card">
+
+              <section class="card-content">
+                <div class="title-container">
+                  <p class="text-14 bold blue-light">UNLIMITED BRONZE 12</p>
+                </div>
+
+                <div class="price">
+                  <!-- <div class="prefix">$</div> -->
+                  <div class="amount">50</div>
+                  <div class="change duration-after">00</div>
+                </div>
+                <p class="text-14 p-b-15 gray-dead">$50/mo after 3 months</p>
+
+                <div class="speed-section w-100">
+                  <div class="split w-100 flex flex-wrap">
+                    <div class="w-50 p-r-10">
+                      <div class="flex flex-wrap">
+                        <div class="w-100 flex">
+                          <p class="legal m-r-5">Up <br/> To</p>
+                          <p class="speed text-24 thin">12Mbps</p>
+                        </div>
+                        <p class="text-14 thin nowrap">Download Speed</p>
+                      </div>
+                    </div>
+                    <div class="w-50 p-l-10">
+                      <p class="text-22 unlimited">Unlimited</p>
+                      <p class="text-14 thin">Data</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="features m-b-25">
+                  <div class="item flex flex-row m-b-10">
+                    <div class="text-center m-t-5 m-r-10">
+                      <img src="../images/icons/video.svg" alt="" class="w-25px" />
+                    </div>
+
+                    <div class="p-r-25">
+                      <p class="bold text-16">Up to 360p Video Streaming</p>
+                      <span class="thin text-14">at Small Screen Quality</span>
+                    </div>
+                  </div>
+
+                  <div class="item flex flex-row">
+                    <div class="text-center m-r-10">
+                      <img src="../images/icons/wifi.svg" alt="" class="w-25px" />
+                    </div>
+
+                    <div class="p-r-25">
+                      <p class="bold text-16">Built-in Wifi</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <button class="add-cart-btn" data-modal-trigger="internet-100-added">
+                Add to Cart
+              </button>
+
+              <!-- Add to cart modal content -->
+              <div id="" data-modal-content="internet-100-added"  class="modal hidden sm:p-x-15 is-active">
+                <div class="modal-content w-66 sm:p-x-15 p-25 md-down:w-100">
+                  <div class="w-100 text-right">
+                    <span data-modal-trigger="close" class="close">&#10005;</span>
+                  </div>
+                  <div class="w-100 flex space-between md-down:flex-column">
+                    <div class="flex text-left p-y-8 md-down:p-b-15">
+                      <img src="/images/icons/check-blue-filled.svg" class="w-25px h-25px -m-t-3 sm:m-0 " alt=""/>
+                      <p class="text-18 p-l-15">Internet 1000 has been added to your cart!</p>
+                    </div>
+                    <div class="text-right p-r-15">
+                      <button class="btn bg-blue-dark white p-y-8 p-x-45" data-modal-trigger="close">Checkout</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End modal content -->
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="package-card">
+
+              <section class="card-content">
+                <div class="title-container">
+                  <p class="text-14 bold blue-light">UNLIMITED SILVER 25</p>
+                </div>
+
+                <div class="price">
+                  <!-- <div class="prefix">$</div> -->
+                  <div class="amount">70</div>
+                  <div class="change duration-after">00</div>
+                </div>
+                <p class="text-14 p-b-15 gray-dead">$50/mo after 3 months</p>
+
+                <div class="speed-section w-100">
+                  <div class="split w-100 flex flex-wrap">
+                    <div class="w-50 p-r-10">
+                      <div class="flex flex-wrap">
+                        <div class="w-100 flex">
+                          <p class="legal m-r-5">Up <br/> To</p>
+                          <p class="speed text-24 thin">25Mbps</p>
+                        </div>
+                        <p class="text-14 thin nowrap">Download Speed</p>
+                      </div>
+                    </div>
+                    <div class="w-50 p-l-10">
+                      <p class="text-22 unlimited">Unlimited</p>
+                      <p class="text-14 thin">Data</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="features m-b-25">
+                  <div class="item flex flex-row m-b-10">
+                    <div class="text-center w-25px m-r-5 m-t-5">
+                      <img src="../images/icons/video.svg" alt="" class="w-100" />
+                    </div>
+
+                    <div class="p-r-25">
+                      <p class="bold text-16">Up to 480p Video Streaming</p>
+                      <span class="thin text-14">at DVD Quality</span>
+                    </div>
+                  </div>
+
+                  <div class="item flex flex-row">
+                    <div class="text-center m-r-10">
+                      <img src="../images/icons/wifi.svg" alt="" class="w-25px" />
+                    </div>
+
+                    <div class="p-r-25">
+                      <p class="bold text-16">Built-in Wifi</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <button class="add-cart-btn" data-modal-trigger="internet-100-added">
+                Add to Cart
+              </button>
+
+              <!-- Add to cart modal content -->
+              <div id="" data-modal-content="internet-100-added"  class="modal hidden sm:p-x-15 is-active">
+                <div class="modal-content w-66 sm:p-x-15 p-25 md-down:w-100">
+                  <div class="w-100 text-right">
+                    <span data-modal-trigger="close" class="close">&#10005;</span>
+                  </div>
+                  <div class="w-100 flex space-between md-down:flex-column">
+                    <div class="flex text-left p-y-8 md-down:p-b-15">
+                      <img src="/images/icons/check-blue-filled.svg" class="w-25px h-25px -m-t-3 sm:m-0 " alt=""/>
+                      <p class="text-18 p-l-15">Internet 1000 has been added to your cart!</p>
+                    </div>
+                    <div class="text-right p-r-15">
+                      <button class="btn bg-blue-dark white p-y-8 p-x-45" data-modal-trigger="close">Checkout</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End modal content -->
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="package-card">
+
+              <section class="card-content">
+                <div class="title-container">
+                  <p class="text-14 bold blue-light">UNLIMITED GOLD 50</p>
+                </div>
+
+                <div class="price">
+                  <!-- <div class="prefix">$</div> -->
+                  <div class="amount">100</div>
+                  <div class="change duration-after">00</div>
+                </div>
+                <p class="text-14 p-b-15 gray-dead">$50/mo after 3 months</p>
+
+                <div class="speed-section w-100">
+                  <div class="split w-100 flex flex-wrap">
+                    <div class="w-50 p-r-10">
+                      <div class="flex flex-wrap">
+                        <div class="w-100 flex">
+                          <p class="legal m-r-5">Up <br/> To</p>
+                          <p class="speed text-24 thin">50Mbps</p>
+                        </div>
+                        <p class="text-14 thin nowrap">Download Speed</p>
+                      </div>
+                    </div>
+                    <div class="w-50 p-l-10">
+                      <p class="text-22 unlimited">Unlimited</p>
+                      <p class="text-14 thin">Data</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="features m-b-25">
+                  <div class="item flex flex-row m-b-10">
+                    <div class="text-center w-25px m-r-5 m-t-5">
+                      <img src="../images/icons/video.svg" alt="" class="w-100" />
+                    </div>
+
+                    <div class="p-r-25">
+                      <p class="bold text-16">Up to 720p Video Streaming</p>
+                      <span class="thin text-14">at HD Quality</span>
+                    </div>
+                  </div>
+
+                  <div class="item flex flex-row">
+                    <div class="text-center m-r-10">
+                      <img src="../images/icons/wifi.svg" alt="" class="w-25px" />
+                    </div>
+
+                    <div class="p-r-25">
+                      <p class="bold text-16">Built-in Wifi</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <button class="add-cart-btn" data-modal-trigger="internet-100-added">
+                Add to Cart
+              </button>
+
+              <!-- Add to cart modal content -->
+              <div id="" data-modal-content="internet-100-added"  class="modal hidden sm:p-x-15 is-active">
+                <div class="modal-content w-66 sm:p-x-15 p-25 md-down:w-100">
+                  <div class="w-100 text-right">
+                    <span data-modal-trigger="close" class="close">&#10005;</span>
+                  </div>
+                  <div class="w-100 flex space-between md-down:flex-column">
+                    <div class="flex text-left p-y-8 md-down:p-b-15">
+                      <img src="/images/icons/check-blue-filled.svg" class="w-25px h-25px -m-t-3 sm:m-0 " alt=""/>
+                      <p class="text-18 p-l-15">Internet 1000 has been added to your cart!</p>
+                    </div>
+                    <div class="text-right p-r-15">
+                      <button class="btn bg-blue-dark white p-y-8 p-x-45" data-modal-trigger="close">Checkout</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End modal content -->
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="package-card">
+
+              <section class="card-content">
+                <div class="title-container">
+                  <p class="text-14 bold blue-light">UNLIMITED PLATINUM 100</p>
+                </div>
+
+                <div class="price">
+                  <!-- <div class="prefix">$</div> -->
+                  <div class="amount">150</div>
+                  <div class="change duration-after">00</div>
+                </div>
+                <p class="text-14 p-b-15 gray-dead">$200/mo after 3 months</p>
+
+                <div class="speed-section w-100">
+                  <div class="split w-100 flex flex-wrap">
+                    <div class="w-50 p-r-10">
+                      <div class="flex flex-wrap">
+                        <div class="w-100 flex">
+                          <p class="legal m-r-5">Up <br/> To</p>
+                          <p class="speed text-24 thin">12Mbps</p>
+                        </div>
+                        <p class="text-14 thin nowrap">Download Speed</p>
+                      </div>
+                    </div>
+                    <div class="w-50 p-l-10">
+                      <p class="text-22 unlimited">Unlimited</p>
+                      <p class="text-14 thin">Data</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="features m-b-25">
+                  <div class="item flex flex-row">
+                    <div class="text-center w-25px m-r-5 m-t-5">
+                      <img src="../images/icons/video.svg" alt="" class="w-100" />
+                    </div>
+
+                    <div class="p-r-25">
+                      <p class="bold text-16">Up to 1080p Video Streaming</p>
+                      <span class="thin text-14">at Full HD Quality</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <button class="add-cart-btn" data-modal-trigger="internet-100-added">
+                Add to Cart
+              </button>
+
+              <!-- Add to cart modal content -->
+              <div id="" data-modal-content="internet-100-added"  class="modal hidden sm:p-x-15 is-active">
+                <div class="modal-content w-66 sm:p-x-15 p-25 md-down:w-100">
+                  <div class="w-100 text-right">
+                    <span data-modal-trigger="close" class="close">&#10005;</span>
+                  </div>
+                  <div class="w-100 flex space-between md-down:flex-column">
+                    <div class="flex text-left p-y-8 md-down:p-b-15">
+                      <img src="/images/icons/check-blue-filled.svg" class="w-25px h-25px -m-t-3 sm:m-0 " alt=""/>
+                      <p class="text-18 p-l-15">Internet 1000 has been added to your cart!</p>
+                    </div>
+                    <div class="text-right p-r-15">
+                      <button class="btn bg-blue-dark white p-y-8 p-x-45" data-modal-trigger="close">Checkout</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End modal content -->
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../index.js"></script>
+  <script type="text/javascript" src="../scripts/cart.js"></script>

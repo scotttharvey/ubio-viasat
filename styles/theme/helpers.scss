@@ -163,6 +163,11 @@
   line-height: 32px;
 }
 
+.text-22 {
+  font-size: 22px;
+  line-height: 28px;
+}
+
 .text-20 {
   font-size: 20px;
   line-height: 26px;
@@ -200,6 +205,7 @@
 .pink { color: $pink; }
 .orange { color: $orange; }
 .green { color: $green; }
+.green-dark { color: $green-dark; }
 .purple { color: $purple; }
 
 // ========================================
@@ -222,6 +228,7 @@
 .bg-pink { background-color: $pink; }
 .bg-orange { background-color: $orange; }
 .bg-green { background-color: $green; }
+.bg-green-dark { background-color: $green-dark; }
 .bg-purple { background-color: $purple; }
 .bg-teal-to-blue {
   background: linear-gradient(106.57deg, $teal 30.76%, $blue-darkest 68.11%);
@@ -230,7 +237,7 @@
 // ========================================
 // Font Weight Classes
 // ========================================
-.bold { font-weight: 700; }
+.bold { font-weight: 600; }
 .thin { font-weight: 200; }
 .strike-out { text-decoration: line-through; }
 .italic { font-style: italic; }
@@ -300,6 +307,8 @@
 .border-gray-light { border: 1px solid $gray-light; }
 .border-blue-light-2 { border: 2px solid $blue-light; }
 .border-purple-light { border: solid 1px $purple-light; }
+
+.border-0 { border: 0; }
 
 .border-top-blue-light { border-top: 6px solid $blue-light; }
 .border-top-blue-dark { border-top: 6px solid $blue-dark; }

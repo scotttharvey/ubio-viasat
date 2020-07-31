@@ -32,6 +32,24 @@
     }
   }
 
+  &.check-circle-green {
+    &.top-2 {
+      &::before {
+        top: 2;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url('/images/icons/check-green-filled.svg');
+      width: 22px;
+      height: 22px;
+      content: '';
+    }
+  }
+
   &.tv-channel {
     &::before {
       position: absolute;
