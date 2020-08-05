@@ -50,11 +50,11 @@
                       <div class="w-100 flex-1 space-between">
                         <div class="flex-1 space-between">
                           <p class="text-18 blue p-r-10">Monthly Equipment Rental Fee</p>
-                          <p class="text-18 thin text-right lg-up:hidden">$10.00/mo</p>
+                          <p class="text-18 text-right lg-up:hidden">$10.00/mo</p>
                         </div>
                       </div>
                       <div class="flex-1 flex-end p-l-15 md-down:hidden">
-                        <p class="text-18 thin">$10.00/mo</p>
+                        <p class="text-18">$10.00/mo</p>
                       </div>
                     </div>
                   </section>
@@ -74,11 +74,11 @@
                       <div class="w-100 flex-1 space-between">
                         <div class="flex-1 space-between">
                           <p class="text-18 blue p-r-10">One-time Equipment Fee</p>
-                          <p class="text-18 thin text-right lg-up:hidden">one-time $299.00</p>
+                          <p class="text-18 text-right lg-up:hidden">one-time $299.00</p>
                         </div>
                       </div>
                       <div class="flex-1 flex-end p-l-15 md-down:hidden">
-                        <p class="text-18 thin">one-time $299.00</p>
+                        <p class="text-18">one-time $299.00</p>
                       </div>
                     </div>
                   </section>
@@ -185,11 +185,11 @@
                       <div class="w-100 flex-1 space-between">
                         <div class="flex-1 space-between">
                           <p class="text-18 blue p-r-10">Add Viasat Shield Premium</p>
-                          <p class="text-18 thin text-right lg-up:hidden">$8.99/mo, Free for first 3 months</p>
+                          <p class="text-18 text-right lg-up:hidden">$8.99/mo, Free for first 3 months</p>
                         </div>
                       </div>
                       <div class="flex-1 flex-end p-l-15 md-down:hidden">
-                        <p class="text-18 thin">$5.99/mo</p>
+                        <p class="text-18">$5.99/mo</p>
                       </div>
                     </div>
                   </section>
@@ -266,6 +266,25 @@
                         </div>
                       </div>
                     </div>
+                    <!-- Start modal content -->
+                    <div data-modal-content="out-of-area" class="modal hidden sm:p-x-15 is-active">
+                      <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
+                        <div class="w-100 text-right">
+                          <span data-modal-trigger="close" class="close">&#10005;</span>
+                        </div>
+                        <div class="text-center p-y-30 flex flex-column justify-center">
+                          <img src="../images/icons/exclaimation-icon-green.svg" alt="" class="text-center m-b-10" />
+                          <p class="h3 thin p-b-15 p-x-45">Phone number out of area</p>
+                          <p class="p-b-15 w-100 m-auto ">The phone number <span class="blue">1 (845) 411-2487</span> is in not an area supported by the Viasat Voice home phone service.</p>
+                          <button  class="btn bg-blue-dark white p-y-8 p-x-45 m-auto border-0" data-modal-trigger="close">Countinue with a new phone number from ViaSat</button>
+                          <br/>
+                          <button  class="btn bg-blue-dark white p-y-8 p-x-45 m-auto border-0" data-modal-trigger="close">Countinue without voice bundling</button>
+                          <br/>
+                          <button  class="btn bg-white blue p-y-8 p-x-45 m-auto border-0" data-modal-trigger="close">Try again</button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End modal content -->
                   </section>
 
                   <section class="plan-option border-white w-100 flex md-down:flex-column box-shadow p-y-25 p-x-20 m-b-10">
@@ -315,7 +334,7 @@
               </div>
 
               <div class="flex flex-end content w-100 bg-white sm:fixed-submit">
-                <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45 disabled" >Next</button>
+                <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45 disabled" data-modal-trigger="out-of-area">Next</button>
               </div>
 
             </form>
