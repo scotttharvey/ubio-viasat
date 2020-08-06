@@ -1,0 +1,114 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+<link rel="stylesheet" href="./../styles/index.scss" />
+
+<!-- SCREEN 5-A -->
+<div class="container row w-100 bg-white">
+  <section class="w-100 bg-white p-y-15 content flex space-between">
+    <p class="text-18 icon lock-green-dark">Secure Checkout</p>
+    <p class="blue-light">Back to Cart</p>
+  </section>
+</div>
+
+<div class="container bg-gray-light">
+  <div id="screen-5" class="row p-y-30 sm:p-y-15">
+    <section class="flex w-100 flex-wrap sm:flex-column">
+
+      <div class="w-66 sm:w-100 p-y-25 sm:p-t-0 content">
+        <h1 class="h3 gray-darkest thin p-b-15">Checkout</h1>
+        <p class="p-b-25 sm:hidden">Just a few more steps and you’ll be set! Fill out your information below to place your order. </p>
+        <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
+          <div class="flex flex-row align-center">
+            <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt=""/>
+            <p class="text-18 sm:text-14">Personal Information</p>
+          </div>
+          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+        </section>
+
+        <section class="bg-white p-25 sm:p-x-15">
+          <div class="w-100 m-b-15 flex space-between">
+            <p class="text-24 thin">Promotions</p>
+            <p class="gray">Step ? of ?</p>
+          </div>
+          <p class="text-14 thin p-b-25">The following Promotions are available for your order.</p>
+
+          <div class="flex space-between p-x-20 p-y-25 border-blue-light-2 m-b-25">
+            <p class="text-18 blue-dark">$50/mo for the first 3 months and a standard installation fee may apply.</p>
+          </div>
+
+          <div class="btn flex flex-end w-100 bg-white sm:fixed-submit">
+            <button type="submit" class="btn bg-blue white btn-shadow border-0 p-y-8 p-x-45" data-modal-trigger="money-deposit" >Next</button>
+          </div>
+
+
+        </section>
+      </div>
+
+      <!-- COST SECTION -->
+      <div class="w-33 sm:w-100 p-y-25 sm:p-x-15 content">
+        <p class="text-24 thin p-b-25 sm:p-b-10">Cost</p>
+
+        <section>
+          <div class="bg-white p-25 sm:p-x-15 m-b-25">
+            <p class="text-24 thin p-b-10">Monthly Cost</p>
+            <div class="flex space-between p-b-5">
+              <p class="text-14">UNLIMITED BRONZE 12</p>
+              <p class="text-14">$70.00/mo</p>
+            </div>
+            <div class="flex space-between blue-light p-b-5">
+              <p class="text-14">$20.00 Off for 12 months</p>
+              <p class="text-14">-($20.00)/mo</p>
+            </div>
+            <div class="flex space-between p-b-5">
+              <p class="text-14">EasyCare</p>
+              <p class="text-14">$8.99/mo</p>
+            </div>
+            <div class="flex space-between blue-light p-b-5">
+              <p class="text-14">EasyCare - 3 month credit</p>
+              <p class="text-14">-($8.99)/mo</p>
+            </div>
+            <div class="flex space-between p-b-5">
+              <p class="text-14">Viasat Shield Premium</p>
+              <p class="text-14">$5.99/mo</p>
+            </div>
+            <div class="flex space-between p-b-10">
+              <p class="text-14">Equipment Lease Fee - Monthly</p>
+              <p class="text-14">$10.00/mo</p>
+            </div>
+
+            <div class="w-100 flex flex-wrap space-between border-top-gray p-t-10 blue-dark bold p-b-10">
+              <p class="text-16 w-50">Total</p>
+              <p class="text-16 w-50 text-right">$65.99/mo</p>
+              <span class="w-100 text-12 gray-darkest thin text-right ">plus tax</span>
+            </div>
+
+          </div>
+        </section>
+
+        <section>
+          <div class="bg-white p-25 sm:p-x-15 m-b-25">
+            <p class="text-18 bold p-b-15">Today's Charges</p>
+            <div class="flex space-between p-b-5">
+              <p class="text-14">Standard Installation Fee - Lease</p>
+              <p class="text-14">$300.00</p>
+            </div>
+            <div class="flex space-between p-b-10">
+              <p class="text-14"> Standard Installation Fee Credit - Lease</p>
+              <p class="text-14">$00.00</p>
+            </div>
+
+            <div class="w-100 flex flex-wrap space-between border-top-gray p-t-10 blue-dark bold p-b-10">
+              <p class="text-16 w-50">Total</p>
+              <p class="text-16 w-50 text-right">$300.00/mo</p>
+              <span class="w-100 text-12 gray-darkest thin text-right ">plus tax</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </section>
+  </div>
+</div>
+<div class="sm:p-y-15"></div>
+
+<script type="text/javascript" src="../index.js"></script>
+<script type="text/javascript" src="../scripts/mask.js"></script>
