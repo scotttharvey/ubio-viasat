@@ -42,7 +42,7 @@
                 <option value="test">Test Val 5</option>
               </select>
             </div>
-            <p class="w-100 text-24 thin p-b-5 m-b-25 border-bottom-gray">
+            <p class="w-100 text-24 thin p-b-5 m-b-25 border-bottom-gray-dark">
               E911 (Enhanced 911) Information
             </p>
             <div class="bg-gray-lightest flex p-t-15 p-b-25 p-x-20 m-b-25">
@@ -166,7 +166,7 @@
               </div>
             </div>
 
-            <p class="w-100 text-24 thin p-b-5 m-b-25 border-bottom-gray">
+            <p class="w-100 text-24 thin p-b-5 m-b-25 border-bottom-gray-dark">
               Create a Login for Voice Support
             </p>
             <div class="bg-gray-lightest flex p-t-15 p-b-25 p-x-20 m-b-25">
@@ -179,7 +179,7 @@
               </div>
             </div>
 
-            <div class="w-100 createLogin m-b-15">
+            <div class="w-100 createLogin m-b-25">
               <div class="w-100 flex flex-wrap space-between">
                 <div class="w-66 md-down:w-50 sm:w-100 sm:p-0 m-r-25">
                   <label for="username">
@@ -204,26 +204,59 @@
                     <!-- SPACER -->
                   </div>
                 </div>
+                <p class="thin text-14">Password should contain 7-20 characters, at least one uppercase,one lowercase and one number.</p>
 
               </div>
-              <div class="flex-1 flex-wrap space-between">
+            </div>
+
+            <div class="callerID m-b-25">
+              <p class="w-100 text-24 thin p-b-5 m-b-25 border-bottom-gray-dark">
+                Caller ID
+              </p>
+              <div class="w-100 p-b-10 md-down:p-b-45 relative">
+                <label for="blockCallerID" class="checkbox">
+                  <input type="checkbox" id="blockCallerID" name="blockCallerID" class="consent m-r-15 m-0" />
+                  <span tabindex="-1">Block caller ID name</span>
+                </label>
+              </div>
+              <div class="w-100 flex flex-wrap space-between">
                 <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
-                  <label for="streetName">
-                    Street Name*
+                  <label for="firstName">
+                    First Name*
                   </label>
-                  <input id="streetName" name="streetName" type="text" required />
+                  <input id="firstName" name="firstName" type="text" required />
                 </div>
                 <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
-                  <label for="suffix2">
-                    Suffix
+                  <label for="middleName">
+                    Middle Name
                   </label>
-                  <input id="suffix2" name="suffix2" type="text" required />
+                  <input id="middleName" name="middleName" type="text" />
                 </div>
                 <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
-                  <label for="postDirection">
-                    Post Direction
+                  <label for="lastname">
+                    Last Name*
                   </label>
-                  <select name="postDirection" id="postDirection" class="w-100 dropdown" required>
+                  <input id="lastname" name="lastname" type="text" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="directoryListing">
+              <p class="w-100 text-24 thin p-b-5 m-b-25 border-bottom-gray-dark">
+                Directory Listing
+              </p>
+              <div class="w-100 p-b-10 md-down:p-b-45 relative">
+                <label for="publishAddress" class="checkbox">
+                  <input type="checkbox" id="publishAddress" name="publishAddress" class="consent m-r-15 m-0" />
+                  <span tabindex="-1">Publish Address in public directory/span>
+                </label>
+              </div>
+              <div class="w-100 flex flex-wrap space-between">
+                <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                  <label for="listingType">
+                    Listing Type*
+                  </label>
+                  <select name="listingType" id="listingType" class="w-100 dropdown p-x-10" required>
                     <option value="test">Test Val 1</option>
                     <option value="test">Test Val 2</option>
                     <option value="test">Test Val 3</option>
@@ -231,95 +264,25 @@
                     <option value="test">Test Val 5</option>
                   </select>
                 </div>
-              </div>
-            </div>
-
-            <div class="p-y-45">
-              <p class="h1">BREAK</p>
-            </div>
-
-            <div class="name-container flex w-100 sm:flex-column">
-              <div class="w-33 md-down:w-50 sm:w-100  m-r-25 sm:p-0">
-                <label for="firstname">
-                  First name*
-                </label>
-                <input id="firstname" name="firstname" type="text" required />
-              </div>
-              <div class="w-33 md-down:w-50 sm:w-100">
-                <label for="lastname">
-                  Last name*
-                </label>
-                <input id="lastname" name="lastname" type="text" required />
-              </div>
-            </div>
-
-            <div class="contact flex flex-wrap w-100 p-b-15">
-              <div class="w-33 sm:w-100 m-r-25 sm:m-0">
-                <label for="phone">
-                  Phone*
-                </label>
-                <input id="phone" name="phone" type="tel" placeholder="(000)000-0000" required data-parsley-required-message="Phone is required" data-parsley-pattern-message="Phone expecting 10 numbers" data-parsley-pattern="((\(\d{3}\)?)|(\d{3}-))?\d{3}-\d{4}" />
-              </div>
-
-              <div class="w-60 sm:w-100">
-                <label for="email">
-                  Email*
-                </label>
-                <input id="email" name="email" type="email" required data-parsley-required-message="Email is required" data-parsley-pattern-message="Please enter valid email" data-parsley-pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" />
-              </div>
-            </div>
-
-            <div class="w-100 flex flex-start flex-column checkbox-container p-b-25">
-              <label for="consent" class="checkbox" >
-                <input type="checkbox" id="consent" name="consent" value="Consent" class="consent m-r-15 m-0" required />
-                <span class="blue-dark" tabindex="-1">By checking this box, you authorize AT&T to reach you by phone or text with information about your AT&T services. Examples include install and repair appointment, billing and account information, and customer satisfaction inquiries. Standard rates may apply.</span>
-              </label>
-            </div>
-
-            <div class="creditcheck border-blue-light p-y-25 p-x-20 sm:p-x-15 flex flex-column w-100">
-              <p class="text-18 thin m-b-15 icon lock">Credit Check</p>
-              <p class="text-14 m-b-15">To complete your order, we need a few details to check your credit. We'll use your existing credit info that may be on file with other AT&T companies and/or a credit bureau.</p>
-              <div class="w-100 flex flex-wrap">
-                <div class="w-33 md-down:w-100">
-                  <label for="SSN">
-                    SSN*
+                <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                  <label for="firstName2">
+                    First Name*
                   </label>
-                  <input id="SSN" name="SSN" type="text" placeholder="000-00-0000" pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$" maxlength="9" required  data-parsley-required-message="SSN is required" data-parsley-pattern-message="Please enter valid SSN" data-parsley-pattern="^(?!(000|666|9))(\d{3}-?(?!(00))\d{2}-?(?!(0000))\d{4})$"/>
+                  <input id="firstName2" name="firstName2" type="text" />
                 </div>
-
-                <div class="w-33 md-down:w-100 p-l-25 md-down:p-0">
-                  <label for="birthday">
-                    Date of Birth*
+                <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                  <label for="lastName2">
+                    Last Name*
                   </label>
-                  <input id="birthday" name="birthday" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Birthday is required" data-parsley-pattern-message="Please enter valid Birthday" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
-                </div>
-
-                <div class="w-33 sm:w-50 p-l-25 sm:p-0 flex align-center p-b-10">
-                  <img src="/images/icons/verisign-secured.svg" alt="" class="w-50 sm:w-60">
+                  <input id="lastName2" name="lastName2" type="text" required />
                 </div>
               </div>
             </div>
 
             <div class="flex flex-end w-100 p-t-25">
-
               <div class="flex flex-end content w-100 bg-white sm:fixed-submit">
-                <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-65 disabled" data-modal-trigger="money-deposit" >Next</button>
+                <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-65 disabled" >Next</button>
               </div>
-              <!-- Start modal content -->
-              <div data-modal-content="money-deposit" class="modal hidden sm:p-x-15 is-active">
-                <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
-                  <div class="w-100 text-right">
-                    <span data-modal-trigger="close" class="close">&#10005;</span>
-                  </div>
-                  <div class="text-center p-y-30">
-                    <p class="text-24 p-b-15 p-x-45">Based on your credit report, you are required to pay a <span class="blue-light">$100.00</span> advanced payment.</p>
-                    <p class="p-b-15 w-75 m-auto p-x-20">This advanced payment will be used towards your monthly bills.
-                      If you have any questions, please call 1-888-888-8888.</p>
-                    <button  class="btn bg-blue-dark white p-y-8 p-x-45" data-modal-trigger="close">Yes, I agree to continue</button>
-                  </div>
-                </div>
-              </div>
-              <!-- End modal content -->
             </div>
 
           </form>

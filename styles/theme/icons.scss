@@ -14,6 +14,18 @@
     }
   }
 
+  &.lock-turquoise {
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 5px;
+      background-image: url('/images/icons/lock-turquoise.svg');
+      width: 22px;
+      height: 22px;
+      content: '';
+    }
+  }
+
   &.check-circle {
     &.top-2 {
       &::before {

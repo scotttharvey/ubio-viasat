@@ -99,6 +99,10 @@
       width: auto;
       margin-top: 0;
       margin-right: 10px;
+
+      &.ownership {
+        margin-right: 5px;
+      }
     }
   }
 
@@ -128,6 +132,21 @@
   display: inline-flex;
   cursor: pointer;
   position: relative;
+
+  &.ownership {
+    input {
+      padding: 6px;
+      margin-top: 0;
+      margin-right: 5px;
+      border-radius: 10px;
+
+      &:checked + span::before {
+        background-image: url('/images/icons/check-blue-filled.svg');
+        width: 17px;
+        height: 17px;
+    }
+    }
+  }
 
   input {
     height: 15px;
