@@ -173,10 +173,54 @@
               </p>
               <div class="w-100 p-b-10 md-down:p-b-45 relative">
                 <label for="billingAddress" class="checkbox">
-                  <input type="checkbox" id="billingAddress" name="billingAddress" class="consent m-r-15 m-0" checked />
+                  <input type="checkbox" id="billingAddress" name="billingAddress" class="consent m-r-15 m-0" />
                   <span tabindex="-1">Billing address is the same as service address.</span>
                 </label>
               </div>
+              <div class="billing-form">
+                <div class="flex-1 flex-wrap space-between">
+                  <div class="w-66 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="streetAddressBilling">
+                      Street Address
+                    </label>
+                    <input id="streetAddressBilling" name="streetAddressBilling" type="text" />
+                  </div>
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="addressTypeBilling">
+                      Apt./ Bldg./ Suite
+                    </label>
+                    <input id="addressTypeBilling" name="addressTypeBilling" type="text" />
+                  </div>
+                </div>
+
+                <div class="flex-1 flex-wrap space-between">
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="cityBilling">
+                      City
+                    </label>
+                    <input id="cityBilling" name="cityBilling" type="text" />
+                  </div>
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="stateBilling">
+                      State
+                    </label>
+                    <select name="stateBilling" id="stateBilling" class="w-100 dropdown" required>
+                      <option value="test">Test Val 1</option>
+                      <option value="test">Test Val 2</option>
+                      <option value="test">Test Val 3</option>
+                      <option value="test">Test Val 4</option>
+                      <option value="test">Test Val 5</option>
+                    </select>
+                  </div>
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="zipBilling">
+                      Zip
+                    </label>
+                    <input id="address-zip-illing" name="zipBilling" class="zip" type="tel" data-parsley-required-message="This field is required" pattern="[0-9]{5}" data-parsley-pattern-message="Zipcode must be 5 digits" data-parsley-pattern="[0-9]{5}" maxlength="5" placeholder="00000" required />
+                  </div>
+                </div>
+              </div>
+
             </div>
 
             <div class="w-100 shipping-address m-b-15">
@@ -185,10 +229,54 @@
               </p>
               <div class="w-100 p-b-10 md-down:p-b-45 relative">
                 <label for="shippingAddress" class="checkbox">
-                  <input type="checkbox" id="shippingAddress" name="shippingAddress" class="consent m-r-15 m-0" checked />
+                  <input type="checkbox" id="shippingAddress" name="shippingAddress" class="consent m-r-15 m-0" />
                   <span tabindex="-1">Shipping address is the same as service address.</span>
                 </label>
               </div>
+              <div class="shipping-form">
+                <div class="flex-1 flex-wrap space-between">
+                  <div class="w-66 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="streetAddressShipping">
+                      Street Address
+                    </label>
+                    <input id="streetAddressShipping" name="streetAddressShipping" type="text" required />
+                  </div>
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="addressTypeShipping">
+                      Apt./ Bldg./ Suite
+                    </label>
+                    <input id="addressTypeShipping" name="addressTypeShipping" type="text" required />
+                  </div>
+                </div>
+
+                <div class="flex-1 flex-wrap space-between">
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="cityShipping">
+                      City
+                    </label>
+                    <input id="cityShipping" name="cityShipping" type="text" required />
+                  </div>
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="stateShipping">
+                      State
+                    </label>
+                    <select name="stateShipping" id="state" class="w-100 dropdown" required>
+                      <option value="test">Test Val 1</option>
+                      <option value="test">Test Val 2</option>
+                      <option value="test">Test Val 3</option>
+                      <option value="test">Test Val 4</option>
+                      <option value="test">Test Val 5</option>
+                    </select>
+                  </div>
+                  <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
+                    <label for="zipShipping">
+                      Zip
+                    </label>
+                    <input id="address-zip-shipping" name="zipShipping" class="zip" type="tel" data-parsley-required-message="This field is required" pattern="[0-9]{5}" data-parsley-pattern-message="Zipcode must be 5 digits" data-parsley-pattern="[0-9]{5}" maxlength="5" placeholder="00000" required />
+                  </div>
+                </div>
+              </div>
+
             </div>
 
 
