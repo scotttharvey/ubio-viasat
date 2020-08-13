@@ -25,6 +25,27 @@
   }
 }
 
+.bg-cool-dad {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    height: 100%;
+    width: 49%;
+    right: 0;
+    top: 0;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/images/cool-dad.jpg');
+    @include medium-down {
+      display: none;
+    }
+
+  }
+}
+
 .bg-checker-shirt-lady {
   position: relative;
 
