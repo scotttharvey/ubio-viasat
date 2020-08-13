@@ -29,7 +29,7 @@
               </div>
 
               <div class="payment-method w-100 flex flex-wrap m-b-10">
-                <div class="w-100 flex flex-wrap">
+                <div class="w-50 flex flex-wrap">
                   <p class="m-b-10 w-100">Payment Method</p>
                   <label for="card" class="checkbox circle m-r-15" >
                     <input type="radio" id="card" name="paymentMethod" value="Credit Card" class="consent" required />
@@ -38,6 +38,17 @@
                   <label for="eft" class="checkbox circle m-r-15" >
                     <input type="radio" id="eft" name="paymentMethod" value="Electronic funds transfer" class="consent" required />
                     <span tabindex="-1">Electronic funds transfer</span>
+                  </label>
+                </div>
+                <div class="w-50 flex flex-wrap">
+                  <p class="m-b-10 w-100">Account Type</p>
+                  <label for="card" class="checkbox circle m-r-15" >
+                    <input type="radio" id="checking" name="accountType" value="Checking" class="consent" required />
+                    <span tabindex="-1">Checking</span>
+                  </label>
+                  <label for="eft" class="checkbox circle m-r-15" >
+                    <input type="radio" id="savings" name="accountType" value="Savings" class="consent" required />
+                    <span tabindex="-1">Savings</span>
                   </label>
                 </div>
               </div>
@@ -64,42 +75,18 @@
               </div>
 
               <div class="flex flex-wrap w-100 md-down:w-100">
-                <div class="w-100 p-r-25 md-down:w-100 sm:p-0 flex flex-wrap">
-                  <label class="w-40 md-down:w-100 m-r-10">
+                <div class="w-100 md-down:w-100 sm:p-0 flex space-between flex-wrap">
+                  <label class="w-50 md-down:w-100">
                     Credit Card Number*
                     <input id="credit-card-number" name="credit-card-number" class="credit-card-number" type="tel" required placeholder="0000 0000 0000 0000"
                       pattern="([0-9]{4} ){3}[0-9]{4}" data-parsley-required-message="This field is required" data-parsley-pattern-message="Enter valid card number" data-parsley-pattern="([0-9]{4} ){3}[0-9]{4}" />
                   </label>
-                  <div class="flex flex-center md-down:p-b-15">
-                    <img class="m-r-5 m-t-5 md-down:m-t-0" src="/images/icons/visa-card.svg" alt="" />
-                    <img class="m-r-5 m-t-5 md-down:m-t-0" src="/images/icons/master-card.svg" alt="" />
-                    <img class="m-r-5 m-t-5 md-down:m-t-0" src="/images/icons/american-express-card.svg" alt="" />
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="flex flex-1 space-between w-75 md-down:w-100">
-                <div class="w-30 sm:w-75">
-                  <label>
-                    Exp. Date*
-                    <input name="card-expire" type="tel" class="expire" placeholder="MM/YY" type="text" required data-parsley-required-message="Exp. Date is required" data-parsley-pattern-message="Enter valid date" data-parsley-pattern="^\d{2}\/\d{2}" />
+                  <label class="w-50 md-down:w-100 p-l-33 md-down:p-0">
+                    Bank Account Number*
+                    <input id="bankAccount" name="bankAccount" class="bankAccount" type="tel" required placeholder="00000000" />
                   </label>
                 </div>
 
-                <div class="w-30 sm:w-75 sm:p-0">
-                  <label>
-                    CVV*
-                    <input name="CVV" type="tel" class="cvv" placeholder="000" pattern="[0-9]{3}" required data-parsley-required-message="CVV is required" data-parsley-pattern-message="Enter valid CVV" data-parsley-pattern="[0-9]{3}" />
-                  </label>
-                </div>
-
-                <div class="w-30 sm:w-100 sm:p-0">
-                  <label>
-                    Zipcode*
-                    <input id="payment-zip" name="zipcode" class="zip" type="tel" placeholder="00000" pattern="[0-9]{5}" required data-parsley-required-message="This field is required" data-parsley-pattern-message="Zip expects 5 digits" data-parsley-pattern="[0-9]{5}" />
-                  </label>
-                </div>
               </div>
 
             </div>
@@ -113,12 +100,13 @@
                 <p class="m-b-10">This will be used for the monthly charge of <span class="blue">$300.00</span>.</p>
               </div>
 
-              <div class="w-100 p-b-10 md-down:p-b-45 relative">
+              <!-- HIDE FOR EFT -->
+              <!-- <div class="w-100 p-b-10 md-down:p-b-45 relative">
                 <label for="sameCard" class="checkbox">
                   <input type="checkbox" id="sameCard" name="sameCard" class="consent m-r-15 m-0" />
                   <span tabindex="-1">Use the same credit card from above for today’s charges.</span>
                 </label>
-              </div>
+              </div> -->
 
               <div class="flex flex-1 flex-wrap space-between w-100">
                 <div class="w-30 sm:w-100">
