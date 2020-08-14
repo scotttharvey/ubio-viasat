@@ -1,8 +1,8 @@
 const sortBy = document.querySelector('#sortBy');
 
 sortBy.addEventListener('change', (e) => {
-  let cards = document.querySelectorAll('.package-cards-container .dtv');
-  let prices = document.querySelectorAll('.package-cards-container .dtv .price .amount');
+  let cards = document.querySelectorAll('.package-cards-container .card-ref');
+  let prices = document.querySelectorAll('.package-cards-container .card-ref .price .amount');
   let cardLegal = document.querySelector('.active-text');
 
   const cardData = Array.from(cards).map((card, index) => {
