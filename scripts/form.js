@@ -3,6 +3,7 @@ import parsley from 'parsleyjs'
 const plansoptions = $('.plan-option');
 const deviceCard = $('.device-card');
 const scrollOnSmall = $('.fixed-submit button');
+const paymentMethod = $('.payment-method input');
 
 
 const $form = $('form')
@@ -60,3 +61,14 @@ deviceCard.on('change', (e) => {
   }
 
 });
+
+paymentMethod.on('change', e => {
+  if (e.currentTarget.value !== 'credit-card') {
+    $('.credit-card').addClass('hidden')
+    $('.eft').removeClass('hidden')
+  } else {
+    $('.credit-card').removeClass('hidden')
+    $('.eft').addClass('hidden')
+  }
+
+})
