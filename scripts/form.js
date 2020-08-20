@@ -62,32 +62,47 @@ deviceCard.on('change', (e) => {
 
 });
 
-paymentMethod.on('change', e => {
-
-  // data-not-required="true"
-  function checkRequired(input) {
-    if ($(input).data("not-required") === true) {
-      $(input).prop("required", false)
-    } else {
-      $(input).prop("required", true)
-    }
+// data-not-required="true"
+function checkRequired(input) {
+  if ($(input).data("not-required") === true) {
+    $(input).prop("required", false)
+  } else {
+    $(input).prop("required", true)
     console.log(input);
   }
+}
+
+paymentMethod.on('change', e => {
 
   if (e.currentTarget.value !== 'credit-card') {
     $('.credit-card').addClass('hidden')
     $('.eft').removeClass('hidden')
 
     $('.credit-card input').prop('required',false)
-    $('.eft input').each((i,x) => checkRequired(x))
+    $('.eft input').each((i,el) => checkRequired(el))
 
   } else {
     $('.credit-card').removeClass('hidden')
     $('.eft').addClass('hidden')
 
     $('.eft input').prop('required',false)
-    $('.credit-card input').each((i,x) => checkRequired(x))
+    $('.credit-card input').each((i,el) => checkRequired(el))
 
   }
 
+})
+
+$("[data-toggle-form]").each((i, x) => {
+  $(x).change((el) => {
+    let currentForm = $(x).data('toggle-form')
+
+    if (el.currentTarget.checked) {
+      $(`.${currentForm}`).addClass('hidden')
+      $(`.${currentForm} input`).prop("required", false)
+    } else {
+      $(`.${currentForm}`).removeClass('hidden')
+      $(`.${currentForm} input`).each((i,el) => checkRequired(el))
+    }
+
+  })
 })

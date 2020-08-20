@@ -86,7 +86,7 @@
             </p>
             <div class="bg-gray-lightest flex p-t-15 p-b-25 p-x-20 m-b-25">
               <div class="m-t-3 md-down:hidden">
-                <img src="./../images/icons/question-icon.svg" alt="" class="w-25px h-25px"/>
+                <img src="./../images/icons/house-green.svg" alt="" class="w-25px h-25px"/>
               </div>
               <div class="m-l-10">
                 <p class="text-24 thin p-b-10">Renting? Remember to give your landlord a call</p>
@@ -113,8 +113,8 @@
                   <span tabindex="-1">Single Unit</span>
                 </label>
                 <label for="multi" class="checkbox circle m-r-15" >
-                  <input type="radio" id="multi" name="homeType" value="Multi-Dwelling Unit (eg. Condo, Apartment, Duplex)" class="consent" required />
-                  <span tabindex="-1">Multi-Dwelling Unit (eg. Condo, Apartment, Duplex)</span>
+                  <input type="radio" id="multi" name="homeType" value="Multi-dwelling unit (condo, apartment, duplex)" class="consent" required />
+                  <span tabindex="-1">Multi-dwelling unit (condo, apartment, duplex)</span>
                 </label>
               </div>
             </div>
@@ -131,10 +131,10 @@
                   <input id="streetAddress" name="streetAddress" type="text" required />
                 </div>
                 <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
-                  <label for="addressType">
-                    Apt./ Bldg./ Suite
+                  <label for="addressUnitNumber">
+                    Unit number
                   </label>
-                  <input id="addressType" name="addressType" type="text" required />
+                  <input id="addressUnitNumber" name="addressUnitNumber" type="text" required />
                 </div>
               </div>
 
@@ -173,7 +173,7 @@
               </p>
               <div class="w-100 p-b-10 md-down:p-b-45 relative">
                 <label for="billingAddress" class="checkbox">
-                  <input type="checkbox" id="billingAddress" name="billingAddress" class="consent m-r-15 m-0" />
+                  <input type="checkbox" id="billingAddress" name="billingAddress" class="consent m-r-15 m-0" data-toggle-form="billing-form" />
                   <span tabindex="-1">Billing address is the same as service address.</span>
                 </label>
               </div>
@@ -186,10 +186,10 @@
                     <input id="streetAddressBilling" name="streetAddressBilling" type="text" />
                   </div>
                   <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
-                    <label for="addressTypeBilling">
-                      Apt./ Bldg./ Suite
+                    <label for="billingUnitNumber">
+                      Unit number
                     </label>
-                    <input id="addressTypeBilling" name="addressTypeBilling" type="text" />
+                    <input id="billingUnitNumber" name="billingUnitNumber" type="text" data-not-required="true" />
                   </div>
                 </div>
 
@@ -229,7 +229,7 @@
               </p>
               <div class="w-100 p-b-10 md-down:p-b-45 relative">
                 <label for="shippingAddress" class="checkbox">
-                  <input type="checkbox" id="shippingAddress" name="shippingAddress" class="consent m-r-15 m-0" />
+                  <input type="checkbox" id="shippingAddress" name="shippingAddress" class="consent m-r-15 m-0" data-toggle-form="shipping-form" />
                   <span tabindex="-1">Shipping address is the same as service address.</span>
                 </label>
               </div>
@@ -242,10 +242,10 @@
                     <input id="streetAddressShipping" name="streetAddressShipping" type="text" required />
                   </div>
                   <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
-                    <label for="addressTypeShipping">
-                      Apt./ Bldg./ Suite
+                    <label for="addressUnitNumber">
+                      Unit number
                     </label>
-                    <input id="addressTypeShipping" name="addressTypeShipping" type="text" required />
+                    <input id="addressUnitNumber" name="addressUnitNumber" type="text" data-not-required="true" />
                   </div>
                 </div>
 
