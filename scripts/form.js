@@ -63,12 +63,31 @@ deviceCard.on('change', (e) => {
 });
 
 paymentMethod.on('change', e => {
+
+  // data-not-required="true"
+  function checkRequired(input) {
+    if ($(input).data("not-required") === true) {
+      $(input).prop("required", false)
+    } else {
+      $(input).prop("required", true)
+    }
+    console.log(input);
+  }
+
   if (e.currentTarget.value !== 'credit-card') {
     $('.credit-card').addClass('hidden')
     $('.eft').removeClass('hidden')
+
+    $('.credit-card input').prop('required',false)
+    $('.eft input').each((i,x) => checkRequired(x))
+
   } else {
     $('.credit-card').removeClass('hidden')
     $('.eft').addClass('hidden')
+
+    $('.eft input').prop('required',false)
+    $('.credit-card input').each((i,x) => checkRequired(x))
+
   }
 
 })

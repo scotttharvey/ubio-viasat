@@ -53,7 +53,7 @@
                   <div class="w-30 sm:w-100">
                     <label>
                       Middle Name
-                      <input name="middle-name" type="text"  />
+                      <input name="middle-name" type="text" data-not-required="true" />
                     </label>
                   </div>
                   <div class="w-30 sm:w-100">
@@ -106,19 +106,19 @@
                   <div class="w-30 sm:w-100">
                     <label>
                       Cardholder First Name*
-                      <input name="cardholder-first-name" type="text" required />
+                      <input name="cardholder-first-name" type="text" />
                     </label>
                   </div>
                   <div class="w-30 sm:w-100">
                     <label>
                       Middle Name
-                      <input name="middle-name" type="text"  />
+                      <input name="middle-name" type="text" data-not-required="true" />
                     </label>
                   </div>
                   <div class="w-30 sm:w-100">
                     <label>
                       Last Name*
-                      <input name="last-name" type="text" required />
+                      <input name="last-name" type="text" />
                     </label>
                   </div>
                 </div>
@@ -127,12 +127,12 @@
                   <div class="w-100 md-down:w-100 sm:p-0 flex space-between flex-wrap">
                     <label class="w-50 md-down:w-100">
                       Credit Card Number*
-                      <input id="credit-card-number" name="credit-card-number" class="credit-card-number" type="tel" required placeholder="0000 0000 0000 0000"
+                      <input id="credit-card-number" name="credit-card-number" class="credit-card-number" type="tel" placeholder="0000 0000 0000 0000"
                         pattern="([0-9]{4} ){3}[0-9]{4}" data-parsley-required-message="This field is required" data-parsley-pattern-message="Enter valid card number" data-parsley-pattern="([0-9]{4} ){3}[0-9]{4}" />
                     </label>
                     <label class="w-50 md-down:w-100 p-l-33 md-down:p-0">
                       Bank Account Number*
-                      <input id="bankAccount" name="bankAccount" class="bankAccount" type="tel" required placeholder="00000000" />
+                      <input id="bankAccount" name="bankAccount" class="bankAccount" type="tel" placeholder="00000000" />
                     </label>
                   </div>
 
