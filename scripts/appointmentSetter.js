@@ -46,7 +46,7 @@ const dummyTimes = {
 // CALENDAR CONFIG
 document.querySelector('#calendar').flatpickr({
   minDate: 'today',
-  maxDate: new Date().fp_incr(7),
+  maxDate: new Date().fp_incr(31),
   defaultDate: 'today',
   altInput: true,
   altFormat: 'F j, Y',

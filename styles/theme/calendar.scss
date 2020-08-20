@@ -7,6 +7,12 @@
     background-color: $green;
   }
 
+  .flatpickr-monthDropdown-months {
+    line-height: 24px;
+    appearance: none;
+    text-align-last: center;
+  }
+
   .flatpickr-weekday {
     font-size: 14px;
     color: $gray-dead;
