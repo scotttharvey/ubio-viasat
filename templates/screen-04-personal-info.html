@@ -62,7 +62,7 @@
               <div class="w-100 flex flex-wrap">
                 <div class="w-40 sm:w-100 m-r-25 sm:m-0">
                   <label for="phone">
-                    Phone*
+                    Primary phone*
                   </label>
                   <input id="phone" name="phone" type="tel" placeholder="(000)000-0000" required data-parsley-required-message="Phone is required" data-parsley-pattern-message="Phone expecting 10 numbers" data-parsley-pattern="((\(\d{3}\)?)|(\d{3}-))?\d{3}-\d{4}" />
                 </div>
@@ -84,13 +84,13 @@
             <p class="w-100 text-24 thin p-b-5 m-b-25 border-bottom-gray-dark">
               Ownership Information
             </p>
-            <div class="bg-gray-lightest flex p-t-15 p-b-25 p-x-20 m-b-25">
+            <div class="w-100 bg-gray-lightest flex p-t-15 p-b-15 p-x-20 m-b-25">
               <div class="m-t-3 md-down:hidden">
-                <img src="./../images/icons/question-icon.svg" alt="" class="w-25px h-25px"/>
+                <img src="./../images/icons/house-green.svg" alt="" class="w-25px h-25px"/>
               </div>
               <div class="m-l-10">
                 <p class="text-24 thin p-b-10">Renting? Remember to give your landlord a call</p>
-                <p class="text-14 thin p-b-10">Renters should check with the property owner and obtain the necessary permission. During the installation appointment, someone over the age of 18 must be present to discuss placement of the equipment.</p>
+                <p class="text-14 thin p-b-10">Renters must get permission from their property owner to mount a satellite dish on the premises.</p>
               </div>
             </div>
 
@@ -114,7 +114,7 @@
                 </label>
                 <label for="multi" class="checkbox circle m-r-15" >
                   <input type="radio" id="multi" name="homeType" value="Multi-Dwelling Unit (eg. Condo, Apartment, Duplex)" class="consent" required />
-                  <span tabindex="-1">Multi-Dwelling Unit (eg. Condo, Apartment, Duplex)</span>
+                  <span tabindex="-1">Multi-dwelling unit (condo, duplex, apartment)</span>
                 </label>
               </div>
             </div>
@@ -131,23 +131,23 @@
                   <input id="streetAddress" name="streetAddress" type="text" required />
                 </div>
                 <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
-                  <label for="addressType">
-                    Apt./ Bldg./ Suite
+                  <label for="unitNumber">
+                    Unit number
                   </label>
-                  <input id="addressType" name="addressType" type="text" required />
+                  <input id="unitNumber" name="unitNumber" type="text" />
                 </div>
               </div>
 
               <div class="flex-1 flex-wrap space-between">
                 <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
                   <label for="city">
-                    City
+                    City*
                   </label>
                   <input id="city" name="city" type="text" required />
                 </div>
                 <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
                   <label for="state">
-                    State
+                    State*
                   </label>
                   <select name="state" id="state" class="w-100 dropdown" required>
                     <option value="test">Test Val 1</option>
@@ -159,7 +159,7 @@
                 </div>
                 <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
                   <label for="zip">
-                    Zip
+                    Zip*
                   </label>
                   <input id="address-zip" name="zip" class="zip" type="tel" data-parsley-required-message="This field is required" pattern="[0-9]{5}" data-parsley-pattern-message="Zipcode must be 5 digits" data-parsley-pattern="[0-9]{5}" maxlength="5" placeholder="00000" required />
                 </div>
@@ -172,6 +172,7 @@
                 Billing Address
               </p>
               <div class="w-100 p-b-10 md-down:p-b-45 relative">
+                <p class="p-b-15 p-r-25">Viasat will use this address to send letters regarding your account and to validate your payment method.</p>
                 <label for="billingAddress" class="checkbox">
                   <input type="checkbox" id="billingAddress" name="billingAddress" class="consent m-r-15 m-0" checked />
                   <span tabindex="-1">Billing address is the same as service address.</span>
@@ -184,6 +185,7 @@
                 Shipping Address
               </p>
               <div class="w-100 p-b-10 md-down:p-b-45 relative">
+                <p class="p-b-15 p-r-25">Viasat will use this address to send you your equipment.</p>
                 <label for="shippingAddress" class="checkbox">
                   <input type="checkbox" id="shippingAddress" name="shippingAddress" class="consent m-r-15 m-0" checked />
                   <span tabindex="-1">Shipping address is the same as service address.</span>
@@ -220,7 +222,7 @@
 
             <div class="flex flex-end w-100 p-t-25">
               <div class="flex flex-end w-100 bg-white sm:fixed-submit">
-                <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45 disabled" >Next</button>
+                <button type="submit" class="btn bg-blue-dark white btn-shadow border-0 p-y-8 p-x-45 disabled" >Next</button>
               </div>
             </div>
 

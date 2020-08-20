@@ -26,7 +26,7 @@
 
         <section class="bg-white p-25 sm:p-x-15">
           <div class="w-100 m-b-15 flex space-between">
-            <p class="text-24 thin">Voice Bundling Options</p>
+            <p class="text-24 thin">Voice bundling options</p>
             <p class="gray">Step ? of ?</p>
           </div>
           <form action="" class="flex flex-wrap form-container">
@@ -51,7 +51,7 @@
               </div>
               <div class="m-l-10">
                 <p class="text-24 thin p-b-10">What is E911?</p>
-                <p class="text-14 thin p-b-10">E911 (Enhanced 911) is support for wireless phone users who dial 911, the standard number for requesting help in an emergency. For example this is the address where a 911 dispatcher would send an ambulance. It is critical to confirm the E911 address independently from the service address.</p>
+                <p class="text-14 thin p-b-10">E911, or Enhanced 911, is the emergency help service for wireless phone users. Because Viasat Voice service runs a on wireless satellite network, 911 dispatchers cannot auto-detect your location and need independent confirmation of the address associated with your home phone number.</p>
               </div>
             </div>
 
@@ -68,13 +68,13 @@
                   <label for="suffix1">
                     Suffix
                   </label>
-                  <input id="suffix1" name="suffix1" type="text" required />
+                  <input id="suffix1" name="suffix1" type="text" />
                 </div>
                 <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
                   <label for="preDirection">
                     Pre Direction
                   </label>
-                  <select name="preDirection" id="preDirection" class="w-100 dropdown" required>
+                  <select name="preDirection" id="preDirection" class="w-100 dropdown">
                     <option value="test">Test Val 1</option>
                     <option value="test">Test Val 2</option>
                     <option value="test">Test Val 3</option>
@@ -101,7 +101,7 @@
                   <label for="postDirection">
                     Post Direction
                   </label>
-                  <select name="postDirection" id="postDirection" class="w-100 dropdown" required>
+                  <select name="postDirection" id="postDirection" class="w-100 dropdown">
                     <option value="test">Test Val 1</option>
                     <option value="test">Test Val 2</option>
                     <option value="test">Test Val 3</option>
@@ -119,7 +119,7 @@
                   <label for="unitType">
                     Unit Type
                   </label>
-                  <select name="unitType" id="unitType" class="w-100 dropdown" required>
+                  <select name="unitType" id="unitType" class="w-100 dropdown">
                     <option value="test">Test Val 1</option>
                     <option value="test">Test Val 2</option>
                     <option value="test">Test Val 3</option>
@@ -131,7 +131,7 @@
                   <label for="unitNumber">
                     Unit Number
                   </label>
-                  <input id="unitNumber" name="unitNumber" type="text" required />
+                  <input id="unitNumber" name="unitNumber" type="text" />
                 </div>
                 <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
                   <!-- SPACER -->
@@ -158,7 +158,7 @@
                 </div>
                 <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
                   <label for="zip">
-                    Zip
+                    Zip*
                   </label>
                   <input id="address-zip" name="zip" class="zip" type="tel" data-parsley-required-message="This field is required" pattern="[0-9]{5}" data-parsley-pattern-message="Zipcode must be 5 digits" data-parsley-pattern="[0-9]{5}" maxlength="5" placeholder="00000" required />
                 </div>
@@ -167,7 +167,7 @@
             </div>
 
             <p class="w-100 text-24 thin p-b-5 m-b-25 border-bottom-gray-dark">
-              Create a Login for Voice Support
+              Create a login for Voice support
             </p>
             <div class="bg-gray-lightest flex p-t-15 p-b-25 p-x-20 m-b-25">
               <div class="m-t-3 md-down:hidden">
@@ -175,7 +175,7 @@
               </div>
               <div class="m-l-10">
                 <p class="text-24 thin p-b-10">Why am I creating a login?</p>
-                <p class="text-14 thin p-b-10">This is the username and password to manage Voice only. Please note that it is not the login for the account management portal.</p>
+                <p class="text-14 thin p-b-10">Voice support runs through a different online portal from your overall Viasat account and requires a separate username and password.</p>
               </div>
             </div>
 
@@ -216,7 +216,7 @@
               <div class="w-100 p-b-10 md-down:p-b-45 relative">
                 <label for="blockCallerID" class="checkbox">
                   <input type="checkbox" id="blockCallerID" name="blockCallerID" class="consent m-r-15 m-0" />
-                  <span tabindex="-1">Block caller ID name</span>
+                  <span tabindex="-1">Show my caller ID as "Blocked number"</span>
                 </label>
               </div>
               <div class="w-100 flex flex-wrap space-between">
@@ -248,7 +248,7 @@
               <div class="w-100 p-b-10 md-down:p-b-45 relative">
                 <label for="publishAddress" class="checkbox">
                   <input type="checkbox" id="publishAddress" name="publishAddress" class="consent m-r-15 m-0" />
-                  <span tabindex="-1">Publish Address in public directory/span>
+                  <span tabindex="-1">Publish Address in public directory</span>
                 </label>
               </div>
               <div class="w-100 flex flex-wrap space-between">
@@ -256,7 +256,7 @@
                   <label for="listingType">
                     Listing Type*
                   </label>
-                  <select name="listingType" id="listingType" class="w-100 dropdown p-x-10" required>
+                  <select name="listingType" id="listingType" class="w-100 dropdown p-x-10">
                     <option value="test">Test Val 1</option>
                     <option value="test">Test Val 2</option>
                     <option value="test">Test Val 3</option>

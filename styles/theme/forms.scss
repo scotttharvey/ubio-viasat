@@ -114,8 +114,9 @@
     position: relative;
     height: 40px;
     background-color: $white;
-    border: solid 1px $blue;
+    border: solid 1px #c7cad1;
     margin: 8px auto 18px;
+    padding-left: 5px;
 
     &::after {
       position: absolute;
