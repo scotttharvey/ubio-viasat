@@ -285,6 +285,9 @@
   }
 }
 
+.is-selected { opacity: 1; }
+.not-selected { opacity: .6; }
+
 .checkbox-container {
   .parsley-errors-list li {
     top: 5px;

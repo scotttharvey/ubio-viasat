@@ -37,10 +37,29 @@ $('form').on('submit', e => {
 
 plansoptions.on('change', (e) => {
   const input = plansoptions.find('[type="radio"]:checked');
+  const inputName = $(e.currentTarget).find('input')[0].name
+  const currentOptions = plansoptions.find(`[name=${inputName}]`);
 
   $('.plan-option').removeClass('border-blue-light');
 
-  input.closest('.plan-option').toggleClass('border-blue-light')
+  input.closest('.plan-option').addClass('border-blue-light')
+
+  // BY DEFAULT ALL OPTIONS WILL HAVE OPACITY OF 1;
+  // ON SELECT, INPUTS WITH THE SAME NAME WILL HAVE OPACITY OF .6;
+  currentOptions.each((i, el) => {
+
+    const option = $(el).closest('.plan-option');
+    option.removeClass('is-selected')
+    option.removeClass('not-selected')
+
+    if (option.hasClass('border-blue-light')) {
+      option.addClass('is-selected')
+    } else {
+      option.addClass('not-selected')
+    }
+
+  })
+
 
 });
 
