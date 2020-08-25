@@ -1,7 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
 <link rel="stylesheet" href="./../styles/index.scss" />
 
-<!-- SCREEN 5-A -->
+<!-- SCREEN 0-4 -->
 <div class="container row w-100 bg-white">
   <section class="w-100 bg-white p-y-15 content flex space-between">
     <p class="text-18 icon lock-green-dark">Secure Checkout</p>
@@ -15,25 +15,25 @@
 
       <div class="w-66 sm:w-100 p-y-25 sm:p-t-0 content">
         <h1 class="h3 gray-darkest thin p-b-15">Checkout</h1>
-        <p class="p-b-25 sm:hidden">Just a few more steps and you’ll be set! Fill out your information below to place your order. </p>
+        <p class="p-b-25 sm:hidden">Just a few more steps to complete your order! Enter your preferences and information below.</p>
         <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
           <div class="flex flex-row align-center">
             <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt=""/>
-            <p class="text-18 sm:text-14">Plan Options and Addons</p>
+            <p class="text-18 sm:text-14">Plan options and add-ons</p>
           </div>
           <p class="no-underline text-18 blue-light sm:hidden">Change</p>
         </section>
         <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
           <div class="flex flex-row align-center">
             <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt=""/>
-            <p class="text-18 sm:text-14">Voice Bundling Options</p>
+            <p class="text-18 sm:text-14">Voice bundling options</p>
           </div>
           <p class="no-underline text-18 blue-light sm:hidden">Change</p>
         </section>
 
         <section class="bg-white p-25 sm:p-x-15">
           <div class="w-100 m-b-15 flex space-between">
-            <p class="text-24 thin">Personal Information</p>
+            <p class="text-24 thin">Customer Information</p>
             <p class="gray">Step ? of ?</p>
           </div>
           <form action="" class="flex flex-wrap form-container">
@@ -55,7 +55,7 @@
             <div class="contact flex flex-wrap w-100 p-b-15">
               <div class="w-50 sm:w-100">
                 <label for="email">
-                  Email Address*
+                  Email address*
                 </label>
                 <input id="email" name="email" type="email" required data-parsley-required-message="Email is required" data-parsley-pattern-message="Please enter valid email" data-parsley-pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" />
               </div>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="w-40 sm:w-100 m-r-25 sm:m-0">
                   <label for="secondPhone">
-                    Secondary Phone*
+                    Secondary phone*
                   </label>
                   <input id="secondPhone" name="secondPhone" type="tel" placeholder="(000)000-0000" required data-parsley-required-message="Phone is required" data-parsley-pattern-message="Phone expecting 10 numbers" data-parsley-pattern="((\(\d{3}\)?)|(\d{3}-))?\d{3}-\d{4}" />
                 </div>
@@ -82,7 +82,7 @@
             </div>
 
             <p class="w-100 text-24 thin p-b-5 m-b-25 border-bottom-gray-dark">
-              Ownership Information
+              Residential Information
             </p>
             <div class="w-100 bg-gray-lightest flex p-t-15 p-b-15 p-x-20 m-b-25">
               <div class="m-t-3 md-down:hidden">
@@ -284,7 +284,7 @@
               <div class="w-100 flex flex-wrap">
                 <div class="w-33 md-down:w-100">
                   <label for="SSN">
-                    SSN - Last 4 digits*
+                    Last 4 digits of SSN*
                   </label>
                   <input id="SSN" name="SSN" type="text" placeholder="XXXX" pattern="[0-9]{4}" maxlength="4" required  data-parsley-required-message="Last 4 of SSN is required" data-parsley-pattern-message="Please enter valid SSN" data-parsley-pattern="[0-9]{4}"/>
                   <input id="SSN-mask" placeholder="XXXX" class="hidden SSN-mask" />
@@ -292,7 +292,7 @@
 
                 <div class="w-33 md-down:w-100 p-l-25 md-down:p-0">
                   <label for="birthday">
-                    Date of Birth*
+                    Date of birth*
                   </label>
                   <input id="birthday" name="birthday" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Birthday is required" data-parsley-pattern-message="Please enter valid Birthday" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
                   <input id="birthday-mask" placeholder="MM/DD/YYYY" class="hidden birthday-mask" />
@@ -307,9 +307,25 @@
 
             <div class="flex flex-end w-100 p-t-25">
               <div class="flex flex-end w-100 bg-white sm:fixed-submit">
-                <button type="submit" class="btn bg-blue-dark white btn-shadow border-0 p-y-8 p-x-45 disabled" >Next</button>
+                <button type="submit" class="btn bg-blue-dark white btn-shadow border-0 p-y-8 p-x-45 disabled" data-modal-trigger="prequalComplete">Next</button>
               </div>
             </div>
+
+            <!-- Start modal content -->
+            <div data-modal-content="prequalComplete" class="modal sm:p-x-15 hidden is-active">
+              <div class="modal-content p-25 sm:p-x-15 w-50 md-down:w-100">
+                <div class="w-100 text-right">
+                  <span data-modal-trigger="close" class="close">&#10005;</span>
+                </div>
+                <div class="text-center p-y-30 flex flex-column justify-center">
+                  <img src="../images/icons/thumbs-up-green.svg" alt="" class="text-center m-b-10" />
+                  <p class="text-30 thin p-b-15 p-x-45">Prequalification complete!</p>
+                  <p class="p-b-25 w-100 m-auto ">Thank you for completing the credit prequalification.</p>
+                  <button  class="btn bg-blue white p-y-8 p-x-45 m-auto border-0" data-modal-trigger="close">Next</button>
+                </div>
+              </div>
+            </div>
+            <!-- End modal content -->
 
           </form>
         </section>

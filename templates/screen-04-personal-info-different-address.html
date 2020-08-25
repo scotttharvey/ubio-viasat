@@ -1,7 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
 <link rel="stylesheet" href="./../styles/index.scss" />
 
-<!-- SCREEN 5-A -->
+<!-- SCREEN 0-4 -->
 <div class="container row w-100 bg-white">
   <section class="w-100 bg-white p-y-15 content flex space-between">
     <p class="text-18 icon lock-green-dark">Secure Checkout</p>
@@ -15,25 +15,25 @@
 
       <div class="w-66 sm:w-100 p-y-25 sm:p-t-0 content">
         <h1 class="h3 gray-darkest thin p-b-15">Checkout</h1>
-        <p class="p-b-25 sm:hidden">Just a few more steps and you’ll be set! Fill out your information below to place your order. </p>
+        <p class="p-b-25 sm:hidden">Just a few more steps to complete your order! Enter your preferences and information below.</p>
         <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
           <div class="flex flex-row align-center">
             <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt=""/>
-            <p class="text-18 sm:text-14">Plan Options and Addons</p>
+            <p class="text-18 sm:text-14">Plan options and add-ons</p>
           </div>
           <p class="no-underline text-18 blue-light sm:hidden">Change</p>
         </section>
         <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
           <div class="flex flex-row align-center">
             <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt=""/>
-            <p class="text-18 sm:text-14">Voice Bundling Options</p>
+            <p class="text-18 sm:text-14">Voice bundling options</p>
           </div>
           <p class="no-underline text-18 blue-light sm:hidden">Change</p>
         </section>
 
         <section class="bg-white p-25 sm:p-x-15">
           <div class="w-100 m-b-15 flex space-between">
-            <p class="text-24 thin">Personal Information</p>
+            <p class="text-24 thin">Customer Information</p>
             <p class="gray">Step ? of ?</p>
           </div>
           <form action="" class="flex flex-wrap form-container">
@@ -55,20 +55,20 @@
             <div class="contact flex flex-wrap w-100 p-b-15">
               <div class="w-50 sm:w-100">
                 <label for="email">
-                  Email Address*
+                  Email address*
                 </label>
                 <input id="email" name="email" type="email" required data-parsley-required-message="Email is required" data-parsley-pattern-message="Please enter valid email" data-parsley-pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" />
               </div>
               <div class="w-100 flex flex-wrap">
                 <div class="w-40 sm:w-100 m-r-25 sm:m-0">
                   <label for="phone">
-                    Phone*
+                    Primary phone*
                   </label>
                   <input id="phone" name="phone" type="tel" placeholder="(000)000-0000" required data-parsley-required-message="Phone is required" data-parsley-pattern-message="Phone expecting 10 numbers" data-parsley-pattern="((\(\d{3}\)?)|(\d{3}-))?\d{3}-\d{4}" />
                 </div>
                 <div class="w-40 sm:w-100 m-r-25 sm:m-0">
                   <label for="secondPhone">
-                    Secondary Phone*
+                    Secondary phone*
                   </label>
                   <input id="secondPhone" name="secondPhone" type="tel" placeholder="(000)000-0000" required data-parsley-required-message="Phone is required" data-parsley-pattern-message="Phone expecting 10 numbers" data-parsley-pattern="((\(\d{3}\)?)|(\d{3}-))?\d{3}-\d{4}" />
                 </div>
@@ -82,15 +82,15 @@
             </div>
 
             <p class="w-100 text-24 thin p-b-5 m-b-25 border-bottom-gray-dark">
-              Ownership Information
+              Residential Information
             </p>
-            <div class="bg-gray-lightest flex p-t-15 p-b-25 p-x-20 m-b-25">
+            <div class="w-100 bg-gray-lightest flex p-t-15 p-b-15 p-x-20 m-b-25">
               <div class="m-t-3 md-down:hidden">
                 <img src="./../images/icons/house-green.svg" alt="" class="w-25px h-25px"/>
               </div>
               <div class="m-l-10">
                 <p class="text-24 thin p-b-10">Renting? Remember to give your landlord a call</p>
-                <p class="text-14 thin p-b-10">Renters should check with the property owner and obtain the necessary permission. During the installation appointment, someone over the age of 18 must be present to discuss placement of the equipment.</p>
+                <p class="text-14 thin p-b-10">Renters must get permission from their property owner to mount a satellite dish on the premises.</p>
               </div>
             </div>
 
@@ -113,28 +113,28 @@
                   <span tabindex="-1">Single Unit</span>
                 </label>
                 <label for="multi" class="checkbox circle m-r-15" >
-                  <input type="radio" id="multi" name="homeType" value="Multi-dwelling unit (condo, apartment, duplex)" class="consent" required />
-                  <span tabindex="-1">Multi-dwelling unit (condo, apartment, duplex)</span>
+                  <input type="radio" id="multi" name="homeType" value="Multi-Dwelling Unit (eg. Condo, Apartment, Duplex)" class="consent" required />
+                  <span tabindex="-1">Multi-dwelling unit (condo, duplex, apartment)</span>
                 </label>
               </div>
             </div>
 
             <div class="w-100 service-address m-b-15">
               <p class="w-100 text-24 thin p-b-5 m-b-25 border-bottom-gray-dark">
-                Service Address
+                Service address
               </p>
               <div class="flex-1 flex-wrap space-between">
                 <div class="w-66 md-down:w-50 sm:w-100 sm:p-0">
                   <label for="streetAddress">
-                    Street Address*
+                    Street address*
                   </label>
                   <input id="streetAddress" name="streetAddress" type="text" required />
                 </div>
                 <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
-                  <label for="addressUnitNumber">
+                  <label for="unitNumber">
                     Unit number
                   </label>
-                  <input id="addressUnitNumber" name="addressUnitNumber" type="text" required />
+                  <input id="unitNumber" name="unitNumber" type="text" />
                 </div>
               </div>
 
@@ -169,7 +169,7 @@
 
             <div class="w-100 billing-address m-b-15">
               <p class="w-100 text-24 thin p-b-5 m-b-25 border-bottom-gray-dark">
-                Billing Address
+                Billing address
               </p>
               <div class="w-100 p-b-10 md-down:p-b-45 relative">
                 <label for="billingAddress" class="checkbox">
@@ -181,7 +181,7 @@
                 <div class="flex-1 flex-wrap space-between">
                   <div class="w-66 md-down:w-50 sm:w-100 sm:p-0">
                     <label for="streetAddressBilling">
-                      Street Address*
+                      Street address*
                     </label>
                     <input id="streetAddressBilling" name="streetAddressBilling" type="text" />
                   </div>
@@ -225,7 +225,7 @@
 
             <div class="w-100 shipping-address m-b-15">
               <p class="w-100 text-24 thin p-b-5 m-b-25 border-bottom-gray-dark">
-                Shipping Address
+                Shipping address
               </p>
               <div class="w-100 p-b-10 md-down:p-b-45 relative">
                 <label for="shippingAddress" class="checkbox">
@@ -237,7 +237,7 @@
                 <div class="flex-1 flex-wrap space-between">
                   <div class="w-66 md-down:w-50 sm:w-100 sm:p-0">
                     <label for="streetAddressShipping">
-                      Street Address*
+                      Street address*
                     </label>
                     <input id="streetAddressShipping" name="streetAddressShipping" type="text" required />
                   </div>
@@ -252,13 +252,13 @@
                 <div class="flex-1 flex-wrap space-between">
                   <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
                     <label for="cityShipping">
-                      City*
+                      City
                     </label>
                     <input id="cityShipping" name="cityShipping" type="text" required />
                   </div>
                   <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
                     <label for="stateShipping">
-                      State*
+                      State
                     </label>
                     <select name="stateShipping" id="state" class="w-100 dropdown" required>
                       <option value="test">Test Val 1</option>
@@ -270,7 +270,7 @@
                   </div>
                   <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
                     <label for="zipShipping">
-                      Zip*
+                      Zip
                     </label>
                     <input id="address-zip-shipping" name="zipShipping" class="zip" type="tel" data-parsley-required-message="This field is required" pattern="[0-9]{5}" data-parsley-pattern-message="Zipcode must be 5 digits" data-parsley-pattern="[0-9]{5}" maxlength="5" placeholder="00000" required />
                   </div>
@@ -284,7 +284,7 @@
               <div class="w-100 flex flex-wrap">
                 <div class="w-33 md-down:w-100">
                   <label for="SSN">
-                    SSN - Last 4 digits*
+                    Last 4 digits of SSN*
                   </label>
                   <input id="SSN" name="SSN" type="text" placeholder="XXXX" pattern="[0-9]{4}" maxlength="4" required  data-parsley-required-message="Last 4 of SSN is required" data-parsley-pattern-message="Please enter valid SSN" data-parsley-pattern="[0-9]{4}"/>
                   <input id="SSN-mask" placeholder="XXXX" class="hidden SSN-mask" />
@@ -292,7 +292,7 @@
 
                 <div class="w-33 md-down:w-100 p-l-25 md-down:p-0">
                   <label for="birthday">
-                    Date of Birth*
+                    Date of birth*
                   </label>
                   <input id="birthday" name="birthday" type="text" placeholder="MM/DD/YYYY" pattern="^\d{2}\/\d{2}\/\d{4}$" maxlength="10" required data-parsley-required-message="Birthday is required" data-parsley-pattern-message="Please enter valid Birthday" data-parsley-pattern="^\d{2}\/\d{2}\/\d{4}$" />
                   <input id="birthday-mask" placeholder="MM/DD/YYYY" class="hidden birthday-mask" />
@@ -307,7 +307,7 @@
 
             <div class="flex flex-end w-100 p-t-25">
               <div class="flex flex-end w-100 bg-white sm:fixed-submit">
-                <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45 border-0 disabled" >Next</button>
+                <button type="submit" class="btn bg-blue-dark white btn-shadow border-0 p-y-8 p-x-45 disabled" >Next</button>
               </div>
             </div>
 
