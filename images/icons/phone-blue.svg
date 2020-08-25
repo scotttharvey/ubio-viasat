@@ -1,28 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;}
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#0057B8;}
-</style>
-<desc>Created with Sketch.</desc>
-<g id="Hi-fidelity-Design">
-	<g id="cart-11a-Summary-desktop-02" transform="translate(-153.000000, -379.000000)">
-		<g id="Group-9" transform="translate(134.000000, 277.000000)">
-			<g id="Group-7" transform="translate(16.000000, 94.000000)">
-				<g id="Group-8">
-					<g id="Group-3">
-						<g id="Communication_x2F_ic_x5F_call" transform="translate(0.000000, 5.000000)">
-							<rect id="Bounds" x="3" y="3" class="st0" width="24" height="24"/>
-							<path id="Color-Fill" class="st1" d="M9.6,13.8c1.4,2.8,3.8,5.1,6.6,6.6l2.2-2.2c0.3-0.3,0.7-0.4,1-0.2
-								c1.1,0.4,2.3,0.6,3.6,0.6c0.5,0,1,0.4,1,1V23c0,0.5-0.5,1-1,1C13.6,24,6,16.4,6,7c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1
-								c0,1.2,0.2,2.4,0.6,3.6c0.1,0.4,0,0.7-0.2,1L9.6,13.8z"/>
-						</g>
-					</g>
-				</g>
-			</g>
-		</g>
-	</g>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="4" y="1" width="17" height="22">
+<path d="M4.06165 1.84625H20.1601V22.2134H4.06165V1.84625Z" fill="#009FE3"/>
+</mask>
+<g mask="url(#mask0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.85648 4.58927C7.48885 10.6339 10.8042 15.9782 15.4952 20.1254L18.085 17.0589C17.3248 16.3814 16.5985 15.6588 15.9158 14.9008L14.1498 16.4072L13.6705 15.8456C11.6911 13.5261 10.0797 10.9286 8.88048 8.12502L8.59026 7.44601L10.7248 6.53327C10.3493 5.58656 10.0244 4.61474 9.75445 3.63074L5.85648 4.58927ZM15.6651 22.2134L15.1013 21.7367C9.68651 17.1638 5.92995 11.1088 4.23777 4.22705L4.06165 3.51001L10.826 1.84625L11.0028 2.5633C11.3444 3.95308 11.8026 5.32293 12.3638 6.63554L12.6544 7.31456L10.5376 8.21954C11.5393 10.4047 12.8087 12.4509 14.3218 14.3192L16.0727 12.825L16.5524 13.3866C17.481 14.4747 18.5052 15.4938 19.5959 16.4146L20.1601 16.8909L15.6651 22.2134Z" fill="#009FE3"/>
 </g>
 </svg>
