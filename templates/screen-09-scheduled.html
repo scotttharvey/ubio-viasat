@@ -47,3 +47,14 @@
 
 <script type="text/javascript" src="../index.js"></script>
 <script type="text/javascript" src="../scripts/mask.js"></script>
+
+<script>
+  var nextStep = document.querySelectorAll('[data-next-step]');
+  nextStep.forEach(el => {
+    el.addEventListener('click', () => {
+      const nextStepName = 'screen-02-plans-options'
+
+      window.location = `/templates/${nextStepName}.html`
+    })
+  })
+</script>

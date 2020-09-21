@@ -309,7 +309,7 @@
           <div class="p-t-25"></div>
 
           <div class="flex flex-end w-100 bg-white sm:fixed-submit">
-            <button class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45">Next</button>
+            <button class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45" data-next-step>Next</button>
           </div>
 
         </section>
@@ -384,3 +384,14 @@
 
 <script type="text/javascript" src="../index.js"></script>
 <script type="text/javascript" src="../scripts/mask.js"></script>
+
+<script>
+  var nextStep = document.querySelectorAll('[data-next-step]');
+  nextStep.forEach(el => {
+    el.addEventListener('click', () => {
+      const nextStepName = 'screen-08-payment'
+
+      window.location = `/templates/${nextStepName}.html`
+    })
+  })
+</script>

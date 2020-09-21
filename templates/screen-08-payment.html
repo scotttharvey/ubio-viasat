@@ -226,7 +226,7 @@
             </div>
 
             <div class="flex flex-end w-100 bg-white sm:fixed-submit">
-              <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45 block m-l-auto disabled" >Place Order</button>
+              <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-45 block m-l-auto disabled" data-next-step>Place Order</button>
             </div>
           </form>
         </section>
@@ -303,3 +303,14 @@
 
 <script type="text/javascript" src="../index.js"></script>
 <script type="text/javascript" src="../scripts/mask.js"></script>
+
+<script>
+  var nextStep = document.querySelectorAll('[data-next-step]');
+  nextStep.forEach(el => {
+    el.addEventListener('click', () => {
+      const nextStepName = 'screen-09-scheduled'
+
+      window.location = `/templates/${nextStepName}.html`
+    })
+  })
+</script>

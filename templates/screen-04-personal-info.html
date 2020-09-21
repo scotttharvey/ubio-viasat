@@ -21,14 +21,14 @@
             <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt=""/>
             <p class="text-18 sm:text-14">Plan options and add-ons</p>
           </div>
-          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+          <p class="no-underline text-18 blue-light sm:hidden" onclick="stepLink('screen-02-plans-options')">Change</p>
         </section>
         <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
           <div class="flex flex-row align-center">
             <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt=""/>
             <p class="text-18 sm:text-14">Voice bundling options</p>
           </div>
-          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+          <p class="no-underline text-18 blue-light sm:hidden" onclick="stepLink('screen-03-bundling')">Change</p>
         </section>
 
         <section class="bg-white p-25 sm:p-x-15">
@@ -321,7 +321,7 @@
                   <img src="../images/icons/thumbs-up-green.svg" alt="" class="text-center m-b-10" />
                   <p class="text-30 thin p-b-15 p-x-45">Prequalification complete!</p>
                   <p class="p-b-25 w-100 m-auto ">Thank you for completing the credit prequalification.</p>
-                  <button  class="btn bg-blue white p-y-8 p-x-45 m-auto border-0" data-modal-trigger="close">Next</button>
+                  <button  class="btn bg-blue white p-y-8 p-x-45 m-auto border-0" data-modal-trigger="close" data-next-step>Next</button>
                 </div>
               </div>
             </div>
@@ -381,3 +381,14 @@
 
 <script type="text/javascript" src="../index.js"></script>
 <script type="text/javascript" src="../scripts/mask.js"></script>
+
+<script>
+  var nextStep = document.querySelectorAll('[data-next-step]');
+  nextStep.forEach(el => {
+    el.addEventListener('click', () => {
+      const nextStepName = 'screen-05-promotions'
+
+      window.location = `/templates/${nextStepName}.html`
+    })
+  })
+</script>

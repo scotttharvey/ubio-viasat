@@ -23,7 +23,7 @@
             <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt=""/>
             <p class="text-18 sm:text-14">Plan options and add-ons</p>
           </div>
-          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+          <p class="no-underline text-18 blue-light sm:hidden" onclick="stepLink('screen-02-plans-options')">Change</p>
         </section>
 
         <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
@@ -31,7 +31,7 @@
             <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt=""/>
             <p class="text-18 sm:text-14">Voice bundling options</p>
           </div>
-          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+          <p class="no-underline text-18 blue-light sm:hidden" onclick="stepLink('screen-03-bundling')">Change</p>
         </section>
 
         <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
@@ -39,7 +39,7 @@
             <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt=""/>
             <p class="text-18 sm:text-14">Customer information</p>
           </div>
-          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+          <p class="no-underline text-18 blue-light sm:hidden" onclick="stepLink('screen-04-personal-info')">Change</p>
         </section>
 
         <section class="bg-white p-25 sm:p-x-15 m-b-15 flex flex-row space-between align-center">
@@ -47,7 +47,7 @@
             <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt=""/>
             <p class="text-18 sm:text-14">Promotions</p>
           </div>
-          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+          <p class="no-underline text-18 blue-light sm:hidden" onclick="stepLink('screen-05-promotions')">Change</p>
         </section>
 
         <section class="bg-white p-25 sm:p-x-15">
@@ -99,7 +99,7 @@
             </div>
 
             <div class="flex flex-end w-100 bg-white sm:fixed-submit">
-              <button type="submit" class="btn bg-blue border-0 white btn-shadow p-y-8 p-x-45 disabled" >Next</button>
+              <button type="submit" class="btn bg-blue border-0 white btn-shadow p-y-8 p-x-45 disabled" data-next-step>Next</button>
             </div>
           </form>
 
@@ -176,3 +176,14 @@
 
 <script type="text/javascript" src="../scripts/appointmentSetter.js"></script>
 <script type="text/javascript" src="../index.js"></script>
+
+<script>
+  var nextStep = document.querySelectorAll('[data-next-step]');
+  nextStep.forEach(el => {
+    el.addEventListener('click', () => {
+      const nextStepName = 'screen-07-review'
+
+      window.location = `/templates/${nextStepName}.html`
+    })
+  })
+</script>

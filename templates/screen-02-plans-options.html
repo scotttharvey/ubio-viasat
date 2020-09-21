@@ -173,9 +173,9 @@
                           <img src="../images/icons/exclaimation-icon-green.svg" alt="" class="text-center m-b-10" />
                           <p class="h3 thin p-b-15 p-x-45">Phone number out of area</p>
                           <p class="p-b-15 w-100 m-auto ">The phone number <span class="blue">1 (845) 411-2487</span> is in not an area supported by the Viasat Voice home phone service.</p>
-                          <button  class="btn bg-blue-dark white p-y-8 p-x-45 m-auto border-0" data-modal-trigger="close">Countinue with a new phone number from ViaSat</button>
+                          <button  class="btn bg-blue-dark white p-y-8 p-x-45 m-auto border-0" data-modal-trigger="close" data-next-step>Countinue with a new phone number from ViaSat</button>
                           <br/>
-                          <button  class="btn bg-blue-dark white p-y-8 p-x-45 m-auto border-0" data-modal-trigger="close">Countinue without voice bundling</button>
+                          <button  class="btn bg-blue-dark white p-y-8 p-x-45 m-auto border-0" data-modal-trigger="close" data-next-step>Countinue without voice bundling</button>
                           <br/>
                           <button  class="btn bg-white blue p-y-8 p-x-45 m-auto border-0" data-modal-trigger="close">Try again</button>
                         </div>
@@ -381,3 +381,14 @@
 
 <script type="text/javascript" src="../index.js"></script>
 <script type="text/javascript" src="../scripts/mask.js"></script>
+
+<script>
+  var nextStep = document.querySelectorAll('[data-next-step]');
+  nextStep.forEach(el => {
+    el.addEventListener('click', () => {
+      const nextStepName = 'screen-03-bundling'
+
+      window.location = `/templates/${nextStepName}.html`
+    })
+  })
+</script>

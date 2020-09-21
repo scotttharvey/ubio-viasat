@@ -21,7 +21,7 @@
             <img class="w-25px h-25px m-r-10 -m-t-3" src="./../images/icons/check-blue.svg" alt=""/>
             <p class="text-18 sm:text-14">Plan Options and add-ons</p>
           </div>
-          <p class="no-underline text-18 blue-light sm:hidden">Change</p>
+          <p class="no-underline text-18 blue-light sm:hidden pointer" onclick="stepLink('screen-02-plans-options')" >Change</p>
         </section>
 
         <section class="bg-white p-25 sm:p-x-15">
@@ -281,7 +281,7 @@
 
             <div class="flex flex-end w-100 p-t-25">
               <div class="flex flex-end w-100 bg-white sm:fixed-submit">
-                <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-65 disabled" >Next</button>
+                <button type="submit" class="btn bg-blue-dark white btn-shadow p-y-8 p-x-65 disabled" data-next-step>Next</button>
               </div>
             </div>
 
@@ -339,3 +339,18 @@
 
 <script type="text/javascript" src="../index.js"></script>
 <script type="text/javascript" src="../scripts/mask.js"></script>
+
+<script>
+  var nextStep = document.querySelectorAll('[data-next-step]');
+  nextStep.forEach(el => {
+    el.addEventListener('click', () => {
+      const nextStepName = 'screen-04-personal-info'
+
+      window.location = `/templates/${nextStepName}.html`
+    })
+  })
+
+  stepLink = (link) => {
+    return window.location = `/templates/${link}.html`
+  }
+</script>
