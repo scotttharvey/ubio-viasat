@@ -1,0 +1,48 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+  <link rel="stylesheet" href="./../styles/index.scss" />
+  <script type="text/javascript" src="./../index.js"></script>
+</head>
+
+<!-- Marketing Header -->
+<div class="w-100">
+  <img src="/images/marketing/header.png" alt=""  class="w-100"/>
+</div>
+<!-- END Marketing Header -->
+
+<div class="w-100">
+  <img src="/images/marketing/mkgt-01.png" alt=""class="w-100"/>
+</div>
+<div id="marketingCards"  class="w-100">
+  <img src="/images/marketing/mkgt-02-package.png" alt="" id="cards" class="w-100 pointer" onclick="stepLink('screen-01-plans-page')" />
+  <img src="/images/marketing/mkgt-02-package-hover.png" alt="" id="hoverCards" class="w-100 pointer hidden" onclick="stepLink('screen-01-plans-page')" />
+</div>
+<div class="w-100">
+  <img src="/images/marketing/mkgt-03.png" alt=""class="w-100"/>
+</div>
+
+<!-- Marketing footer -->
+<div class="w-100">
+  <img src="/images/marketing/footer.png" alt=""  class="w-100"/>
+</div>
+<!-- END Marketing footer -->
+
+
+<script type="text/javascript">
+
+stepLink = (link) => {
+  return window.location = `/templates/${link}.html`
+}
+
+
+document.querySelector('#marketingCards').addEventListener('mouseover', el => {
+  document.querySelector('#cards').classList.add('hidden')
+  document.querySelector('#hoverCards').classList.remove('hidden')
+})
+
+document.querySelector('#marketingCards').addEventListener('mouseleave', el => {
+  document.querySelector('#cards').classList.remove('hidden')
+  document.querySelector('#hoverCards').classList.add('hidden')
+})
+
+</script>
