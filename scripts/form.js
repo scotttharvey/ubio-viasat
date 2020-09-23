@@ -16,6 +16,7 @@ window.Parsley.on('form:init', function() {
 $('form').on('keyup change paste', 'input, select, textarea', function(){
   const parentForm = $(this).closest('form')
   const submit = parentForm.find('[type="submit"]')
+
   if (parentForm.parsley().isValid()) {
     submit.removeClass('disabled')
   } else {
@@ -87,7 +88,6 @@ function checkRequired(input) {
     $(input).prop("required", false)
   } else {
     $(input).prop("required", true)
-    console.log(input);
   }
 }
 
@@ -118,9 +118,11 @@ $("[data-toggle-form]").each((i, x) => {
     if (el.currentTarget.checked) {
       $(`.${currentForm}`).addClass('hidden')
       $(`.${currentForm} input`).prop("required", false)
+      $(`.${currentForm} select`).prop("required", false)
     } else {
       $(`.${currentForm}`).removeClass('hidden')
       $(`.${currentForm} input`).each((i,el) => checkRequired(el))
+      $(`.${currentForm} select`).each((i,el) => checkRequired(el))
     }
 
   })

@@ -76,7 +76,7 @@
                   <label for="secondPhone">
                     Secondary phone*
                   </label>
-                  <input id="secondPhone" name="secondPhone" type="tel" placeholder="(000)000-0000" required data-parsley-required-message="Phone is required" data-parsley-pattern-message="Phone expecting 10 numbers" data-parsley-pattern="((\(\d{3}\)?)|(\d{3}-))?\d{3}-\d{4}" />
+                  <input id="secondPhone" name="secondPhone" type="tel" placeholder="(000)000-0000" data-parsley-required-message="Phone is required" data-parsley-pattern-message="Phone expecting 10 numbers" data-parsley-pattern="((\(\d{3}\)?)|(\d{3}-))?\d{3}-\d{4}" />
                 </div>
               </div>
             </div>
@@ -210,7 +210,7 @@
                     <label for="stateBilling">
                       State*
                     </label>
-                    <select name="stateBilling" id="stateBilling" class="w-100 dropdown" required>
+                    <select name="stateBilling" id="stateBilling" class="w-100 dropdown" >
                       <option value="test">Test Val 1</option>
                       <option value="test">Test Val 2</option>
                       <option value="test">Test Val 3</option>
@@ -222,7 +222,7 @@
                     <label for="zipBilling">
                       Zip*
                     </label>
-                    <input id="address-zip-illing" name="zipBilling" class="zip" type="tel" data-parsley-required-message="This field is required" pattern="[0-9]{5}" data-parsley-pattern-message="Zipcode must be 5 digits" data-parsley-pattern="[0-9]{5}" maxlength="5" placeholder="00000" required />
+                    <input id="address-zip-illing" name="zipBilling" class="zip" type="tel" data-parsley-required-message="This field is required" pattern="[0-9]{5}" data-parsley-pattern-message="Zipcode must be 5 digits" data-parsley-pattern="[0-9]{5}" maxlength="5" placeholder="00000" />
                   </div>
                 </div>
               </div>
@@ -245,7 +245,7 @@
                     <label for="streetAddressShipping">
                       Street Address
                     </label>
-                    <input id="streetAddressShipping" name="streetAddressShipping" type="text" required />
+                    <input id="streetAddressShipping" name="streetAddressShipping" type="text" />
                   </div>
                   <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
                     <label for="addressUnitNumber">
@@ -260,13 +260,13 @@
                     <label for="cityShipping">
                       City
                     </label>
-                    <input id="cityShipping" name="cityShipping" type="text" required />
+                    <input id="cityShipping" name="cityShipping" type="text" />
                   </div>
                   <div class="w-30 md-down:w-50 sm:w-100 sm:p-0">
                     <label for="stateShipping">
                       State
                     </label>
-                    <select name="stateShipping" id="state" class="w-100 dropdown" required>
+                    <select name="stateShipping" id="state" class="w-100 dropdown" >
                       <option value="test">Test Val 1</option>
                       <option value="test">Test Val 2</option>
                       <option value="test">Test Val 3</option>
@@ -278,7 +278,7 @@
                     <label for="zipShipping">
                       Zip
                     </label>
-                    <input id="address-zip-shipping" name="zipShipping" class="zip" type="tel" data-parsley-required-message="This field is required" pattern="[0-9]{5}" data-parsley-pattern-message="Zipcode must be 5 digits" data-parsley-pattern="[0-9]{5}" maxlength="5" placeholder="00000" required />
+                    <input id="address-zip-shipping" name="zipShipping" class="zip" type="tel" data-parsley-required-message="This field is required" pattern="[0-9]{5}" data-parsley-pattern-message="Zipcode must be 5 digits" data-parsley-pattern="[0-9]{5}" maxlength="5" placeholder="00000" />
                   </div>
                 </div>
               </div>
@@ -393,6 +393,7 @@
 
 <script type="text/javascript" src="../index.js"></script>
 <script type="text/javascript" src="../scripts/mask.js"></script>
+<script type="text/javascript" src="../scripts/form.js"></script>
 
 <script>
   var nextStep = document.querySelectorAll('[data-next-step]');
