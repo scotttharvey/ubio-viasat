@@ -98,7 +98,7 @@
             <div>
               <p>Phone number for technician to contact you on the day of appointment*</p>
               <div class="w-33">
-                <input id="phone" name="phone" type="tel" placeholder="(000)000-0000" data-parsley-required-message="Phone is required" data-parsley-pattern-message="Phone expecting 10 numbers" data-parsley-pattern="((\(\d{3}\)?)|(\d{3}-))?\d{3}-\d{4}" />
+                <input id="phone" name="phone" type="tel" placeholder="(000)000-0000" data-parsley-required-message="Phone is required" data-parsley-pattern-message="Phone expecting 10 numbers" data-parsley-pattern="((\(\d{3}\)?)|(\d{3}-))?\d{3}-\d{4}" class="phone" required />
               </div>
               <p class="m-b-15">(Optional) Please provide instructions that will help the technician safely and easily find your residence (e.g. gate code, large animals on the property, etc.).</p>
               <textarea class="w-100 border-gray-light m-b-30 min-max-w-100"></textarea>
@@ -188,6 +188,7 @@
 
 <script type="text/javascript" src="../scripts/appointmentSetter.js"></script>
 <script type="text/javascript" src="../index.js"></script>
+<script type="text/javascript" src="../scripts/mask.js"></script>
 
 <script>
   var nextStep = document.querySelectorAll('[data-next-step]');
